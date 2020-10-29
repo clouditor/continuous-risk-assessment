@@ -1,4 +1,4 @@
-package main
+package assessment
 
 import (
 	"context"
@@ -7,7 +7,7 @@ import (
 	"github.com/open-policy-agent/opa/rego"
 )
 
-func evaluateExamplePolicy() {
+func EvaluateExamplePolicy() {
 
 	module := `
 package example.authz

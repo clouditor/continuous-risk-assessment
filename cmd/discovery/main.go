@@ -5,7 +5,7 @@ import (
 	"os"
 	"strings"
 
-	"clouditor.io/discovery"
+	"clouditor.io/riskAssessment/internal/discovery"
 
 	log "github.com/sirupsen/logrus"
 	"github.com/spf13/cobra"
