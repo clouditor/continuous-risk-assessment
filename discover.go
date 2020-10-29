@@ -2,7 +2,9 @@ package discovery
 
 import (
 	"context"
+	"encoding/json"
 	"fmt"
+	"io/ioutil"
 
 	"github.com/Azure/azure-sdk-for-go/services/resources/mgmt/2018-02-01/resources"
 	"github.com/Azure/go-autorest/autorest"
@@ -40,11 +42,10 @@ func (a *App) AuthorizeAzure() (err error) {
 	return err
 }
 
-func (a App) GetAzureArmTemplate() (err error) {
+func (a App) exportArmTemplate() (result resources.GroupExportResult, err error) {
 	client := resources.NewGroupsClient(viper.GetString(SubscriptionIDFlag))
 	client.Authorizer = a.auth
 
-	var result resources.GroupExportResult
 	expReq := resources.ExportTemplateRequest{
 		ResourcesProperty: &[]string{"*"},
 	}
@@ -52,11 +53,48 @@ func (a App) GetAzureArmTemplate() (err error) {
 	result, err = client.ExportTemplate(context.Background(), viper.GetString(ResourceGroupFlag), expReq)
 
 	if err != nil {
-		fmt.Println("err: ", err)
+		fmt.Println("Error exporting ARM template: ", err)
+		return result, err
+	}
+
+	return result, err
+}
+
+func (a App) GetAzureArmTemplate() (err error) {
+
+	armTemplate, err := a.exportArmTemplate()
+
+	if err != nil {
 		return err
 	}
 
-	fmt.Print("Result: ", result)
+	prefix, indent := "", "    "
+	exported, err := json.MarshalIndent(armTemplate, prefix, indent)
+	if err != nil {
+		fmt.Println("MarshalIndent failed: ", err)
+		return err
+	}
+
+	err = saveToFileSystem(exported)
+
+	if err != nil {
+		return err
+	}
+
+	return nil
+}
+
+func saveToFileSystem(fileContent []byte) (err error) {
+	fileTemplate := "%s-template.json"
+	fileName := fmt.Sprintf(fileTemplate, viper.GetString(ResourceGroupFlag))
+
+	err = ioutil.WriteFile(fileName, fileContent, 0666)
+
+	if err != nil {
+		fmt.Println("Error writing file: ", err)
+	}
+
+	fmt.Println("AWS ARM template stored to file system.")
 
 	return nil
 }
