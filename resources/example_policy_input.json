@@ -1,0 +1,8 @@
+{
+	"method": "GET",
+	"path": ["salary", "bob"],
+	"subject": {
+		"user":   "bob",
+		"groups": ["sales", "marketing"]
+	}
+}
