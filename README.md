@@ -12,8 +12,9 @@ Next steps:
 
 Nice to have:
 - Retrieve AWS CloudFormation templates https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/resource-import-new-stack.html
-- Add some kind of dashboard(?)
+- Add some kind of dashboard
 - Construct graphical attack trees
 
 Misc:
 - We need more use case threat profiles, e.g. Function App has access to storage account, VM is publicly available, open port 22, ...
+  - e.g. Kubernetes paths (e.g. Storage Account can be mounted)
