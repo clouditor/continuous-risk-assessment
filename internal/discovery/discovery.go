@@ -21,10 +21,12 @@ const (
 	AppClientSecretFlag = "app.clientSecret"
 )
 
+// App Creating a new type "App" containing authorize information ...
 type App struct {
 	auth autorest.Authorizer
 }
 
+// AuthorizeAzure takes care of the azure authorization...
 func (a *App) AuthorizeAzure() (err error) {
 	tenantID := viper.GetString(AppTenantIDFlag)
 	clientID := viper.GetString(AppClientIDFlag)
@@ -42,7 +44,8 @@ func (a *App) AuthorizeAzure() (err error) {
 	return err
 }
 
-func (a App) exportArmTemplate() (result resources.GroupExportResult, err error) {
+// ExportArmTemplate exports Azure ARM template from Azure...
+func (a App) ExportArmTemplate() (result resources.GroupExportResult, err error) {
 	client := resources.NewGroupsClient(viper.GetString(SubscriptionIDFlag))
 	client.Authorizer = a.auth
 
@@ -60,35 +63,25 @@ func (a App) exportArmTemplate() (result resources.GroupExportResult, err error)
 	return result, err
 }
 
-func (a App) GetAzureArmTemplate() (err error) {
-
-	armTemplate, err := a.exportArmTemplate()
-
-	if err != nil {
-		return err
-	}
+// PrepareArmExport prepares Azure ARM template for saving at file system...
+func (a App) PrepareArmExport(armTemplate resources.GroupExportResult) (prepatedArmTemplate []byte, err error) {
 
 	prefix, indent := "", "    "
-	exported, err := json.MarshalIndent(armTemplate, prefix, indent)
+	prepatedArmTemplate, err = json.MarshalIndent(armTemplate, prefix, indent)
 	if err != nil {
 		fmt.Println("MarshalIndent failed: ", err)
-		return err
+		return nil, err
 	}
 
-	err = saveToFileSystem(exported)
-
-	if err != nil {
-		return err
-	}
-
-	return nil
+	return prepatedArmTemplate, nil
 }
 
-func saveToFileSystem(fileContent []byte) (err error) {
-	fileTemplate := "%s-template.json"
+// SaveArmTemplateToFileSystem saves Azure ARM template at file system...
+func (a App) SaveArmTemplateToFileSystem(armTemplate []byte) (err error) {
+	fileTemplate := "resources/inputs/%s-template.json"
 	fileName := fmt.Sprintf(fileTemplate, viper.GetString(ResourceGroupFlag))
 
-	err = ioutil.WriteFile(fileName, fileContent, 0666)
+	err = ioutil.WriteFile(fileName, armTemplate, 0666)
 
 	if err != nil {
 		fmt.Println("Error writing file: ", err)

@@ -65,7 +65,17 @@ func doCmd(cmd *cobra.Command, args []string) (err error) {
 		return err
 	}
 
-	if err = app.GetAzureArmTemplate(); err != nil {
+	armTemplate, err := app.ExportArmTemplate()
+	if err != nil {
+		return err
+	}
+
+	preparedArmTemplate, err := app.PrepareArmExport(armTemplate)
+	if err != nil {
+		return err
+	}
+
+	if err = app.SaveArmTemplateToFileSystem(preparedArmTemplate); err != nil {
 		return err
 	}
 
