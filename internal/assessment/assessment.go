@@ -14,11 +14,11 @@ func EvaluatePolicy() {
 
 	ctx := context.TODO()
 	r, err := rego.New(
-		rego.Query("x = data.example.authz.allow"),
+		rego.Query("x = data.threats"),
 		rego.Load([]string{"./resources/threat_profiles/"}, nil),
 	).PrepareForEval(ctx)
 
-	input := jsonFileInput("./resources/inputs/example_policy_input.json")
+	input := jsonFileInput("./resources/inputs/testTemplate.json")
 
 	results, err := r.Eval(ctx, rego.EvalInput(input))
 	if err != nil {
