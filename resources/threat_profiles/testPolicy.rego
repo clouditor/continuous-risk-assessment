@@ -1,5 +1,10 @@
 package threats
 
+get_default_names(resource_names) = resource_default_names{    
+	resource_default_names := input.template.parameters[i]["defaultValue"]
+    resource_names == i
+}
+
 functionapps_with_access_to_storageaccount[app_names] {
     some i, j
     app_names := [ apps |
@@ -15,9 +20,13 @@ functionapps_with_access_to_storageaccount[app_names] {
 
 storageaccount_nohttps[storageaccount_names] {
     some i
-    storageaccount_names := split(input.template.resources[i].name, "_")[1]
+    storageaccount_names_tmp := split(input.template.resources[i].name, "'")[1]
+
     input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
     input.template.resources[i].properties.supportsHttpsTrafficOnly == false
+
+    storageaccount_names := get_default_names(storageaccount_names_tmp)
+
 }
 
 vm_names_with_public_ips[vms_with_publicIPs] {
