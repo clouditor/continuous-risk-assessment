@@ -6,16 +6,14 @@ get_default_names(resource_names) = resource_default_names{
 }
 
 functionapps_with_access_to_storageaccount[app_names] {
-    some i, j
     app_names := [ apps |
         input.template.resources[j].type == "Microsoft.Web/sites"
         contains(
             input.template.resources[j].properties.siteConfig.connectionStrings[_].connectionString,
-            storageaccount_nohttps[_]
-        )
-        input.template.resources[i].type == "Microsoft.Web/sites"
-        apps := get_default_names(split(input.template.resources[i].name, "'")[1])
-    ]
+            storageaccount_nohttps[_])
+            
+            apps := get_default_names(split(input.template.resources[j].name, "'")[1]) 
+        ]
 }
 
 storageaccount_nohttps[storageaccount_names] {   
