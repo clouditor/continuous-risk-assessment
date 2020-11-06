@@ -1,0 +1,4 @@
+- https://capec.mitre.org/
+- https://attack.mitre.org/
+- SecuriCAD für AWS https://foreseeti.com/securicad/
+- https://www.scienceopen.com/document_file/d2801ec7-8cea-40be-a565-4000591a675d/ScienceOpen/064_Wolf.pdf
