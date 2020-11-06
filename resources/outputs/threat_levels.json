@@ -1,0 +1,21 @@
+[
+ {
+  "expressions": [
+   {
+    "value": {
+     "all_assets": [
+      "bcloudtest"
+     ],
+     "asset_to_max_threatlevel": {
+      "bcloudtest": 3
+     }
+    },
+    "text": "data.threatlevels",
+    "location": {
+     "row": 1,
+     "col": 1
+    }
+   }
+  ]
+ }
+]

@@ -1,0 +1,26 @@
+[
+ {
+  "expressions": [
+   {
+    "value": true,
+    "text": "x = data.reconstruction",
+    "location": {
+     "row": 1,
+     "col": 1
+    }
+   }
+  ],
+  "bindings": {
+   "x": {
+    "all_assets": [
+     "bcloudtest"
+    ],
+    "asset_to_paths": {
+     "bcloudtest": [
+      "storageaccount_nohttps"
+     ]
+    }
+   }
+  }
+ }
+]

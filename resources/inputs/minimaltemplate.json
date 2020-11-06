@@ -1,0 +1,61 @@
+{
+    "template": {
+        "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#",
+        "contentVersion": "1.0.0.0",
+        "parameters": {
+            "storageAccounts_bcloudtest_name": {
+                "defaultValue": "bcloudtest",
+                "type": "String"
+            }
+        },
+        "resources": [
+            {
+                "apiVersion": "2020-08-01-preview",
+                "kind": "Storage",
+                "location": "westeurope",
+                "name": "[parameters('storageAccounts_bcloudtest_name')]",
+                "properties": {
+                    "allowBlobPublicAccess": true,
+                    "azureFilesIdentityBasedAuthentication": {
+                        "directoryServiceOptions": "None"
+                    },
+                    "encryption": {
+                        "keySource": "Microsoft.Storage",
+                        "services": {
+                            "blob": {
+                                "enabled": true,
+                                "keyType": "Account"
+                            },
+                            "file": {
+                                "enabled": true,
+                                "keyType": "Account"
+                            }
+                        }
+                    },
+                    "minimumTlsVersion": "TLS1_0",
+                    "networkAcls": {
+                        "bypass": "AzureServices",
+                        "defaultAction": "Allow",
+                        "ipRules": [
+                            {
+                                "action": "Allow",
+                                "value": "138.246.31.222"
+                            }
+                        ],
+                        "virtualNetworkRules": []
+                    },
+                    "supportsHttpsTrafficOnly": false
+                },
+                "sku": {
+                    "name": "Standard_LRS",
+                    "tier": "Standard"
+                },
+                "tags": {
+                    "BCloud": "test"
+                },
+                "type": "Microsoft.Storage/storageAccounts"
+            }
+        ],
+        "variables": {}
+    }
+}

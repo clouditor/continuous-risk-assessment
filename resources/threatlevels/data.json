@@ -1,0 +1,7 @@
+{
+    "attackpaths_and_threatlevels": {
+        "storageaccount_nohttps": 3,
+        "one_attack_path": 1,
+        "yet_another_attack_path": 2
+    }
+}
