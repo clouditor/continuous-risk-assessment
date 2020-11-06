@@ -88,14 +88,26 @@ interfaces_with_open_port22[interfaces22] {
     )
 }
 
-nsgs_with_port22[nsgs22] {
+nsgs_with_port22[nsgs22_default] {
     some i
     input.template.resources[i].properties.securityRules[_].properties.destinationPortRange == "22"
     input.template.resources[i].properties.securityRules[_].properties.access == "Allow"
     input.template.resources[i].properties.securityRules[_].properties.direction == "Inbound"
     input.template.resources[i].type == "Microsoft.Network/networkSecurityGroups"
-    nsgs22 := strings.replace_n(
-        {"[": "", ")": "", "]": ""},
-        input.template.resources[i].name,
-    )
+    
+    nsgs22 := split(input.template.resources[i].name, "'")[1] #input.template.resources[i].name
+    
+    nsgs22_default := get_default_names(nsgs22)
 }
+
+#nsgs_with_port22[nsgs22] {
+#    some i
+#    input.template.resources[i].properties.securityRules[_].properties.destinationPortRange == "22"
+#    input.template.resources[i].properties.securityRules[_].properties.access == "Allow"
+#    input.template.resources[i].properties.securityRules[_].properties.direction == "Inbound"
+#    input.template.resources[i].type == "Microsoft.Network/networkSecurityGroups"
+#    nsgs22 := strings.replace_n(
+#        {"[": "", ")": "", "]": ""},
+#        input.template.resources[i].name,
+#    )
+#}
