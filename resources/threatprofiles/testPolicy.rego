@@ -1,4 +1,4 @@
-package threats
+package threatprofile
 
 get_default_names(resource_names) = resource_default_names{    
 	resource_default_names := input.template.parameters[i]["defaultValue"]

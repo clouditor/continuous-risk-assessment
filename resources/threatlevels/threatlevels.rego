@@ -1,4 +1,4 @@
-package threatlevels
+package threatlevel
 
 asset_to_max_threatlevel[asset] = maxis {
     asset := all_assets[_]

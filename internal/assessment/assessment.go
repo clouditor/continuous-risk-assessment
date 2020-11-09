@@ -16,18 +16,25 @@ func IdentifyThreatsFromTemplate(threatProfileDir string, inputFile string) (res
 
 	ctx := context.TODO()
 	r, err := rego.New(
-		rego.Query("x = data.minimal"),
+		rego.Query("x = data.threatprofile"),
 		rego.Load([]string{threatProfileDir}, nil),
 	).PrepareForEval(ctx)
 
-	input := jsonFileInput(inputFile)
+	input := readFromFilesystem(inputFile)
 
 	results, err = r.Eval(ctx, rego.EvalInput(input))
+
 	if err != nil {
 		log.Fatal(err)
+		return nil
 	}
 
-	fmt.Println("Result evaluation")
+	if results == nil {
+		fmt.Println("Evaluation result is nil.")
+		return nil
+	}
+
+	fmt.Println("Result threats")
 	pretty.Print(results)
 	fmt.Println()
 
@@ -74,7 +81,7 @@ func IdentifyHighestThreatLevel(threatLevelsProfileDir string, evaluationResult 
 
 	ctx := context.TODO()
 	r, err := rego.New(
-		rego.Query("data.threatlevels"),
+		rego.Query("data.threatlevel"),
 		rego.Load([]string{threatLevelsProfileDir}, nil),
 	).PrepareForEval(ctx)
 
@@ -90,7 +97,7 @@ func IdentifyHighestThreatLevel(threatLevelsProfileDir string, evaluationResult 
 	return threatlevels
 }
 
-func jsonFileInput(path string) interface{} {
+func readFromFilesystem(path string) interface{} {
 
 	bs, err := ioutil.ReadFile(path)
 	if err != nil {
@@ -105,8 +112,8 @@ func jsonFileInput(path string) interface{} {
 	return input
 }
 
-// SaveToJSONFile saves rego binding results to file system.
-func SaveToJSONFile(filename string, data rego.ResultSet) {
+// SaveToFilesystem saves rego binding results to file system.
+func SaveToFilesystem(filename string, data rego.ResultSet) {
 	file, err := json.MarshalIndent(data, "", " ")
 
 	if err != nil {
@@ -118,7 +125,7 @@ func SaveToJSONFile(filename string, data rego.ResultSet) {
 	if err != nil {
 		fmt.Println("Error saving file to file system: ", err)
 	} else {
-		fmt.Println("Saved rego evaluation result to file system: ", filename)
+		fmt.Printf("Saved data to %s.\n", filename)
 	}
 
 }
