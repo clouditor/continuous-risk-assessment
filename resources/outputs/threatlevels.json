@@ -4,26 +4,19 @@
    {
     "value": {
      "all_assets": [
-      [
-       "cloudcontrolFA",
-       "cloudcontrol_FA_2"
-      ],
+      "kubernetes-istio-test",
+      {
+       "interface_ids": "[resourceId('Microsoft.Network/networkInterfaces', parameters('networkInterfaces_kubernetes_istio_tes941_name'))]",
+       "vm_name": "kubernetes-istio-test"
+      },
+      "cloudcontrolFA",
+      "cloudcontrol_FA_2",
       "kubernetes-istio-tes941",
       "kubernetes-istio-tes9412",
       "kubernetes-istio-test-nsg",
       "kubernetes-istio-test-nsg2",
       "bcloudtest",
-      "bcloudtest2",
-      [
-       "kubernetes-istio-test"
-      ],
-      [
-       {
-        "interface_ids": "[resourceId('Microsoft.Network/networkInterfaces', parameters('networkInterfaces_kubernetes_istio_tes941_name'))]",
-        "vm_name": "kubernetes-istio-test"
-       }
-      ],
-      "kubernetes-istio-test"
+      "bcloudtest2"
      ],
      "asset_to_max_threatlevel": {
       "bcloudtest": 3,
