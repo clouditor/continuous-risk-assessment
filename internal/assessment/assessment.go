@@ -11,22 +11,25 @@ import (
 	"github.com/open-policy-agent/opa/rego"
 )
 
-func EvaluatePolicy(threatprofile_dir string) (results rego.ResultSet) {
+// IdentifyThreatsFromTemplate identifies threats from template data.
+func IdentifyThreatsFromTemplate(threatProfileDir string, inputFile string) (results rego.ResultSet) {
 
 	ctx := context.TODO()
 	r, err := rego.New(
 		rego.Query("x = data.minimal"),
-		rego.Load([]string{threatprofile_dir}, nil),
+		rego.Load([]string{threatProfileDir}, nil),
 	).PrepareForEval(ctx)
 
-	input := jsonFileInput("resources/inputs/minimaltemplate.json")
+	input := jsonFileInput(inputFile)
 
 	results, err = r.Eval(ctx, rego.EvalInput(input))
 	if err != nil {
 		log.Fatal(err)
 	}
 
+	fmt.Println("Result evaluation")
 	pretty.Print(results)
+	fmt.Println()
 
 	// for index, element := range results {
 	// 	fmt.Println()
@@ -46,6 +49,47 @@ func EvaluatePolicy(threatprofile_dir string) (results rego.ResultSet) {
 	return results
 }
 
+// ReconstructAttackTrees reconstructs attack trees from threats.
+func ReconstructAttackTrees(reconstructAttackTreesProfileDir string, data rego.ResultSet) (attacktrees rego.ResultSet) {
+	ctx := context.TODO()
+	r, err := rego.New(
+		rego.Query("x = data.reconstruction"),
+		rego.Load([]string{reconstructAttackTreesProfileDir}, nil),
+	).PrepareForEval(ctx)
+
+	attacktrees, err = r.Eval(ctx, rego.EvalInput(data))
+	if err != nil {
+		log.Fatal(err)
+	}
+
+	fmt.Println("Result reconstructed attack trees")
+	pretty.Print(attacktrees)
+	fmt.Println()
+
+	return attacktrees
+}
+
+// IdentifyHighestThreatLevel identifies highest threat level per asset.
+func IdentifyHighestThreatLevel(threatLevelsProfileDir string, evaluationResult rego.ResultSet) (threatlevels rego.ResultSet) {
+
+	ctx := context.TODO()
+	r, err := rego.New(
+		rego.Query("data.threatlevels"),
+		rego.Load([]string{threatLevelsProfileDir}, nil),
+	).PrepareForEval(ctx)
+
+	threatlevels, err = r.Eval(ctx, rego.EvalInput(evaluationResult))
+	if err != nil {
+		log.Fatal(err)
+	}
+
+	fmt.Println("Result highest threat level")
+	pretty.Print(threatlevels)
+	fmt.Println()
+
+	return threatlevels
+}
+
 func jsonFileInput(path string) interface{} {
 
 	bs, err := ioutil.ReadFile(path)
@@ -61,51 +105,20 @@ func jsonFileInput(path string) interface{} {
 	return input
 }
 
-// SaveToJsonFile saves rego binding results to file system.
+// SaveToJSONFile saves rego binding results to file system.
 func SaveToJSONFile(filename string, data rego.ResultSet) {
-	file, _ := json.MarshalIndent(data, "", " ")
+	file, err := json.MarshalIndent(data, "", " ")
 
-	err := ioutil.WriteFile(filename, file, 0644)
+	if err != nil {
+		fmt.Println("Error Marshal JSON data: ", err)
+	}
+
+	err = ioutil.WriteFile(filename, file, 0644)
 
 	if err != nil {
 		fmt.Println("Error saving file to file system: ", err)
 	} else {
-		fmt.Printf("Saved rego evaluation result to file system: %s", filename)
+		fmt.Println("Saved rego evaluation result to file system: ", filename)
 	}
 
-}
-
-func Reconstruct_attacktrees(data rego.ResultSet) (attacktrees rego.ResultSet) {
-	ctx := context.TODO()
-	r, err := rego.New(
-		rego.Query("x = data.reconstruction"),
-		rego.Load([]string{"./resources/reconstruction/"}, nil),
-	).PrepareForEval(ctx)
-
-	attacktrees, err = r.Eval(ctx, rego.EvalInput(data))
-	if err != nil {
-		log.Fatal(err)
-	}
-
-	pretty.Print(attacktrees)
-
-	return attacktrees
-}
-
-func Identify_highest_threat_level(evaluationResult rego.ResultSet) (threatlevels rego.ResultSet) {
-
-	ctx := context.TODO()
-	r, err := rego.New(
-		rego.Query("data.threatlevels"),
-		rego.Load([]string{"./resources/threatlevels/"}, nil),
-	).PrepareForEval(ctx)
-
-	threatlevels, err = r.Eval(ctx, rego.EvalInput(evaluationResult))
-	if err != nil {
-		log.Fatal(err)
-	}
-
-	pretty.Print(threatlevels)
-
-	return threatlevels
 }
