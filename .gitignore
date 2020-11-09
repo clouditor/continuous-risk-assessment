@@ -6,6 +6,9 @@
 *.dylib
 *.DS_Store
 
+# generated outputs
+resources/outputs/
+
 # Test binary, built with `go test -c`
 *.test
 
