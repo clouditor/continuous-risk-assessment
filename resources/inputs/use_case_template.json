@@ -4,38 +4,34 @@
         "contentVersion": "1.0.0.0",
         "parameters": {
             "disks_istio_data_disk_externalid": {
-                "defaultValue": "/subscriptions/196946e1-7029-4d97-8f65-ba6c6138c93f/resourceGroups/BAYERNCLOUD/providers/Microsoft.Compute/disks/istio-data-disk",
+                "defaultValue": "/subscriptions/11111111-1111-1111-1111-111111111111/resourceGroups/CLOUDCONTROL/providers/Microsoft.Compute/disks/istio-data-disk",
                 "type": "String"
             },
-            "disks_kubernetes_istio_test_OsDisk_1_8e02eaf7e04a498da4a03dadd3eb3318_externalid": {
-                "defaultValue": "/subscriptions/196946e1-7029-4d97-8f65-ba6c6138c93f/resourceGroups/BAYERNCLOUD/providers/Microsoft.Compute/disks/kubernetes-istio-test_OsDisk_1_8e02eaf7e04a498da4a03dadd3eb3318",
+            "disks_web_frontend_OsDisk_1_8e02eaf7e04a498da4a03dadd3eb3318_externalid": {
+                "defaultValue": "/subscriptions/11111111-1111-1111-1111-111111111111/resourceGroups/CLOUDCONTROL/providers/Microsoft.Compute/disks/kubernetes-istio-test_OsDisk_1_8e02eaf7e04a498da4a03dadd3eb3318",
                 "type": "String"
             },
             "extensions_enablevmaccess_username": {
                 "type": "SecureString"
             },
-            "networkInterfaces_kubernetes_istio_tes9412_name": {
+            "networkInterfaces_web_frontend_ni9412_name": {
                 "defaultValue": "kubernetes-istio-tes9412",
                 "type": "String"
             },
-            "networkInterfaces_kubernetes_istio_tes941_name": {
+            "networkInterfaces_web_frontend_ni941_name": {
                 "defaultValue": "kubernetes-istio-tes941",
                 "type": "String"
             },
-            "networkSecurityGroups_kubernetes_istio_test_nsg2_name": {
-                "defaultValue": "kubernetes-istio-test-nsg2",
-                "type": "String"
-            },
-            "networkSecurityGroups_kubernetes_istio_test_nsg_name": {
+            "networkSecurityGroups_web_frontend_nsg_name": {
                 "defaultValue": "kubernetes-istio-test-nsg",
                 "type": "String"
             },
-            "publicIPAddresses_kubernetes_istio_test_ip_name": {
+            "publicIPAddresses_web_frontend_ip_name": {
                 "defaultValue": "kubernetes-istio-test-ip",
                 "type": "String"
             },
-            "serverfarms_ASP_BayernCloud_b089_externalid": {
-                "defaultValue": "/subscriptions/196946e1-7029-4d97-8f65-ba6c6138c93f/resourceGroups/BayernCloud/providers/Microsoft.Web/serverfarms/ASP-BayernCloud-b089",
+            "serverfarms_ASP_CloudControl_b089_externalid": {
+                "defaultValue": "/subscriptions/11111111-1111-1111-1111-111111111111/resourceGroups/CloudControl/providers/Microsoft.Web/serverfarms/ASP-CloudControl-b089",
                 "type": "String"
             },
             "sites_cloudcontrol_FA_2_name": {
@@ -46,30 +42,30 @@
                 "defaultValue": "cloudcontrolFA",
                 "type": "String"
             },
-            "storageAccounts_bcloudtest2_name": {
-                "defaultValue": "bcloudtest2",
+            "storageAccounts_CloudCtrl_customerdata_name": {
+                "defaultValue": "CloudCtrl_customerdata",
                 "type": "String"
             },
-            "storageAccounts_bcloudtest_name": {
-                "defaultValue": "bcloudtest",
+            "storageAccounts_CloudCtrl_devicedata_name": {
+                "defaultValue": "CloudCtrl_devicedata",
                 "type": "String"
             },
-            "virtualMachines_kubernetes_istio_test_name": {
+            "virtualMachines_web_frontend_name": {
                 "defaultValue": "kubernetes-istio-test",
                 "type": "String"
             },
-            "virtualNetworks_BayernCloud_vnet_name": {
-                "defaultValue": "BayernCloud-vnet",
+            "virtualNetworks_CloudControl_vnet_name": {
+                "defaultValue": "CloudControl-vnet",
                 "type": "String"
             },
-            "IotHubs_Braun_connectionString": {
+            "IotHubs_remote_control_hub_connectionString": {
             "type": "SecureString"
             },
-            "IotHubs_Braun_containerName": {
+            "IotHubs_remote_control_hub_containerName": {
                 "type": "SecureString"
             },
-            "IotHubs_Braun_name": {
-                "defaultValue": "Braun",
+            "IotHubs_remote_control_hub_name": {
+                "defaultValue": "remote_control_hub",
                 "type": "String"
             }
         },
@@ -77,7 +73,7 @@
             {
                 "apiVersion": "2020-05-01",
                 "location": "westeurope",
-                "name": "[parameters('networkSecurityGroups_kubernetes_istio_test_nsg_name')]",
+                "name": "[parameters('networkSecurityGroups_web_frontend_nsg_name')]",
                 "properties": {
                     "securityRules": [
                         {
@@ -123,53 +119,7 @@
             {
                 "apiVersion": "2020-05-01",
                 "location": "westeurope",
-                "name": "[parameters('networkSecurityGroups_kubernetes_istio_test_nsg2_name')]",
-                "properties": {
-                    "securityRules": [
-                        {
-                            "name": "SSH",
-                            "properties": {
-                                "access": "Allow",
-                                "destinationAddressPrefix": "*",
-                                "destinationAddressPrefixes": [],
-                                "destinationPortRange": "22",
-                                "destinationPortRanges": [],
-                                "direction": "Inbound",
-                                "priority": 300,
-                                "protocol": "TCP",
-                                "sourceAddressPrefixes": [
-                                    "138.246.31.222",
-                                    "93.217.162.81"
-                                ],
-                                "sourcePortRange": "*",
-                                "sourcePortRanges": []
-                            }
-                        },
-                        {
-                            "name": "http",
-                            "properties": {
-                                "access": "Allow",
-                                "destinationAddressPrefix": "*",
-                                "destinationAddressPrefixes": [],
-                                "destinationPortRange": "80",
-                                "destinationPortRanges": [],
-                                "direction": "Inbound",
-                                "priority": 370,
-                                "protocol": "TCP",
-                                "sourceAddressPrefix": "138.246.31.222",
-                                "sourceAddressPrefixes": [],
-                                "sourcePortRange": "*",
-                                "sourcePortRanges": []
-                            }
-                        }
-                    ]
-                },
-                "type": "Microsoft.Network/networkSecurityGroups"
-            },
-            {
-                "apiVersion": "2020-05-01",
-                "location": "westeurope",
-                "name": "[parameters('publicIPAddresses_kubernetes_istio_test_ip_name')]",
+                "name": "[parameters('publicIPAddresses_web_frontend_ip_name')]",
                 "properties": {
                     "idleTimeoutInMinutes": 4,
                     "ipAddress": "13.73.136.167",
@@ -185,7 +135,7 @@
             {
                 "apiVersion": "2020-05-01",
                 "location": "westeurope",
-                "name": "[parameters('virtualNetworks_BayernCloud_vnet_name')]",
+                "name": "[parameters('virtualNetworks_CloudControl_vnet_name')]",
                 "properties": {
                     "addressSpace": {
                         "addressPrefixes": [
@@ -212,15 +162,15 @@
             {
                 "apiVersion": "2019-07-01",
                 "dependsOn": [
-                    "[resourceId('Microsoft.Network/networkInterfaces', parameters('networkInterfaces_kubernetes_istio_tes941_name'))]"
+                    "[resourceId('Microsoft.Network/networkInterfaces', parameters('networkInterfaces_web_frontend_ni941_name'))]"
                 ],
                 "location": "westeurope",
-                "name": "[parameters('virtualMachines_kubernetes_istio_test_name')]",
+                "name": "[parameters('virtualMachines_web_frontend_name')]",
                 "properties": {
                     "diagnosticsProfile": {
                         "bootDiagnostics": {
                             "enabled": true,
-                            "storageUri": "https://bcloudtest.blob.core.windows.net/"
+                            "storageUri": "https://CloudCtrl_devicedata.blob.core.windows.net/"
                         }
                     },
                     "hardwareProfile": {
@@ -229,7 +179,7 @@
                     "networkProfile": {
                         "networkInterfaces": [
                             {
-                                "id": "[resourceId('Microsoft.Network/networkInterfaces', parameters('networkInterfaces_kubernetes_istio_tes941_name'))]"
+                                "id": "[resourceId('Microsoft.Network/networkInterfaces', parameters('networkInterfaces_web_frontend_ni941_name'))]"
                             }
                         ]
                     },
@@ -256,9 +206,9 @@
                             "caching": "ReadWrite",
                             "createOption": "FromImage",
                             "managedDisk": {
-                                "id": "[parameters('disks_kubernetes_istio_test_OsDisk_1_8e02eaf7e04a498da4a03dadd3eb3318_externalid')]"
+                                "id": "[parameters('disks_web_frontend_OsDisk_1_8e02eaf7e04a498da4a03dadd3eb3318_externalid')]"
                             },
-                            "name": "[concat(parameters('virtualMachines_kubernetes_istio_test_name'), '_OsDisk_1_8e02eaf7e04a498da4a03dadd3eb3318')]",
+                            "name": "[concat(parameters('virtualMachines_web_frontend_name'), '_OsDisk_1_8e02eaf7e04a498da4a03dadd3eb3318')]",
                             "osType": "Linux"
                         }
                     }
@@ -268,10 +218,10 @@
             {
                 "apiVersion": "2019-07-01",
                 "dependsOn": [
-                    "[resourceId('Microsoft.Compute/virtualMachines', parameters('virtualMachines_kubernetes_istio_test_name'))]"
+                    "[resourceId('Microsoft.Compute/virtualMachines', parameters('virtualMachines_web_frontend_name'))]"
                 ],
                 "location": "westeurope",
-                "name": "[concat(parameters('virtualMachines_kubernetes_istio_test_name'), '/enablevmaccess')]",
+                "name": "[concat(parameters('virtualMachines_web_frontend_name'), '/enablevmaccess')]",
                 "properties": {
                     "autoUpgradeMinorVersion": true,
                     "protectedSettings": {
@@ -292,9 +242,9 @@
             {
                 "apiVersion": "2020-05-01",
                 "dependsOn": [
-                    "[resourceId('Microsoft.Network/networkSecurityGroups', parameters('networkSecurityGroups_kubernetes_istio_test_nsg_name'))]"
+                    "[resourceId('Microsoft.Network/networkSecurityGroups', parameters('networkSecurityGroups_web_frontend_nsg_name'))]"
                 ],
-                "name": "[concat(parameters('networkSecurityGroups_kubernetes_istio_test_nsg_name'), '/30975')]",
+                "name": "[concat(parameters('networkSecurityGroups_web_frontend_nsg_name'), '/30975')]",
                 "properties": {
                     "access": "Allow",
                     "destinationAddressPrefix": "*",
@@ -314,9 +264,9 @@
             {
                 "apiVersion": "2020-05-01",
                 "dependsOn": [
-                    "[resourceId('Microsoft.Network/networkSecurityGroups', parameters('networkSecurityGroups_kubernetes_istio_test_nsg_name'))]"
+                    "[resourceId('Microsoft.Network/networkSecurityGroups', parameters('networkSecurityGroups_web_frontend_nsg_name'))]"
                 ],
-                "name": "[concat(parameters('networkSecurityGroups_kubernetes_istio_test_nsg_name'), '/http')]",
+                "name": "[concat(parameters('networkSecurityGroups_web_frontend_nsg_name'), '/http')]",
                 "properties": {
                     "access": "Allow",
                     "destinationAddressPrefix": "*",
@@ -336,9 +286,9 @@
             {
                 "apiVersion": "2020-05-01",
                 "dependsOn": [
-                    "[resourceId('Microsoft.Network/networkSecurityGroups', parameters('networkSecurityGroups_kubernetes_istio_test_nsg_name'))]"
+                    "[resourceId('Microsoft.Network/networkSecurityGroups', parameters('networkSecurityGroups_web_frontend_nsg_name'))]"
                 ],
-                "name": "[concat(parameters('networkSecurityGroups_kubernetes_istio_test_nsg_name'), '/SSH')]",
+                "name": "[concat(parameters('networkSecurityGroups_web_frontend_nsg_name'), '/SSH')]",
                 "properties": {
                     "access": "Allow",
                     "destinationAddressPrefix": "*",
@@ -360,9 +310,9 @@
             {
                 "apiVersion": "2020-05-01",
                 "dependsOn": [
-                    "[resourceId('Microsoft.Network/virtualNetworks', parameters('virtualNetworks_BayernCloud_vnet_name'))]"
+                    "[resourceId('Microsoft.Network/virtualNetworks', parameters('virtualNetworks_CloudControl_vnet_name'))]"
                 ],
-                "name": "[concat(parameters('virtualNetworks_BayernCloud_vnet_name'), '/default')]",
+                "name": "[concat(parameters('virtualNetworks_CloudControl_vnet_name'), '/default')]",
                 "properties": {
                     "addressPrefix": "10.1.8.0/24",
                     "delegations": [],
@@ -374,12 +324,12 @@
             {
                 "apiVersion": "2020-05-01",
                 "dependsOn": [
-                    "[resourceId('Microsoft.Network/publicIPAddresses', parameters('publicIPAddresses_kubernetes_istio_test_ip_name'))]",
-                    "[resourceId('Microsoft.Network/virtualNetworks/subnets', parameters('virtualNetworks_BayernCloud_vnet_name'), 'default')]",
-                    "[resourceId('Microsoft.Network/networkSecurityGroups', parameters('networkSecurityGroups_kubernetes_istio_test_nsg_name'))]"
+                    "[resourceId('Microsoft.Network/publicIPAddresses', parameters('publicIPAddresses_web_frontend_ip_name'))]",
+                    "[resourceId('Microsoft.Network/virtualNetworks/subnets', parameters('virtualNetworks_CloudControl_vnet_name'), 'default')]",
+                    "[resourceId('Microsoft.Network/networkSecurityGroups', parameters('networkSecurityGroups_web_frontend_nsg_name'))]"
                 ],
                 "location": "westeurope",
-                "name": "[parameters('networkInterfaces_kubernetes_istio_tes941_name')]",
+                "name": "[parameters('networkInterfaces_web_frontend_ni941_name')]",
                 "properties": {
                     "dnsSettings": {
                         "dnsServers": []
@@ -395,16 +345,16 @@
                                 "privateIPAddressVersion": "IPv4",
                                 "privateIPAllocationMethod": "Dynamic",
                                 "publicIPAddress": {
-                                    "id": "[resourceId('Microsoft.Network/publicIPAddresses', parameters('publicIPAddresses_kubernetes_istio_test_ip_name'))]"
+                                    "id": "[resourceId('Microsoft.Network/publicIPAddresses', parameters('publicIPAddresses_web_frontend_ip_name'))]"
                                 },
                                 "subnet": {
-                                    "id": "[resourceId('Microsoft.Network/virtualNetworks/subnets', parameters('virtualNetworks_BayernCloud_vnet_name'), 'default')]"
+                                    "id": "[resourceId('Microsoft.Network/virtualNetworks/subnets', parameters('virtualNetworks_CloudControl_vnet_name'), 'default')]"
                                 }
                             }
                         }
                     ],
                     "networkSecurityGroup": {
-                        "id": "[resourceId('Microsoft.Network/networkSecurityGroups', parameters('networkSecurityGroups_kubernetes_istio_test_nsg_name'))]"
+                        "id": "[resourceId('Microsoft.Network/networkSecurityGroups', parameters('networkSecurityGroups_web_frontend_nsg_name'))]"
                     }
                 },
                 "type": "Microsoft.Network/networkInterfaces"
@@ -412,12 +362,12 @@
             {
                 "apiVersion": "2020-05-01",
                 "dependsOn": [
-                    "[resourceId('Microsoft.Network/publicIPAddresses', parameters('publicIPAddresses_kubernetes_istio_test_ip_name'))]",
-                    "[resourceId('Microsoft.Network/virtualNetworks/subnets', parameters('virtualNetworks_BayernCloud_vnet_name'), 'default')]",
-                    "[resourceId('Microsoft.Network/networkSecurityGroups', parameters('networkSecurityGroups_kubernetes_istio_test_nsg_name'))]"
+                    "[resourceId('Microsoft.Network/publicIPAddresses', parameters('publicIPAddresses_web_frontend_ip_name'))]",
+                    "[resourceId('Microsoft.Network/virtualNetworks/subnets', parameters('virtualNetworks_CloudControl_vnet_name'), 'default')]",
+                    "[resourceId('Microsoft.Network/networkSecurityGroups', parameters('networkSecurityGroups_web_frontend_nsg_name'))]"
                 ],
                 "location": "westeurope",
-                "name": "[parameters('networkInterfaces_kubernetes_istio_tes9412_name')]",
+                "name": "[parameters('networkInterfaces_web_frontend_ni9412_name')]",
                 "properties": {
                     "dnsSettings": {
                         "dnsServers": []
@@ -433,16 +383,16 @@
                                 "privateIPAddressVersion": "IPv4",
                                 "privateIPAllocationMethod": "Dynamic",
                                 "publicIPAddress": {
-                                    "id": "[resourceId('Microsoft.Network/publicIPAddresses', parameters('publicIPAddresses_kubernetes_istio_test_ip_name'))]"
+                                    "id": "[resourceId('Microsoft.Network/publicIPAddresses', parameters('publicIPAddresses_web_frontend_ip_name'))]"
                                 },
                                 "subnet": {
-                                    "id": "[resourceId('Microsoft.Network/virtualNetworks/subnets', parameters('virtualNetworks_BayernCloud_vnet_name'), 'default')]"
+                                    "id": "[resourceId('Microsoft.Network/virtualNetworks/subnets', parameters('virtualNetworks_CloudControl_vnet_name'), 'default')]"
                                 }
                             }
                         }
                     ],
                     "networkSecurityGroup": {
-                        "id": "[resourceId('Microsoft.Network/networkSecurityGroups', parameters('networkSecurityGroups_kubernetes_istio_test_nsg_name'))]"
+                        "id": "[resourceId('Microsoft.Network/networkSecurityGroups', parameters('networkSecurityGroups_web_frontend_nsg_name'))]"
                     }
                 },
                 "type": "Microsoft.Network/networkInterfaces"
@@ -477,18 +427,15 @@
                     "redundancyMode": "None",
                     "reserved": true,
                     "scmSiteAlsoStopped": false,
-                    "serverFarmId": "[parameters('serverfarms_ASP_BayernCloud_b089_externalid')]",
+                    "serverFarmId": "[parameters('serverfarms_ASP_CloudControl_b089_externalid')]",
                     "siteConfig": {
                         "connectionStrings": [
                             {
-                                "connectionString": "DefaultEndpointsProtocol=https;AccountName=bcloudtest;AccountKey=<AccountKey>;EndpointSuffix=core.windows.net",
+                                "connectionString": "DefaultEndpointsProtocol=https;AccountName=CloudCtrl_devicedata;AccountKey=<AccountKey>;EndpointSuffix=core.windows.net",
                                 "name": "testconstring"
                             }
                         ]
                     }
-                },
-                "tags": {
-                    "owner": "kunz"
                 },
                 "type": "Microsoft.Web/sites"
             },
@@ -522,18 +469,15 @@
                     "redundancyMode": "None",
                     "reserved": true,
                     "scmSiteAlsoStopped": false,
-                    "serverFarmId": "[parameters('serverfarms_ASP_BayernCloud_b089_externalid')]",
+                    "serverFarmId": "[parameters('serverfarms_ASP_CloudControl_b089_externalid')]",
                     "siteConfig": {
                         "connectionStrings": [
                             {
-                                "connectionString": "DefaultEndpointsProtocol=https;AccountName=bcloudtest;AccountKey=HkmyyHmOwEFfySAmK9WVkzJuLx2AFAYQJAFsqHePTtzYVYoFWqhfOPidOJ9hr3XmXSMgTMHgALqW7f/nKq+TtA==;EndpointSuffix=core.windows.net",
+                                "connectionString": "DefaultEndpointsProtocol=https;AccountName=CloudCtrl_devicedata;AccountKey=AccountKey=<AccountKey>;EndpointSuffix=core.windows.net",
                                 "name": "testconstring"
                             }
                         ]
                     }
-                },
-                "tags": {
-                    "owner": "kunz"
                 },
                 "type": "Microsoft.Web/sites"
             },
@@ -616,9 +560,6 @@
                     ],
                     "webSocketsEnabled": false
                 },
-                "tags": {
-                    "owner": "kunz"
-                },
                 "type": "Microsoft.Web/sites/config"
             },
             {
@@ -654,7 +595,7 @@
                 "apiVersion": "2020-08-01-preview",
                 "kind": "Storage",
                 "location": "westeurope",
-                "name": "[parameters('storageAccounts_bcloudtest_name')]",
+                "name": "[parameters('storageAccounts_CloudCtrl_devicedata_name')]",
                 "properties": {
                     "allowBlobPublicAccess": true,
                     "azureFilesIdentityBasedAuthentication": {
@@ -692,7 +633,7 @@
                     "tier": "Standard"
                 },
                 "tags": {
-                    "BCloud": "test"
+                    "CloudCtrl": "test"
                 },
                 "type": "Microsoft.Storage/storageAccounts"
             },
@@ -700,7 +641,7 @@
                 "apiVersion": "2020-08-01-preview",
                 "kind": "Storage",
                 "location": "westeurope",
-                "name": "[parameters('storageAccounts_bcloudtest2_name')]",
+                "name": "[parameters('storageAccounts_CloudCtrl_customerdata_name')]",
                 "properties": {
                     "allowBlobPublicAccess": true,
                     "azureFilesIdentityBasedAuthentication": {
@@ -738,16 +679,16 @@
                     "tier": "Standard"
                 },
                 "tags": {
-                    "BCloud": "test"
+                    "CloudCtrl": "test"
                 },
                 "type": "Microsoft.Storage/storageAccounts"
             },
             {
                 "apiVersion": "2020-08-01-preview",
                 "dependsOn": [
-                    "[resourceId('Microsoft.Storage/storageAccounts', parameters('storageAccounts_bcloudtest_name'))]"
+                    "[resourceId('Microsoft.Storage/storageAccounts', parameters('storageAccounts_CloudCtrl_devicedata_name'))]"
                 ],
-                "name": "[concat(parameters('storageAccounts_bcloudtest_name'), '/default')]",
+                "name": "[concat(parameters('storageAccounts_CloudCtrl_devicedata_name'), '/default')]",
                 "properties": {
                     "cors": {
                         "corsRules": []
@@ -765,10 +706,10 @@
             {
                 "apiVersion": "2020-08-01-preview",
                 "dependsOn": [
-                    "[resourceId('Microsoft.Storage/storageAccounts/blobServices', parameters('storageAccounts_bcloudtest_name'), 'default')]",
-                    "[resourceId('Microsoft.Storage/storageAccounts', parameters('storageAccounts_bcloudtest_name'))]"
+                    "[resourceId('Microsoft.Storage/storageAccounts/blobServices', parameters('storageAccounts_CloudCtrl_devicedata_name'), 'default')]",
+                    "[resourceId('Microsoft.Storage/storageAccounts', parameters('storageAccounts_CloudCtrl_devicedata_name'))]"
                 ],
-                "name": "[concat(parameters('storageAccounts_bcloudtest_name'), '/default/another-bcloud-container')]",
+                "name": "[concat(parameters('storageAccounts_CloudCtrl_devicedata_name'), '/default/another-CloudCtrl-container')]",
                 "properties": {
                     "defaultEncryptionScope": "$account-encryption-key",
                     "denyEncryptionScopeOverride": false,
@@ -779,10 +720,10 @@
             {
                 "apiVersion": "2020-08-01-preview",
                 "dependsOn": [
-                    "[resourceId('Microsoft.Storage/storageAccounts/blobServices', parameters('storageAccounts_bcloudtest_name'), 'default')]",
-                    "[resourceId('Microsoft.Storage/storageAccounts', parameters('storageAccounts_bcloudtest_name'))]"
+                    "[resourceId('Microsoft.Storage/storageAccounts/blobServices', parameters('storageAccounts_CloudCtrl_devicedata_name'), 'default')]",
+                    "[resourceId('Microsoft.Storage/storageAccounts', parameters('storageAccounts_CloudCtrl_devicedata_name'))]"
                 ],
-                "name": "[concat(parameters('storageAccounts_bcloudtest_name'), '/default/bcloud-test-container')]",
+                "name": "[concat(parameters('storageAccounts_CloudCtrl_devicedata_name'), '/default/CloudCtrl-test-container')]",
                 "properties": {
                     "defaultEncryptionScope": "$account-encryption-key",
                     "denyEncryptionScopeOverride": false,
@@ -793,10 +734,10 @@
             {
                 "apiVersion": "2020-08-01-preview",
                 "dependsOn": [
-                    "[resourceId('Microsoft.Storage/storageAccounts/blobServices', parameters('storageAccounts_bcloudtest_name'), 'default')]",
-                    "[resourceId('Microsoft.Storage/storageAccounts', parameters('storageAccounts_bcloudtest_name'))]"
+                    "[resourceId('Microsoft.Storage/storageAccounts/blobServices', parameters('storageAccounts_CloudCtrl_devicedata_name'), 'default')]",
+                    "[resourceId('Microsoft.Storage/storageAccounts', parameters('storageAccounts_CloudCtrl_devicedata_name'))]"
                 ],
-                "name": "[concat(parameters('storageAccounts_bcloudtest_name'), '/default/bootdiagnostics-aksagentp-110f4f23-a1ae-4e51-a7b1-6762add0577d')]",
+                "name": "[concat(parameters('storageAccounts_CloudCtrl_devicedata_name'), '/default/bootdiagnostics-aksagentp-110f4f23-a1ae-4e51-a7b1-6762add0577d')]",
                 "properties": {
                     "defaultEncryptionScope": "$account-encryption-key",
                     "denyEncryptionScopeOverride": false,
@@ -807,10 +748,10 @@
             {
                 "apiVersion": "2020-08-01-preview",
                 "dependsOn": [
-                    "[resourceId('Microsoft.Storage/storageAccounts/blobServices', parameters('storageAccounts_bcloudtest_name'), 'default')]",
-                    "[resourceId('Microsoft.Storage/storageAccounts', parameters('storageAccounts_bcloudtest_name'))]"
+                    "[resourceId('Microsoft.Storage/storageAccounts/blobServices', parameters('storageAccounts_CloudCtrl_devicedata_name'), 'default')]",
+                    "[resourceId('Microsoft.Storage/storageAccounts', parameters('storageAccounts_CloudCtrl_devicedata_name'))]"
                 ],
-                "name": "[concat(parameters('storageAccounts_bcloudtest_name'), '/default/bootdiagnostics-kubernete-0b395ac7-fe14-4e82-b2dd-937e9ed0669f')]",
+                "name": "[concat(parameters('storageAccounts_CloudCtrl_devicedata_name'), '/default/bootdiagnostics-kubernete-0b395ac7-fe14-4e82-b2dd-937e9ed0669f')]",
                 "properties": {
                     "defaultEncryptionScope": "$account-encryption-key",
                     "denyEncryptionScopeOverride": false,
@@ -821,10 +762,10 @@
             {
                 "apiVersion": "2020-08-01-preview",
                 "dependsOn": [
-                    "[resourceId('Microsoft.Storage/storageAccounts/blobServices', parameters('storageAccounts_bcloudtest_name'), 'default')]",
-                    "[resourceId('Microsoft.Storage/storageAccounts', parameters('storageAccounts_bcloudtest_name'))]"
+                    "[resourceId('Microsoft.Storage/storageAccounts/blobServices', parameters('storageAccounts_CloudCtrl_devicedata_name'), 'default')]",
+                    "[resourceId('Microsoft.Storage/storageAccounts', parameters('storageAccounts_CloudCtrl_devicedata_name'))]"
                 ],
-                "name": "[concat(parameters('storageAccounts_bcloudtest_name'), '/default/insights-operational-logs')]",
+                "name": "[concat(parameters('storageAccounts_CloudCtrl_devicedata_name'), '/default/insights-operational-logs')]",
                 "properties": {
                     "defaultEncryptionScope": "$account-encryption-key",
                     "denyEncryptionScopeOverride": false,
@@ -835,10 +776,10 @@
             {
                 "apiVersion": "2020-08-01-preview",
                 "dependsOn": [
-                    "[resourceId('Microsoft.Storage/storageAccounts/fileServices', parameters('storageAccounts_bcloudtest_name'), 'default')]",
-                    "[resourceId('Microsoft.Storage/storageAccounts', parameters('storageAccounts_bcloudtest_name'))]"
+                    "[resourceId('Microsoft.Storage/storageAccounts/fileServices', parameters('storageAccounts_CloudCtrl_devicedata_name'), 'default')]",
+                    "[resourceId('Microsoft.Storage/storageAccounts', parameters('storageAccounts_CloudCtrl_devicedata_name'))]"
                 ],
-                "name": "[concat(parameters('storageAccounts_bcloudtest_name'), '/default/testfile2')]",
+                "name": "[concat(parameters('storageAccounts_CloudCtrl_devicedata_name'), '/default/testfile2')]",
                 "properties": {
                     "accessTier": "TransactionOptimized",
                     "enabledProtocols": "SMB",
@@ -849,10 +790,10 @@
             {
                 "apiVersion": "2020-08-01-preview",
                 "dependsOn": [
-                    "[resourceId('Microsoft.Storage/storageAccounts/queueServices', parameters('storageAccounts_bcloudtest_name'), 'default')]",
-                    "[resourceId('Microsoft.Storage/storageAccounts', parameters('storageAccounts_bcloudtest_name'))]"
+                    "[resourceId('Microsoft.Storage/storageAccounts/queueServices', parameters('storageAccounts_CloudCtrl_devicedata_name'), 'default')]",
+                    "[resourceId('Microsoft.Storage/storageAccounts', parameters('storageAccounts_CloudCtrl_devicedata_name'))]"
                 ],
-                "name": "[concat(parameters('storageAccounts_bcloudtest_name'), '/default/bcloud')]",
+                "name": "[concat(parameters('storageAccounts_CloudCtrl_devicedata_name'), '/default/CloudCtrl')]",
                 "properties": {
                     "metadata": {}
                 },
@@ -861,10 +802,10 @@
             {
                 "apiVersion": "2020-08-01-preview",
                 "dependsOn": [
-                    "[resourceId('Microsoft.Storage/storageAccounts/queueServices', parameters('storageAccounts_bcloudtest_name'), 'default')]",
-                    "[resourceId('Microsoft.Storage/storageAccounts', parameters('storageAccounts_bcloudtest_name'))]"
+                    "[resourceId('Microsoft.Storage/storageAccounts/queueServices', parameters('storageAccounts_CloudCtrl_devicedata_name'), 'default')]",
+                    "[resourceId('Microsoft.Storage/storageAccounts', parameters('storageAccounts_CloudCtrl_devicedata_name'))]"
                 ],
-                "name": "[concat(parameters('storageAccounts_bcloudtest_name'), '/default/test')]",
+                "name": "[concat(parameters('storageAccounts_CloudCtrl_devicedata_name'), '/default/test')]",
                 "properties": {
                     "metadata": {}
                 },
@@ -873,16 +814,16 @@
             {
                 "apiVersion": "2020-08-01-preview",
                 "dependsOn": [
-                    "[resourceId('Microsoft.Storage/storageAccounts/tableServices', parameters('storageAccounts_bcloudtest_name'), 'default')]",
-                    "[resourceId('Microsoft.Storage/storageAccounts', parameters('storageAccounts_bcloudtest_name'))]"
+                    "[resourceId('Microsoft.Storage/storageAccounts/tableServices', parameters('storageAccounts_CloudCtrl_devicedata_name'), 'default')]",
+                    "[resourceId('Microsoft.Storage/storageAccounts', parameters('storageAccounts_CloudCtrl_devicedata_name'))]"
                 ],
-                "name": "[concat(parameters('storageAccounts_bcloudtest_name'), '/default/BCloudTable')]",
+                "name": "[concat(parameters('storageAccounts_CloudCtrl_devicedata_name'), '/default/CloudCtrlTable')]",
                 "type": "Microsoft.Storage/storageAccounts/tableServices/tables"
             },
             {
                 "type": "Microsoft.Devices/IotHubs",
                 "apiVersion": "2020-07-10-preview",
-                "name": "[parameters('IotHubs_Braun_name')]",
+                "name": "[parameters('IotHubs_remote_control_hub_name')]",
                 "location": "westeurope",
                 "sku": {
                     "name": "F1",
@@ -908,13 +849,13 @@
                             "storageContainers": [
                                 {
                                     "id": "string",
-                                    "connectionString": "DefaultEndpointsProtocol=https;AccountName=bcloudtest;AccountKey=<AccountKey>;EndpointSuffix=core.windows.net",
+                                    "connectionString": "DefaultEndpointsProtocol=https;AccountName=CloudCtrl_devicedata;AccountKey=<AccountKey>;EndpointSuffix=core.windows.net",
                                     "endpointUri": "<endpointUri>",
                                     "authenticationType": "string",
                                     "name": "string",
                                     "subscriptionId": "<subscriptionId>",
-                                    "resourceGroup": "BayernCloud",
-                                    "containerName": "bcloud-test-container",
+                                    "resourceGroup": "CloudControl",
+                                    "containerName": "CloudCtrl-test-container",
                                     "fileNameFormat": "zip",
                                     "batchFrequencyInSeconds": "30",
                                     "maxChunkSizeInBytes": "1024",
@@ -936,8 +877,8 @@
                     "storageEndpoints": {
                         "$default": {
                             "sasTtlAsIso8601": "PT1H",
-                            "connectionString": "[parameters('IotHubs_Braun_connectionString')]",
-                            "containerName": "[parameters('IotHubs_Braun_containerName')]"
+                            "connectionString": "[parameters('IotHubs_remote_control_hub_connectionString')]",
+                            "containerName": "[parameters('IotHubs_remote_control_hub_containerName')]"
                         }
                     },
                     "messagingEndpoints": {
