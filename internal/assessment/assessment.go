@@ -81,7 +81,7 @@ func IdentifyHighestThreatLevel(threatLevelsProfileDir string, evaluationResult 
 
 	ctx := context.TODO()
 	r, err := rego.New(
-		rego.Query("data.threatlevel"),
+		rego.Query("data.threatlevels"),
 		rego.Load([]string{threatLevelsProfileDir}, nil),
 	).PrepareForEval(ctx)
 

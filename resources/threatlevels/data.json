@@ -1,7 +1,43 @@
 {
+    "asset_impacts": {
+        "bcloudtest": {
+            "availability": 3,
+            "confidentiality": 1,
+            "integrity": 2
+        },
+        "CloudCtrl_devicedata": {
+            "availability": 3,
+            "confidentiality": 1,
+            "integrity": 2
+        },
+        "kubernetes-ni9412": {
+            "availability": 3,
+            "confidentiality": 1,
+            "integrity": 2
+        },
+        "kubernetes-nsg": {
+            "availability": 3,
+            "confidentiality": 1,
+            "integrity": 2
+        },
+        "cloudcontrolFA": {
+            "availability": 3,
+            "confidentiality": 1,
+            "integrity": 2
+        },
+        "cloudcontrol_FA_2": {
+            "availability": 3,
+            "confidentiality": 1,
+            "integrity": 2
+        },
+        "CloudControl-vnet": {
+            "availability": 3,
+            "confidentiality": 1,
+            "integrity": 3
+        }
+    },
     "attackpaths_and_threatlevels": {
-        "storageaccount_nohttps": 3,
-        "one_attack_path": 1,
-        "yet_another_attack_path": 2
+        "storageaccount_confidentiality_accessPublicly": 2,
+        "storageaccount_confidentiality_eavesdropOnConnection": 1
     }
 }

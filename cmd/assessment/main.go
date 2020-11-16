@@ -9,8 +9,8 @@ import (
 
 const (
 	// File names for evaluation
-	threatProfileDataInputFileName string = "resources/inputs/testTemplate.json"
-	threatProfileDir               string = "resources/threatprofiles/testPolicy.rego"
+	threatProfileDataInputFileName string = "resources/inputs/use_case_template.json"
+	threatProfileDir               string = "resources/threatprofiles/use_case_policy.rego"
 	threatProfileOutputFileName    string = "./resources/outputs/threats.json"
 
 	// File names for attack tree reconstruction

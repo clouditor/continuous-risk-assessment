@@ -3,31 +3,31 @@
         "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#",
         "contentVersion": "1.0.0.0",
         "parameters": {
-            "disks_istio_data_disk_externalid": {
-                "defaultValue": "/subscriptions/11111111-1111-1111-1111-111111111111/resourceGroups/CLOUDCONTROL/providers/Microsoft.Compute/disks/istio-data-disk",
+            "disks_data_disk_externalid": {
+                "defaultValue": "/subscriptions/11111111-1111-1111-1111-111111111111/resourceGroups/CLOUDCONTROL/providers/Microsoft.Compute/disks/data-disk",
                 "type": "String"
             },
-            "disks_web_frontend_OsDisk_1_8e02eaf7e04a498da4a03dadd3eb3318_externalid": {
-                "defaultValue": "/subscriptions/11111111-1111-1111-1111-111111111111/resourceGroups/CLOUDCONTROL/providers/Microsoft.Compute/disks/kubernetes-istio-test_OsDisk_1_8e02eaf7e04a498da4a03dadd3eb3318",
+            "disks_web_frontend_OsDisk_1_12345678910111213141516171819202_externalid": {
+                "defaultValue": "/subscriptions/11111111-1111-1111-1111-111111111111/resourceGroups/CLOUDCONTROL/providers/Microsoft.Compute/disks/kubernetes-test_OsDisk_1_12345678910111213141516171819202",
                 "type": "String"
             },
             "extensions_enablevmaccess_username": {
                 "type": "SecureString"
             },
             "networkInterfaces_web_frontend_ni9412_name": {
-                "defaultValue": "kubernetes-istio-tes9412",
+                "defaultValue": "kubernetes-ni9412",
                 "type": "String"
             },
             "networkInterfaces_web_frontend_ni941_name": {
-                "defaultValue": "kubernetes-istio-tes941",
+                "defaultValue": "kubernetes-ni941",
                 "type": "String"
             },
             "networkSecurityGroups_web_frontend_nsg_name": {
-                "defaultValue": "kubernetes-istio-test-nsg",
+                "defaultValue": "kubernetes-nsg",
                 "type": "String"
             },
             "publicIPAddresses_web_frontend_ip_name": {
-                "defaultValue": "kubernetes-istio-test-ip",
+                "defaultValue": "kubernetes-ip",
                 "type": "String"
             },
             "serverfarms_ASP_CloudControl_b089_externalid": {
@@ -51,7 +51,7 @@
                 "type": "String"
             },
             "virtualMachines_web_frontend_name": {
-                "defaultValue": "kubernetes-istio-test",
+                "defaultValue": "kubernetes-test",
                 "type": "String"
             },
             "virtualNetworks_CloudControl_vnet_name": {
@@ -190,9 +190,9 @@
                                 "createOption": "Attach",
                                 "lun": 0,
                                 "managedDisk": {
-                                    "id": "[parameters('disks_istio_data_disk_externalid')]"
+                                    "id": "[parameters('disks_data_disk_externalid')]"
                                 },
-                                "name": "istio-data-disk",
+                                "name": "data-disk",
                                 "toBeDetached": false
                             }
                         ],
@@ -206,9 +206,9 @@
                             "caching": "ReadWrite",
                             "createOption": "FromImage",
                             "managedDisk": {
-                                "id": "[parameters('disks_web_frontend_OsDisk_1_8e02eaf7e04a498da4a03dadd3eb3318_externalid')]"
+                                "id": "[parameters('disks_web_frontend_OsDisk_1_12345678910111213141516171819202_externalid')]"
                             },
-                            "name": "[concat(parameters('virtualMachines_web_frontend_name'), '_OsDisk_1_8e02eaf7e04a498da4a03dadd3eb3318')]",
+                            "name": "[concat(parameters('virtualMachines_web_frontend_name'), '_OsDisk_1_12345678910111213141516171819202')]",
                             "osType": "Linux"
                         }
                     }

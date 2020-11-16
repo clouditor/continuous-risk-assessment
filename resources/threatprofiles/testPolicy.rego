@@ -20,7 +20,7 @@ storageaccount_nohttps[storageaccount_names] {
     storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
 }
 
-vm_names_with_public_ips[vms_with_publicIPs] {
+vm_availability_public_ips[vms_with_publicIPs] {
     # get all interfaces with public IPs
     input.template.resources[j].type == "Microsoft.Network/networkInterfaces";  
     input.template.resources[j].properties.ipConfigurations[_].properties.publicIPAddress;
