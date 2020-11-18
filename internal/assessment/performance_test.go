@@ -55,7 +55,7 @@ func generateMinimalTemplate() Template {
 	return template
 }
 
-var threatProfile = `package example.threats
+var threatProfile = `package threatprofile
 
 storageaccount_confidentiality_accessPublicly[storageaccount_names] {
 	input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
@@ -84,7 +84,11 @@ func TestBigTemplatePerformance(t *testing.T) {
 	}
 
 	// add further resources
-	template.Resources = append(template.Resources, resource)
+	i := 0
+	for i < 10 {
+		template.Resources = append(template.Resources, resource)
+		i += 1
+	}
 
 	templateenc, err := json.Marshal(template)
 	if err != nil {
@@ -99,6 +103,7 @@ func TestBigTemplatePerformance(t *testing.T) {
 
 	// call evaluation func
 	identifiedThreats := IdentifyThreatsFromTemplate("testfiles/", "testfiles/bigtemplate.json")
+	fmt.Println(identifiedThreats)
 
 	if identifiedThreats == nil {
 		fmt.Println("Nil threats identified")
@@ -114,7 +119,8 @@ func TestBigTemplatePerformance(t *testing.T) {
 func TestBigThreatProfilePerformance(t *testing.T) {
 	// create minimal template, create minimal threat profile
 	// template := generateMinimalTemplate()
-	additionalPolicy := `storageaccount_confidentiality_accessPublicly[storageaccount_names] {
+	num := 0
+	additionalPolicy := `storageaccount_confidentiality_accessPublicly` + strconv.Itoa(num) + `[storageaccount_names] {
 		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
 		input.template.resources[i].properties.allowBlobPublicAccess == true
 
@@ -123,10 +129,19 @@ func TestBigThreatProfilePerformance(t *testing.T) {
 	// add 2, 4, 8, ... threat profiles
 	i := 0
 	tp := threatProfile
-	for i < 2 {
-		tp += "\n" + strconv.Itoa(i) + additionalPolicy
+	for i < 2000 {
+		// tp += "\n" + strconv.Itoa(i) + additionalPolicy
+		num = i
+		tp += "\n" + additionalPolicy
 		i += 1
 	}
 	fmt.Println(tp)
-	// TODO evaluate template against threatprofile
+	ioutil.WriteFile("testfiles/smallpolicy.rego", []byte(tp), os.ModePerm)
+	// evaluate template against threatprofile
+	identifiedThreats := IdentifyThreatsFromTemplate("testfiles/", "testfiles/bigtemplate.json")
+	fmt.Println(identifiedThreats)
+
+	if identifiedThreats == nil {
+		fmt.Println("Nil threats identified")
+	}
 }

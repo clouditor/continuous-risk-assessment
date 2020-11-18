@@ -1,4 +1,4 @@
-package example.threats
+package threatprofile
 
 storageaccount_confidentiality_accessPublicly[storageaccount_names] {
 	input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
@@ -10,3 +10,12003 @@ get_default_names(resource_names) = resource_default_names{
 	resource_default_names := input.template.parameters[i]["defaultValue"]
 	resource_names == i
 }
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
+storageaccount_confidentiality_accessPublicly0[storageaccount_names] {
+		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+		input.template.resources[i].properties.allowBlobPublicAccess == true
+
+		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
+	}
