@@ -21,10 +21,10 @@ type Parameter struct {
 	Type         string `json:"type"`
 }
 type Resource struct {
-	APIVersion string     `json:"apiVersion"`
-	Location   string     `json:"location"`
-	Name       string     `json:"name"`
-	Properties []Property `json:"properties"`
+	APIVersion string   `json:"apiVersion"`
+	Location   string   `json:"location"`
+	Name       string   `json:"name"`
+	Properties Property `json:"properties"`
 }
 type Property struct {
 	Access string `json:"access"`
@@ -42,7 +42,7 @@ func generateMinimalTemplate() Template {
 		APIVersion: "2020-05-01",
 		Location:   "westeurope",
 		Name:       "name",
-		Properties: []Property{property},
+		Properties: property,
 	}
 	template := Template{
 		Schema:         "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#",
@@ -55,21 +55,7 @@ func generateMinimalTemplate() Template {
 	return template
 }
 
-var threatProfile = `package threatprofile
-
-storageaccount_confidentiality_accessPublicly[storageaccount_names] {
-	input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
-	input.template.resources[i].properties.allowBlobPublicAccess == true
-
-	storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
-}
-get_default_names(resource_names) = resource_default_names{    
-	resource_default_names := input.template.parameters[i]["defaultValue"]
-	resource_names == i
-}`
-
-// TODO is there some caching that can be deactivated?
-func TestBigTemplatePerformance(t *testing.T) {
+func generateBigTemplate() Template {
 	template := generateMinimalTemplate()
 
 	// add 1, 2, 4, 8, ... resources to the template
@@ -80,15 +66,28 @@ func TestBigTemplatePerformance(t *testing.T) {
 		APIVersion: "2020-05-01",
 		Location:   "westeurope",
 		Name:       "name",
-		Properties: []Property{property},
+		Properties: property,
 	}
 
 	// add further resources
 	i := 0
-	for i < 10 {
+	for i < 100 {
 		template.Resources = append(template.Resources, resource)
 		i += 1
 	}
+	return template
+}
+
+var threatProfile = `package threatprofile
+
+storageaccount_confidentiality_accessPublicly {
+	input.resources[i].properties.access == "allow"
+}
+`
+
+// TODO is there some caching that can be deactivated?
+func TestBigTemplatePerformance(t *testing.T) {
+	template := generateBigTemplate()
 
 	templateenc, err := json.Marshal(template)
 	if err != nil {
@@ -103,6 +102,7 @@ func TestBigTemplatePerformance(t *testing.T) {
 
 	// call evaluation func
 	identifiedThreats := IdentifyThreatsFromTemplate("testfiles/", "testfiles/bigtemplate.json")
+	// identifiedThreats := IdentifyThreatsFromTemplate("../../resources/threatprofiles/testPolicy.rego", "testfiles/bigtemplate.json")
 	fmt.Println(identifiedThreats)
 
 	if identifiedThreats == nil {
@@ -117,28 +117,28 @@ func TestBigTemplatePerformance(t *testing.T) {
 }
 
 func TestBigThreatProfilePerformance(t *testing.T) {
-	// create minimal template, create minimal threat profile
-	// template := generateMinimalTemplate()
-	num := 0
-	additionalPolicy := `storageaccount_confidentiality_accessPublicly` + strconv.Itoa(num) + `[storageaccount_names] {
-		input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
-		input.template.resources[i].properties.allowBlobPublicAccess == true
-
-		storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
-	}`
-	// add 2, 4, 8, ... threat profiles
 	i := 0
 	tp := threatProfile
-	for i < 2000 {
-		// tp += "\n" + strconv.Itoa(i) + additionalPolicy
-		num = i
-		tp += "\n" + additionalPolicy
+	for i < 12000 {
+		tp += "\n" + `storageaccount_confidentiality_accessPublicly` + strconv.Itoa(i) + `{
+			input.resources[i].properties.access == "allow"
+		}`
 		i += 1
 	}
 	fmt.Println(tp)
 	ioutil.WriteFile("testfiles/smallpolicy.rego", []byte(tp), os.ModePerm)
+
+	// create template and write template to file
+	template := generateBigTemplate() // generateMinimalTemplate()
+	templateenc, err := json.Marshal(template)
+	if err != nil {
+		fmt.Println(err)
+	}
+	ioutil.WriteFile("testfiles/bigtemplate.json", templateenc, os.ModePerm)
+
 	// evaluate template against threatprofile
 	identifiedThreats := IdentifyThreatsFromTemplate("testfiles/", "testfiles/bigtemplate.json")
+	// identifiedThreats := IdentifyThreatsFromTemplate("testfiles/", "../../resources/inputs/testTemplate.json")
 	fmt.Println(identifiedThreats)
 
 	if identifiedThreats == nil {
