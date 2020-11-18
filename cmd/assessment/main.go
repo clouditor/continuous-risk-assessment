@@ -41,8 +41,8 @@ func doCmd() (err error) {
 
 	assessment.SaveToFilesystem(attackTreeReconstructionOutputFileName, attacktreeReconstruction)
 
-	// identify highest threat level per asset
-	threatLevels := assessment.IdentifyHighestThreatLevel(threatLevelsProfileDir, identifiedThreats)
+	// calculate risk scores per asset/protection goal
+	threatLevels := assessment.CalculateRiskScores(threatLevelsProfileDir, identifiedThreats)
 
 	if threatLevels == nil {
 		fmt.Println("Identifying threat level result is nil.")

@@ -11,7 +11,7 @@ import (
 	"github.com/open-policy-agent/opa/rego"
 )
 
-// IdentifyThreatsFromTemplate identifies threats from template data.
+// compares an ARM template (inputFile) to Rego Threat Profiles, and outputs threats and vulnerable resources
 func IdentifyThreatsFromTemplate(threatProfileDir string, inputFile string) (results rego.ResultSet) {
 
 	ctx := context.TODO()
@@ -38,25 +38,10 @@ func IdentifyThreatsFromTemplate(threatProfileDir string, inputFile string) (res
 	pretty.Print(results)
 	fmt.Println()
 
-	// for index, element := range results {
-	// 	fmt.Println()
-	// 	fmt.Println(element)
-	// 	if err != nil {
-	// 		// Which error?
-	// 		// Handle evaluation error.
-	// 	} else if len(results) == 0 {
-	// 		// Handle undefined result.
-	// 	} else if result, ok := results[index].Bindings["x"].(bool); !ok {
-	// 		fmt.Println("Rego Bindings Result: ", result)
-	// 	} else {
-	// 		// fmt.Printf("%+v", results) => [{Expressions:[true] Bindings:map[x:true]}]
-	// 	}
-	// }
-
 	return results
 }
 
-// ReconstructAttackTrees reconstructs attack trees from threats.
+// reassembles the output of IdentifyThreatsFromTemplate per asset, i.e. indicates the attack paths per asset
 func ReconstructAttackTrees(reconstructAttackTreesProfileDir string, data rego.ResultSet) (attacktrees rego.ResultSet) {
 	ctx := context.TODO()
 	r, err := rego.New(
@@ -76,8 +61,8 @@ func ReconstructAttackTrees(reconstructAttackTreesProfileDir string, data rego.R
 	return attacktrees
 }
 
-// IdentifyHighestThreatLevel identifies highest threat level per asset.
-func IdentifyHighestThreatLevel(threatLevelsProfileDir string, evaluationResult rego.ResultSet) (threatlevels rego.ResultSet) {
+// gets the highest threat level and impact level per asset/protection goal, and calculates a risk score
+func CalculateRiskScores(threatLevelsProfileDir string, evaluationResult rego.ResultSet) (threatlevels rego.ResultSet) {
 
 	ctx := context.TODO()
 	r, err := rego.New(
