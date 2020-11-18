@@ -1,6 +1,25 @@
 # continuous-risk-assessment
 Prototype for continuous risk assessment
 
+Threat Profiles:
+- "Microsoft.Network/networkSecurityGroups"
+-- Number of open ports? 
+
+- "Microsoft.Network/networkSecurityGroups/securityRules"
+-- set "sourceAddressPrefixes" 
+
+- "Microsoft.Network/virtualNetworks"
+-- "enableDdosProtection"
+-- "enableVmProtection"
+-- is it possible that the location of the VM and the network interface/security group are different?
+
+- "Microsoft.Storage/storageAccounts"
+-- encryption (Oder sind die eh immer verschlüsselt?)
+-- "networkAcls"/"ipRules" 
+
+- "Microsoft.Storage/storageAccounts/blobServices/containers"
+-- "publicAccess"
+
 - Retrieve ARM templates https://docs.microsoft.com/en-us/rest/api/resources/resourcegroups/exporttemplate
 - Integrate OPA/Rego https://www.openpolicyagent.org/docs/latest/integration/
 - Reconstruct attack trees from Rego output: https://play.openpolicyagent.org/p/eZF4hFltsX
