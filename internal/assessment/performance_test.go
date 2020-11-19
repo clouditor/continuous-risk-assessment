@@ -4,6 +4,7 @@ import (
 	"encoding/json"
 	"fmt"
 	"io/ioutil"
+	"math"
 	"os"
 	"strconv"
 	"testing"
@@ -89,11 +90,38 @@ func generateThreatProfile(amount int) {
 	ioutil.WriteFile("testfiles/policy.rego", []byte(tp), os.ModePerm)
 }
 
-func BenchmarkRegoEvaluation(b *testing.B) {
-	generateTemplate(16384)
-	generateThreatProfile(16384)
+// func BenchmarkRegoEvaluation(b *testing.B) {
+// 	generateTemplate(16384)
+// 	generateThreatProfile(16384)
 
-	for i := 0; i < b.N; i++ {
-		IdentifyThreatsFromTemplate("testfiles/", "testfiles/template.json")
+// 	for i := 0; i < b.N; i++ {
+// 		IdentifyThreatsFromTemplate("testfiles/", "testfiles/template.json")
+// 	}
+// }
+
+func regoEvaluation(tempAmount int, tpAmount int) {
+	generateTemplate(tempAmount)
+	generateThreatProfile(tpAmount)
+
+	IdentifyThreatsFromTemplate("testfiles/", "testfiles/template.json")
+}
+
+func BenchmarkRegoEvaluation(b *testing.B) {
+	for k := 0.; k <= 10; k++ {
+		n := int(math.Pow(2, k))
+		generateTemplate(n)
+		for l := 0.; l <= 10; l++ {
+			m := int(math.Pow(2, l))
+			generateThreatProfile(m)
+			b.Run(fmt.Sprintf("%d/%d", n, m), func(b *testing.B) {
+				for i := 0; i < b.N; i++ {
+					IdentifyThreatsFromTemplate("testfiles/", "testfiles/template.json")
+				}
+			})
+		}
 	}
+}
+
+// TODO
+func TestCompleteModule2(t *testing.T) {
 }
