@@ -34,9 +34,9 @@ func IdentifyThreatsFromTemplate(threatProfileDir string, inputFile string) (res
 		return nil
 	}
 
-	fmt.Println("Result threats")
-	pretty.Print(results)
-	fmt.Println()
+	// fmt.Println("Result threats")
+	// pretty.Print(results)
+	// fmt.Println()
 
 	return results
 }
