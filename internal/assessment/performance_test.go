@@ -2,7 +2,6 @@ package assessment
 
 import (
 	"encoding/json"
-	"errors"
 	"fmt"
 	"io/ioutil"
 	"math"
@@ -10,7 +9,8 @@ import (
 	"strconv"
 	"testing"
 
-	"clouditor.io/riskAssessment/internal/discovery"
+	disc "clouditor.io/riskAssessment/cmd/discovery"
+	"github.com/smartystreets/goconvey/convey"
 )
 
 type IaC struct {
@@ -128,23 +128,48 @@ func BenchmarkRegoEvaluation(b *testing.B) {
 func TestCompleteModule2(t *testing.T) {
 	// discovery + assessment
 
-	var err error
+	// //Config
+	// viper.SetEnvKeyReplacer(strings.NewReplacer(".", "_"))
+	// viper.SetEnvPrefix("CLOUDITOR")
+	// viper.AutomaticEnv()
+	// viper.SetConfigName("config")
+	// viper.SetConfigType("yaml")
+	// viper.AddConfigPath(".")
 
-	if discovery.SubscriptionIDFlag == "" {
-		fmt.Println(errors.New("Subscription ID is not set"))
-	}
+	// var err error
 
-	app := &discovery.App{}
-	if err = app.AuthorizeAzure(); err != nil {
-		fmt.Println("Authorization error: ", err)
-	}
+	// err = viper.ReadInConfig()
+	// if err != nil {
+	// 	fmt.Printf("Could not read config: %s", err)
+	// }
 
-	armTemplate, err := app.ExportArmTemplate()
-	if err != nil {
-		fmt.Println("ARM template export error: ", err)
-	}
+	// // Declare var
+	// viper.BindPFlag(discovery.SubscriptionIDFlag, discoverCmd.Flags().Lookup(discovery.SubscriptionIDFlag))
+	// viper.BindPFlag(discovery.ResourceGroupFlag, discoverCmd.Flags().Lookup(discovery.ResourceGroupFlag))
+	// viper.BindPFlag(discovery.AppTenantIDFlag, discoverCmd.Flags().Lookup(discovery.AppTenantIDFlag))
+	// viper.BindPFlag(discovery.AppClientIDFlag, discoverCmd.Flags().Lookup(discovery.AppClientIDFlag))
+	// viper.BindPFlag(discovery.AppClientSecretFlag, discoverCmd.Flags().Lookup(discovery.AppClientSecretFlag))
 
-	fmt.Println("armTemplate: ", armTemplate)
+	// disc.InitConfig()
+	// disc.Init()
+	convey.Convey("", t, func() {
+		args := []string{"discover"}
+		disc.DiscoverCmd.SetArgs(args)
+		disc.DiscoverCmd.Execute()
+
+	})
+
+	// app := &discovery.App{}
+	// if err = app.AuthorizeAzure(); err != nil {
+	// 	fmt.Println("Authorization error: ", err)
+	// }
+
+	// armTemplate, err := app.ExportArmTemplate()
+	// if err != nil {
+	// 	fmt.Println("ARM template export error: ", err)
+	// }
+
+	// fmt.Println("armTemplate: ", armTemplate)
 
 	// I've copied the func IdentifyThreatsFromTemplate to IdentifyThreatsFromARMTemplate,
 	// because the original function IdentifyThreatsFromTemplate became the path to the
@@ -152,7 +177,7 @@ func TestCompleteModule2(t *testing.T) {
 	// 'armTemplate'.
 	// IdentifyThreatsFromARMTemplate does not work and I assume that the object 'armTemplate' is
 	// not the same format as the imported ARM tempate from the filesystem.
-	IdentifyThreatsFromARMTemplate("resources/threatprofiles/use_case_policy.rego", armTemplate)
+	// IdentifyThreatsFromARMTemplate("resources/threatprofiles/use_case_policy.rego", armTemplate)
 
 	// fmt.Println("threats: ", threats)
 

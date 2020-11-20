@@ -28,9 +28,12 @@ type App struct {
 
 // AuthorizeAzure takes care of the azure authorization.
 func (a *App) AuthorizeAzure() (err error) {
-	tenantID := AppTenantIDFlag         //viper.GetString(AppTenantIDFlag)
-	clientID := AppClientIDFlag         //viper.GetString(AppClientIDFlag)
-	clientSecret := AppClientSecretFlag //viper.GetString(AppClientSecretFlag)
+	// tenantID := AppTenantIDFlag         //viper.GetString(AppTenantIDFlag)
+	// clientID := AppClientIDFlag         //viper.GetString(AppClientIDFlag)
+	// clientSecret := AppClientSecretFlag //viper.GetString(AppClientSecretFlag)
+	tenantID := viper.GetString(AppTenantIDFlag)
+	clientID := viper.GetString(AppClientIDFlag)
+	clientSecret := viper.GetString(AppClientSecretFlag)
 
 	if tenantID == "" || clientID == "" || clientSecret == "" {
 		// fall back to env authorizer
@@ -46,14 +49,16 @@ func (a *App) AuthorizeAzure() (err error) {
 
 // ExportArmTemplate exports Azure ARM template from Azure.
 func (a App) ExportArmTemplate() (result resources.GroupExportResult, err error) {
-	client := resources.NewGroupsClient(SubscriptionIDFlag) //(viper.GetString(SubscriptionIDFlag))
+	// client := resources.NewGroupsClient(SubscriptionIDFlag) //(viper.GetString(SubscriptionIDFlag))
+	client := resources.NewGroupsClient(viper.GetString(SubscriptionIDFlag))
 	client.Authorizer = a.auth
 
 	expReq := resources.ExportTemplateRequest{
 		ResourcesProperty: &[]string{"*"},
 	}
 
-	result, err = client.ExportTemplate(context.Background(), ResourceGroupFlag, expReq) //viper.GetString(ResourceGroupFlag), expReq)
+	// result, err = client.ExportTemplate(context.Background(), ResourceGroupFlag, expReq) //viper.GetString(ResourceGroupFlag), expReq)
+	result, err = client.ExportTemplate(context.Background(), viper.GetString(ResourceGroupFlag), expReq)
 
 	if err != nil {
 		fmt.Println("Error exporting ARM template: ", err)
