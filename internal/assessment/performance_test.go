@@ -2,12 +2,15 @@ package assessment
 
 import (
 	"encoding/json"
+	"errors"
 	"fmt"
 	"io/ioutil"
 	"math"
 	"os"
 	"strconv"
 	"testing"
+
+	"clouditor.io/riskAssessment/internal/discovery"
 )
 
 type IaC struct {
@@ -63,7 +66,7 @@ func generateTemplate(amount int) {
 	i := 1
 	for i < amount {
 		template.Resources = append(template.Resources, resource)
-		i += 1
+		i++
 	}
 
 	iacenc, err := json.Marshal(iac)
@@ -85,7 +88,7 @@ func generateThreatProfile(amount int) {
 		tp += "\n" + `storageaccount_confidentiality_accessPublicly` + strconv.Itoa(i) + `{
 			input.template.resources[i].properties.access == "allow"
 		}`
-		i += 1
+		i++
 	}
 	ioutil.WriteFile("testfiles/policy.rego", []byte(tp), os.ModePerm)
 }
@@ -122,6 +125,35 @@ func BenchmarkRegoEvaluation(b *testing.B) {
 	}
 }
 
-// TODO
 func TestCompleteModule2(t *testing.T) {
+	// discovery + assessment
+
+	var err error
+
+	if discovery.SubscriptionIDFlag == "" {
+		fmt.Println(errors.New("Subscription ID is not set"))
+	}
+
+	app := &discovery.App{}
+	if err = app.AuthorizeAzure(); err != nil {
+		fmt.Println("Authorization error: ", err)
+	}
+
+	armTemplate, err := app.ExportArmTemplate()
+	if err != nil {
+		fmt.Println("ARM template export error: ", err)
+	}
+
+	fmt.Println("armTemplate: ", armTemplate)
+
+	// I've copied the func IdentifyThreatsFromTemplate to IdentifyThreatsFromARMTemplate,
+	// because the original function IdentifyThreatsFromTemplate became the path to the
+	// template file. Now the func IdentifyThreatsFromARMTemplate gets directly the template object
+	// 'armTemplate'.
+	// IdentifyThreatsFromARMTemplate does not work and I assume that the object 'armTemplate' is
+	// not the same format as the imported ARM tempate from the filesystem.
+	IdentifyThreatsFromARMTemplate("resources/threatprofiles/use_case_policy.rego", armTemplate)
+
+	// fmt.Println("threats: ", threats)
+
 }

@@ -7,11 +7,13 @@ import (
 	"io/ioutil"
 	"log"
 
+	// "github.com/Azure/azure-sdk-for-go/profiles/latest/resources/mgmt/resources"
+	"github.com/Azure/azure-sdk-for-go/services/resources/mgmt/2018-02-01/resources"
 	"github.com/kr/pretty"
 	"github.com/open-policy-agent/opa/rego"
 )
 
-// compares an ARM template (inputFile) to Rego Threat Profiles, and outputs threats and vulnerable resources
+// IdentifyThreatsFromTemplate compares an ARM template (inputFile) to Rego Threat Profiles, and outputs threats and vulnerable resources.
 func IdentifyThreatsFromTemplate(threatProfileDir string, inputFile string) (results rego.ResultSet) {
 
 	ctx := context.TODO()
@@ -41,7 +43,37 @@ func IdentifyThreatsFromTemplate(threatProfileDir string, inputFile string) (res
 	return results
 }
 
-// reassembles the output of IdentifyThreatsFromTemplate per asset, i.e. indicates the attack paths per asset
+// IdentifyThreatsFromARMTemplate compares an ARM template to Rego Threat Profiles, and outputs threats and vulnerable resources.
+func IdentifyThreatsFromARMTemplate(threatProfileDir string, input resources.GroupExportResult) (results rego.ResultSet) {
+
+	ctx := context.TODO()
+	r, err := rego.New(
+		rego.Query("x = data.threatprofile"),
+		rego.Load([]string{threatProfileDir}, nil),
+	).PrepareForEval(ctx)
+
+	// input := readFromFilesystem(inputFile)
+
+	results, err = r.Eval(ctx, rego.EvalInput(input))
+
+	if err != nil {
+		log.Fatal(err)
+		return nil
+	}
+
+	if results == nil {
+		fmt.Println("Evaluation result is nil.")
+		return nil
+	}
+
+	// fmt.Println("Result threats")
+	// pretty.Print(results)
+	// fmt.Println()
+
+	return results
+}
+
+// ReconstructAttackTrees reassembles the output of IdentifyThreatsFromTemplate per asset, i.e. indicates the attack paths per asset.
 func ReconstructAttackTrees(reconstructAttackTreesProfileDir string, data rego.ResultSet) (attacktrees rego.ResultSet) {
 	ctx := context.TODO()
 	r, err := rego.New(
@@ -61,7 +93,7 @@ func ReconstructAttackTrees(reconstructAttackTreesProfileDir string, data rego.R
 	return attacktrees
 }
 
-// gets the highest threat level and impact level per asset/protection goal, and calculates a risk score
+// CalculateRiskScores gets the highest threat level and impact level per asset/protection goal, and calculates a risk score.
 func CalculateRiskScores(threatLevelsProfileDir string, evaluationResult rego.ResultSet) (threatlevels rego.ResultSet) {
 
 	ctx := context.TODO()
