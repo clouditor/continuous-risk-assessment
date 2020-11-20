@@ -8,8 +8,6 @@ import (
 	"os"
 	"strconv"
 	"testing"
-
-	"clouditor.io/riskAssessment/internal/discovery"
 )
 
 type IaC struct {
@@ -126,24 +124,4 @@ func BenchmarkRegoEvaluation(b *testing.B) {
 
 // TODO
 func TestCompleteModule2(t *testing.T) {
-	// discovery + assessment
-
-	var err error
-
-	app := &discovery.App{}
-	if err = app.AuthorizeAzure(); err != nil {
-		fmt.Println("Authorization error: ", err)
-	}
-
-	armTemplate, err := app.ExportArmTemplate()
-	if err != nil {
-		fmt.Println("ARM template export error: ", err)
-	}
-
-	fmt.Println("armTemplate: ", armTemplate)
-
-	// threats := IdentifyThreatsFromARMTemplate(ThreatProfileDir, armTemplate)
-
-	// fmt.Println("threats: ", threats)
-
 }

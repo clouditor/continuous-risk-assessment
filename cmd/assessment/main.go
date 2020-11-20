@@ -10,8 +10,8 @@ import (
 const (
 	// File names for evaluation
 	threatProfileDataInputFileName string = "resources/inputs/use_case_template.json"
-	ThreatProfileDir               string = "resources/threatprofiles/use_case_policy.rego"
-	ThreatProfileOutputFileName    string = "./resources/outputs/threats.json"
+	threatProfileDir               string = "resources/threatprofiles/use_case_policy.rego"
+	threatProfileOutputFileName    string = "./resources/outputs/threats.json"
 
 	// File names for attack tree reconstruction
 	reconstructAttackTreesProfileDir       string = "./resources/reconstruction/"
@@ -24,13 +24,13 @@ const (
 
 func doCmd() (err error) {
 	// evaluate template against threat profiles
-	identifiedThreats := assessment.IdentifyThreatsFromTemplate(ThreatProfileDir, threatProfileDataInputFileName)
+	identifiedThreats := assessment.IdentifyThreatsFromTemplate(threatProfileDir, threatProfileDataInputFileName)
 
 	if identifiedThreats == nil {
 		return os.ErrInvalid
 	}
 
-	assessment.SaveToFilesystem(ThreatProfileOutputFileName, identifiedThreats)
+	assessment.SaveToFilesystem(threatProfileOutputFileName, identifiedThreats)
 
 	// reconstruct attack paths, i.e. identify all attack paths per asset
 	attacktreeReconstruction := assessment.ReconstructAttackTrees(reconstructAttackTreesProfileDir, identifiedThreats)
