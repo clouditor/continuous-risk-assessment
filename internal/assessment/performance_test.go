@@ -1,6 +1,7 @@
 package assessment
 
 import (
+	"discovery"
 	"encoding/json"
 	"fmt"
 	"io/ioutil"
@@ -30,17 +31,75 @@ type Resource struct {
 	Name       string   `json:"name"`
 	Properties Property `json:"properties"`
 }
+
+// type Property struct {
+// 	Access string `json:"access"`
+// }
+
 type Property struct {
+	SecurityRules []SecurityRule `json:"securityRules"`
+}
+type SecurityRule struct {
+	Name               string               `json:"name"`
+	SecurityProperties []SecurityProperties `json:"securityProperties"`
+}
+type SecurityProperties struct {
 	Access string `json:"access"`
 }
 
-func generateTemplate(amount int) {
+// func generateTemplate(amount int) {
+// 	parameter := Parameter{
+// 		DefaultValue: "name",
+// 		Type:         "String",
+// 	}
+// 	property := Property{
+// 		Access: "allow",
+// 	}
+// 	resource := Resource{
+// 		APIVersion: "2020-05-01",
+// 		Location:   "westeurope",
+// 		Name:       "name",
+// 		Properties: property,
+// 	}
+// 	template := Template{
+// 		Schema:         "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#",
+// 		ContentVersion: "1.0.0.0",
+// 		Variables:      "",
+// 		Parameters:     []Parameter{parameter},
+// 		Resources:      []Resource{resource},
+// 	}
+// 	iac := IaC{
+// 		Template: template,
+// 	}
+
+// 	// add further resources
+// 	i := 1
+// 	for i < amount {
+// 		template.Resources = append(template.Resources, resource)
+// 		i += 1
+// 	}
+
+// 	iacenc, err := json.Marshal(iac)
+// 	if err != nil {
+// 		fmt.Println(err)
+// 	}
+// 	ioutil.WriteFile("testfiles/template.json", []byte(iacenc), os.ModePerm)
+// }
+
+func generateComplicatedTemplate(amount int) {
 	parameter := Parameter{
 		DefaultValue: "name",
 		Type:         "String",
 	}
-	property := Property{
+	securityProperties := SecurityProperties{
 		Access: "allow",
+	}
+	securityRule := SecurityRule{
+		Name:               "name",
+		SecurityProperties: []SecurityProperties{securityProperties},
+	}
+	property := Property{
+		SecurityRules: []SecurityRule{securityRule},
 	}
 	resource := Resource{
 		APIVersion: "2020-05-01",
@@ -100,17 +159,19 @@ func generateThreatProfile(amount int) {
 // }
 
 func regoEvaluation(tempAmount int, tpAmount int) {
-	generateTemplate(tempAmount)
+	// generateTemplate(tempAmount)
+	generateComplicatedTemplate(tempAmount)
 	generateThreatProfile(tpAmount)
 
 	IdentifyThreatsFromTemplate("testfiles/", "testfiles/template.json")
 }
 
 func BenchmarkRegoEvaluation(b *testing.B) {
-	for k := 0.; k <= 10; k++ {
+	for k := 0.; k <= 2; k++ {
 		n := int(math.Pow(2, k))
-		generateTemplate(n)
-		for l := 0.; l <= 10; l++ {
+		generateComplicatedTemplate(n)
+		// generateTemplate(n)
+		for l := 0.; l <= 2; l++ {
 			m := int(math.Pow(2, l))
 			generateThreatProfile(m)
 			b.Run(fmt.Sprintf("%d/%d", n, m), func(b *testing.B) {
@@ -124,4 +185,5 @@ func BenchmarkRegoEvaluation(b *testing.B) {
 
 // TODO
 func TestCompleteModule2(t *testing.T) {
+	discovery.AuthorizeAzure()
 }
