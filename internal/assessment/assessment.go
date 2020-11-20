@@ -7,6 +7,7 @@ import (
 	"io/ioutil"
 	"log"
 
+	"github.com/Azure/azure-sdk-for-go/profiles/latest/resources/mgmt/resources"
 	"github.com/kr/pretty"
 	"github.com/open-policy-agent/opa/rego"
 )
@@ -21,6 +22,36 @@ func IdentifyThreatsFromTemplate(threatProfileDir string, inputFile string) (res
 	).PrepareForEval(ctx)
 
 	input := readFromFilesystem(inputFile)
+
+	results, err = r.Eval(ctx, rego.EvalInput(input))
+
+	if err != nil {
+		log.Fatal(err)
+		return nil
+	}
+
+	if results == nil {
+		fmt.Println("Evaluation result is nil.")
+		return nil
+	}
+
+	// fmt.Println("Result threats")
+	// pretty.Print(results)
+	// fmt.Println()
+
+	return results
+}
+
+// compares an ARM template (inputFile) to Rego Threat Profiles, and outputs threats and vulnerable resources
+func IdentifyThreatsFromARMTemplate(threatProfileDir string, input resources.GroupExportResult) (results rego.ResultSet) {
+
+	ctx := context.TODO()
+	r, err := rego.New(
+		rego.Query("x = data.threatprofile"),
+		rego.Load([]string{threatProfileDir}, nil),
+	).PrepareForEval(ctx)
+
+	// input := readFromFilesystem(inputFile)
 
 	results, err = r.Eval(ctx, rego.EvalInput(input))
 
