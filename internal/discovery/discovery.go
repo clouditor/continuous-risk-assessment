@@ -12,6 +12,7 @@ import (
 	"github.com/spf13/viper"
 )
 
+// const exported for other Azure specific functions
 const (
 	SubscriptionIDFlag = "subscriptionID"
 	ResourceGroupFlag  = "resourceGroup"
@@ -28,9 +29,6 @@ type App struct {
 
 // AuthorizeAzure takes care of the azure authorization.
 func (a *App) AuthorizeAzure() (err error) {
-	// tenantID := AppTenantIDFlag         //viper.GetString(AppTenantIDFlag)
-	// clientID := AppClientIDFlag         //viper.GetString(AppClientIDFlag)
-	// clientSecret := AppClientSecretFlag //viper.GetString(AppClientSecretFlag)
 	tenantID := viper.GetString(AppTenantIDFlag)
 	clientID := viper.GetString(AppClientIDFlag)
 	clientSecret := viper.GetString(AppClientSecretFlag)
@@ -49,7 +47,6 @@ func (a *App) AuthorizeAzure() (err error) {
 
 // ExportArmTemplate exports Azure ARM template from Azure.
 func (a App) ExportArmTemplate() (result resources.GroupExportResult, err error) {
-	// client := resources.NewGroupsClient(SubscriptionIDFlag) //(viper.GetString(SubscriptionIDFlag))
 	client := resources.NewGroupsClient(viper.GetString(SubscriptionIDFlag))
 	client.Authorizer = a.auth
 
@@ -57,7 +54,6 @@ func (a App) ExportArmTemplate() (result resources.GroupExportResult, err error)
 		ResourcesProperty: &[]string{"*"},
 	}
 
-	// result, err = client.ExportTemplate(context.Background(), ResourceGroupFlag, expReq) //viper.GetString(ResourceGroupFlag), expReq)
 	result, err = client.ExportTemplate(context.Background(), viper.GetString(ResourceGroupFlag), expReq)
 
 	if err != nil {
@@ -83,7 +79,7 @@ func (a App) PrepareArmExport(armTemplate resources.GroupExportResult) (prepated
 
 // SaveArmTemplateToFileSystem saves Azure ARM template at file system.
 func (a App) SaveArmTemplateToFileSystem(armTemplate []byte) (err error) {
-	fileTemplate := "resources/inputs/%s-template.json"
+	fileTemplate := "/resources/inputs/%s-template.json"
 	fileName := fmt.Sprintf(fileTemplate, viper.GetString(ResourceGroupFlag))
 
 	err = ioutil.WriteFile(fileName, armTemplate, 0666)

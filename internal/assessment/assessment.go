@@ -5,9 +5,11 @@ import (
 	"encoding/json"
 	"fmt"
 	"io/ioutil"
-	"log"
+
+	log "github.com/sirupsen/logrus"
 
 	// "github.com/Azure/azure-sdk-for-go/profiles/latest/resources/mgmt/resources"
+
 	"github.com/Azure/azure-sdk-for-go/services/resources/mgmt/2018-02-01/resources"
 	"github.com/kr/pretty"
 	"github.com/open-policy-agent/opa/rego"

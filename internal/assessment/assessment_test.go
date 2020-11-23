@@ -4,6 +4,7 @@ import (
 	"encoding/json"
 	"fmt"
 	"io/ioutil"
+	"log"
 	"math"
 	"os"
 	"strconv"
@@ -125,34 +126,17 @@ func BenchmarkRegoEvaluation(b *testing.B) {
 	}
 }
 
-func BenchmarkRiskAssessment(t *testing.B) {
-	// discovery + assessment
+// Tests the whole risk assessment process
+func TestRiskAssessment(t *testing.T) {
+	path, err := os.Getwd()
+	if err != nil {
+		log.Println(err)
+	}
+	fmt.Println(path) // for example /home/user
 
-	// fmt.Println("subcriptionID: ", viper.GetString(discovery.SubscriptionIDFlag))
+	assessment.AssessmentCmd.Execute()
+}
 
-	assessment.DiscoverCmd.Execute()
-
-	// var err error
-	// app := &discovery.App{}
-	// if err = app.AuthorizeAzure(); err != nil {
-	// 	fmt.Println("Authorization error: ", err)
-	// }
-
-	// armTemplate, err := app.ExportArmTemplate()
-	// if err != nil {
-	// 	fmt.Println("ARM template export error: ", err)
-	// }
-
-	// fmt.Println("armTemplate: ", armTemplate)
-
-	// I've copied the func IdentifyThreatsFromTemplate to IdentifyThreatsFromARMTemplate,
-	// because the original function IdentifyThreatsFromTemplate became the path to the
-	// template file. Now the func IdentifyThreatsFromARMTemplate gets directly the template object
-	// 'armTemplate'.
-	// IdentifyThreatsFromARMTemplate does not work and I assume that the object 'armTemplate' is
-	// not the same format as the imported ARM tempate from the filesystem.
-	// IdentifyThreatsFromARMTemplate("resources/threatprofiles/use_case_policy.rego", armTemplate)
-
-	// fmt.Println("threats: ", threats)
-
+func init() {
+	os.Chdir("../../")
 }
