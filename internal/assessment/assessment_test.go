@@ -4,7 +4,6 @@ import (
 	"encoding/json"
 	"fmt"
 	"io/ioutil"
-	"log"
 	"math"
 	"os"
 	"strconv"
@@ -99,7 +98,7 @@ func generateThreatProfile(amount int) {
 // 	generateThreatProfile(16384)
 
 // 	for i := 0; i < b.N; i++ {
-// 		IdentifyThreatsFromTemplate("testfiles/", "testfiles/template.json")
+// 		ass_internal.IdentifyThreatsFromTemplate("testfiles/", "testfiles/template.json")
 // 	}
 // }
 
@@ -128,11 +127,6 @@ func BenchmarkRegoEvaluation(b *testing.B) {
 
 // Tests the whole risk assessment process
 func TestRiskAssessment(t *testing.T) {
-	path, err := os.Getwd()
-	if err != nil {
-		log.Println(err)
-	}
-	fmt.Println(path) // for example /home/user
 
 	assessment.AssessmentCmd.Execute()
 }

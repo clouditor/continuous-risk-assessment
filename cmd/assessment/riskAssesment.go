@@ -19,23 +19,6 @@ const (
 	envPrefix = "CLOUDITOR"
 )
 
-// const for running risk assessment
-// const (
-// 	// File names for evaluation
-// 	threatProfileDataInputFileName string = "./resources/inputs/use_case_template.json"
-// 	threatProfileDir               string = "./resources/threatprofiles/use_case_policy.rego"
-// 	threatProfileOutputFileName    string = "./resources/outputs/threats.json"
-
-// 	// File names for attack tree reconstruction
-// 	reconstructAttackTreesProfileDir       string = "./resources/reconstruction/"
-// 	attackTreeReconstructionOutputFileName string = "./resources/outputs/momentary_attacktree.json"
-
-// 	// File names for threat level evaluation
-// 	threatLevelsProfileDir     string = "./resources/threatlevels/"
-// 	threatLevelsOutputFileName string = "./resources/outputs/threatlevels.json"
-// )
-
-// const for running test
 const (
 	// File names for evaluation
 	threatProfileDataInputFileName string = "./resources/inputs/use_case_template.json"
@@ -99,15 +82,25 @@ func doCmd(cmd *cobra.Command, args []string) (err error) {
 		return err
 	}
 
-	// armTemplate, err := app.ExportArmTemplate()
-	// // _, err = app.ExportArmTemplate()
+	// discover ARM template
+	armTemplate, err := app.ExportArmTemplate()
+	// _, err = app.ExportArmTemplate()
+	if err != nil {
+		return err
+	}
+
+	// preparedArmTemplate, err := app.PrepareArmExport(armTemplate)
 	// if err != nil {
 	// 	return err
 	// }
 
+	// if err = app.SaveArmTemplateToFileSystem(preparedArmTemplate); err != nil {
+	// 	return err
+	// }
+
 	// evaluate template against threat profiles
-	identifiedThreats := assessment.IdentifyThreatsFromTemplate(threatProfileDir, threatProfileDataInputFileName)
-	// identifiedThreats := assessment.IdentifyThreatsFromARMTemplate(threatProfileDir, armTemplate)
+	// identifiedThreats := assessment.IdentifyThreatsFromTemplate(threatProfileDir, threatProfileDataInputFileName)
+	identifiedThreats := assessment.IdentifyThreatsFromARMTemplate(threatProfileDir, armTemplate)
 
 	if identifiedThreats == nil {
 		return os.ErrInvalid
@@ -132,15 +125,6 @@ func doCmd(cmd *cobra.Command, args []string) (err error) {
 	}
 
 	assessment.SaveToFilesystem(threatLevelsOutputFileName, threatLevels)
-
-	// preparedArmTemplate, err := app.PrepareArmExport(armTemplate)
-	// if err != nil {
-	// 	return err
-	// }
-
-	// if err = app.SaveArmTemplateToFileSystem(preparedArmTemplate); err != nil {
-	// 	return err
-	// }
 
 	return nil
 }
