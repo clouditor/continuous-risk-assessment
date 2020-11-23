@@ -1,4 +1,4 @@
-package assessment
+package assessment_test
 
 import (
 	"encoding/json"
@@ -9,8 +9,8 @@ import (
 	"strconv"
 	"testing"
 
-	disc "clouditor.io/riskAssessment/cmd/discovery"
-	"github.com/smartystreets/goconvey/convey"
+	"clouditor.io/riskAssessment/cmd/assessment"
+	ass_internal "clouditor.io/riskAssessment/internal/assessment"
 )
 
 type IaC struct {
@@ -106,7 +106,7 @@ func regoEvaluation(tempAmount int, tpAmount int) {
 	generateTemplate(tempAmount)
 	generateThreatProfile(tpAmount)
 
-	IdentifyThreatsFromTemplate("testfiles/", "testfiles/template.json")
+	ass_internal.IdentifyThreatsFromTemplate("testfiles/", "testfiles/template.json")
 }
 
 func BenchmarkRegoEvaluation(b *testing.B) {
@@ -118,47 +118,21 @@ func BenchmarkRegoEvaluation(b *testing.B) {
 			generateThreatProfile(m)
 			b.Run(fmt.Sprintf("%d/%d", n, m), func(b *testing.B) {
 				for i := 0; i < b.N; i++ {
-					IdentifyThreatsFromTemplate("testfiles/", "testfiles/template.json")
+					ass_internal.IdentifyThreatsFromTemplate("testfiles/", "testfiles/template.json")
 				}
 			})
 		}
 	}
 }
 
-func TestCompleteModule2(t *testing.T) {
+func BenchmarkRiskAssessment(t *testing.B) {
 	// discovery + assessment
 
-	// //Config
-	// viper.SetEnvKeyReplacer(strings.NewReplacer(".", "_"))
-	// viper.SetEnvPrefix("CLOUDITOR")
-	// viper.AutomaticEnv()
-	// viper.SetConfigName("config")
-	// viper.SetConfigType("yaml")
-	// viper.AddConfigPath(".")
+	// fmt.Println("subcriptionID: ", viper.GetString(discovery.SubscriptionIDFlag))
+
+	assessment.DiscoverCmd.Execute()
 
 	// var err error
-
-	// err = viper.ReadInConfig()
-	// if err != nil {
-	// 	fmt.Printf("Could not read config: %s", err)
-	// }
-
-	// // Declare var
-	// viper.BindPFlag(discovery.SubscriptionIDFlag, discoverCmd.Flags().Lookup(discovery.SubscriptionIDFlag))
-	// viper.BindPFlag(discovery.ResourceGroupFlag, discoverCmd.Flags().Lookup(discovery.ResourceGroupFlag))
-	// viper.BindPFlag(discovery.AppTenantIDFlag, discoverCmd.Flags().Lookup(discovery.AppTenantIDFlag))
-	// viper.BindPFlag(discovery.AppClientIDFlag, discoverCmd.Flags().Lookup(discovery.AppClientIDFlag))
-	// viper.BindPFlag(discovery.AppClientSecretFlag, discoverCmd.Flags().Lookup(discovery.AppClientSecretFlag))
-
-	// disc.InitConfig()
-	// disc.Init()
-	convey.Convey("", t, func() {
-		args := []string{"discover"}
-		disc.DiscoverCmd.SetArgs(args)
-		disc.DiscoverCmd.Execute()
-
-	})
-
 	// app := &discovery.App{}
 	// if err = app.AuthorizeAzure(); err != nil {
 	// 	fmt.Println("Authorization error: ", err)

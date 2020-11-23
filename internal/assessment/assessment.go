@@ -36,9 +36,9 @@ func IdentifyThreatsFromTemplate(threatProfileDir string, inputFile string) (res
 		return nil
 	}
 
-	// fmt.Println("Result threats")
-	// pretty.Print(results)
-	// fmt.Println()
+	fmt.Println("Result threats")
+	pretty.Print(results)
+	fmt.Println()
 
 	return results
 }
@@ -52,11 +52,10 @@ func IdentifyThreatsFromARMTemplate(threatProfileDir string, input resources.Gro
 		rego.Load([]string{threatProfileDir}, nil),
 	).PrepareForEval(ctx)
 
-	// input := readFromFilesystem(inputFile)
-
 	results, err = r.Eval(ctx, rego.EvalInput(input))
 
 	if err != nil {
+		fmt.Println("Rego evaluation error: ", err)
 		log.Fatal(err)
 		return nil
 	}
@@ -66,9 +65,9 @@ func IdentifyThreatsFromARMTemplate(threatProfileDir string, input resources.Gro
 		return nil
 	}
 
-	// fmt.Println("Result threats")
-	// pretty.Print(results)
-	// fmt.Println()
+	fmt.Println("Result threats")
+	pretty.Print(results)
+	fmt.Println()
 
 	return results
 }
