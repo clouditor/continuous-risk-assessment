@@ -1,7 +1,6 @@
 package assessment
 
 import (
-	"discovery"
 	"encoding/json"
 	"fmt"
 	"io/ioutil"
@@ -100,6 +99,7 @@ func generateComplicatedTemplate(amount int) {
 	}
 	property := Property{
 		SecurityRules: []SecurityRule{securityRule},
+		// Access: "allow",
 	}
 	resource := Resource{
 		APIVersion: "2020-05-01",
@@ -121,7 +121,7 @@ func generateComplicatedTemplate(amount int) {
 	// add further resources
 	i := 1
 	for i < amount {
-		template.Resources = append(template.Resources, resource)
+		iac.Template.Resources = append(iac.Template.Resources, resource)
 		i += 1
 	}
 
@@ -136,13 +136,14 @@ func generateThreatProfile(amount int) {
 	tp := `package threatprofile
 
 	storageaccount_confidentiality_accessPublicly {
-		input.template.resources[i].properties.access == "allow"
+		input.template.resources[i].properties.securityRules.securityProperties[_].access == "allow"
 	}
 	`
+	// input.template.resources[i].properties.access == "allow"
 	i := 0
 	for i < amount {
 		tp += "\n" + `storageaccount_confidentiality_accessPublicly` + strconv.Itoa(i) + `{
-			input.template.resources[i].properties.access == "allow"
+			input.template.resources[i].properties.securityRules.securityProperties[_].access == "allow"
 		}`
 		i += 1
 	}
@@ -167,11 +168,11 @@ func regoEvaluation(tempAmount int, tpAmount int) {
 }
 
 func BenchmarkRegoEvaluation(b *testing.B) {
-	for k := 0.; k <= 2; k++ {
+	for k := 0.; k <= 10; k++ {
 		n := int(math.Pow(2, k))
 		generateComplicatedTemplate(n)
 		// generateTemplate(n)
-		for l := 0.; l <= 2; l++ {
+		for l := 0.; l <= 10; l++ {
 			m := int(math.Pow(2, l))
 			generateThreatProfile(m)
 			b.Run(fmt.Sprintf("%d/%d", n, m), func(b *testing.B) {
@@ -185,5 +186,4 @@ func BenchmarkRegoEvaluation(b *testing.B) {
 
 // TODO
 func TestCompleteModule2(t *testing.T) {
-	discovery.AuthorizeAzure()
 }
