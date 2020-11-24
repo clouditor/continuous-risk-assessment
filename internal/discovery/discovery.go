@@ -50,8 +50,11 @@ func (a App) ExportArmTemplate() (result resources.GroupExportResult, err error)
 	client := resources.NewGroupsClient(viper.GetString(SubscriptionIDFlag))
 	client.Authorizer = a.auth
 
+	exportTemplateOption := "IncludeParameterDefaultValue"
+
 	expReq := resources.ExportTemplateRequest{
 		ResourcesProperty: &[]string{"*"},
+		Options:           &exportTemplateOption,
 	}
 
 	result, err = client.ExportTemplate(context.Background(), viper.GetString(ResourceGroupFlag), expReq)
@@ -78,9 +81,10 @@ func (a App) PrepareArmExport(armTemplate resources.GroupExportResult) (prepated
 }
 
 // SaveArmTemplateToFileSystem saves Azure ARM template at file system.
-func (a App) SaveArmTemplateToFileSystem(armTemplate []byte) (err error) {
-	fileTemplate := "/resources/inputs/%s-template.json"
-	fileName := fmt.Sprintf(fileTemplate, viper.GetString(ResourceGroupFlag))
+func (a App) SaveArmTemplateToFileSystem(armTemplate []byte, fileName string) (err error) {
+	// TODO
+	// fileTemplate := "./resources/inputs/%s-template.json"
+	// fileName := fmt.Sprintf(fileTemplate, viper.GetString(ResourceGroupFlag))
 
 	err = ioutil.WriteFile(fileName, armTemplate, 0666)
 
@@ -88,7 +92,7 @@ func (a App) SaveArmTemplateToFileSystem(armTemplate []byte) (err error) {
 		fmt.Println("Error writing file: ", err)
 	}
 
-	fmt.Println("AWS ARM template stored to file system.")
+	fmt.Println("AWS ARM template stored to file system: ", fileName)
 
 	return nil
 }

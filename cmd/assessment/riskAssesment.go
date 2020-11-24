@@ -21,9 +21,11 @@ const (
 
 const (
 	// File names for evaluation
-	threatProfileDataInputFileName string = "./resources/inputs/use_case_template.json"
-	threatProfileDir               string = "./resources/threatprofiles/use_case_policy.rego"
-	threatProfileOutputFileName    string = "./resources/outputs/threats.json"
+	// threatProfileDataInputFileName string = "./resources/inputs/use_case_template.json"
+	threatProfileDataInputFileName string = "./resources/inputs/BayernCloud-template.json"
+
+	threatProfileDir            string = "./resources/threatprofiles/use_case_policy.rego"
+	threatProfileOutputFileName string = "./resources/outputs/threats.json"
 
 	// File names for attack tree reconstruction
 	reconstructAttackTreesProfileDir       string = "./resources/reconstruction/"
@@ -69,12 +71,6 @@ func doCmd(cmd *cobra.Command, args []string) (err error) {
 		return errors.New("Subscription ID is not set")
 	}
 
-	path, err := os.Getwd()
-	if err != nil {
-		log.Println(err)
-	}
-	fmt.Println(path) // for example /home/user
-
 	log.Info("Discovering...")
 
 	app := &discovery.App{}
@@ -94,7 +90,7 @@ func doCmd(cmd *cobra.Command, args []string) (err error) {
 	// 	return err
 	// }
 
-	// if err = app.SaveArmTemplateToFileSystem(preparedArmTemplate); err != nil {
+	// if err = app.SaveArmTemplateToFileSystem(preparedArmTemplate, threatProfileDataInputFileName); err != nil {
 	// 	return err
 	// }
 
@@ -129,6 +125,7 @@ func doCmd(cmd *cobra.Command, args []string) (err error) {
 	return nil
 }
 
+// AssessmentCmd exported for main.
 var AssessmentCmd = &cobra.Command{
 	Use:   "discover",
 	Short: "discover takes care of discovering",
