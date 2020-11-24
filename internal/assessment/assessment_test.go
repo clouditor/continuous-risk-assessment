@@ -1,4 +1,4 @@
-package assessment
+package assessment_test
 
 import (
 	"encoding/json"
@@ -8,6 +8,9 @@ import (
 	"os"
 	"strconv"
 	"testing"
+
+	"clouditor.io/riskAssessment/cmd/assessment"
+	ass_internal "clouditor.io/riskAssessment/internal/assessment"
 )
 
 type IaC struct {
@@ -145,7 +148,7 @@ func generateThreatProfile(amount int) {
 		tp += "\n" + `storageaccount_confidentiality_accessPublicly` + strconv.Itoa(i) + `{
 			input.template.resources[i].properties.securityRules.securityProperties[_].access == "allow"
 		}`
-		i += 1
+		i++
 	}
 	ioutil.WriteFile("testfiles/policy.rego", []byte(tp), os.ModePerm)
 }
@@ -155,7 +158,7 @@ func generateThreatProfile(amount int) {
 // 	generateThreatProfile(16384)
 
 // 	for i := 0; i < b.N; i++ {
-// 		IdentifyThreatsFromTemplate("testfiles/", "testfiles/template.json")
+// 		ass_internal.IdentifyThreatsFromTemplate("testfiles/", "testfiles/template.json")
 // 	}
 // }
 
@@ -164,26 +167,31 @@ func regoEvaluation(tempAmount int, tpAmount int) {
 	generateComplicatedTemplate(tempAmount)
 	generateThreatProfile(tpAmount)
 
-	IdentifyThreatsFromTemplate("testfiles/", "testfiles/template.json")
+	ass_internal.IdentifyThreatsFromTemplate("testfiles/", "testfiles/template.json")
 }
 
 func BenchmarkRegoEvaluation(b *testing.B) {
-	for k := 0.; k <= 10; k++ {
+	for k := 0.; k <= 2; k++ {
 		n := int(math.Pow(2, k))
 		generateComplicatedTemplate(n)
 		// generateTemplate(n)
-		for l := 0.; l <= 10; l++ {
+		for l := 0.; l <= 2; l++ {
 			m := int(math.Pow(2, l))
 			generateThreatProfile(m)
 			b.Run(fmt.Sprintf("%d/%d", n, m), func(b *testing.B) {
 				for i := 0; i < b.N; i++ {
-					IdentifyThreatsFromTemplate("testfiles/", "testfiles/template.json")
+					ass_internal.IdentifyThreatsFromTemplate("internal/assessment/testfiles/", "internal/assessment/testfiles/template.json")
 				}
 			})
 		}
 	}
 }
 
-// TODO
-func TestCompleteModule2(t *testing.T) {
+// Tests the whole risk assessment process
+func TestRiskAssessment(t *testing.T) {
+	assessment.AssessmentCmd.Execute()
+}
+
+func init() {
+	os.Chdir("../../")
 }

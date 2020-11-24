@@ -12,6 +12,7 @@ import (
 	"github.com/spf13/viper"
 )
 
+// const exported for other Azure specific functions
 const (
 	SubscriptionIDFlag = "subscriptionID"
 	ResourceGroupFlag  = "resourceGroup"
@@ -78,7 +79,7 @@ func (a App) PrepareArmExport(armTemplate resources.GroupExportResult) (prepated
 
 // SaveArmTemplateToFileSystem saves Azure ARM template at file system.
 func (a App) SaveArmTemplateToFileSystem(armTemplate []byte) (err error) {
-	fileTemplate := "resources/inputs/%s-template.json"
+	fileTemplate := "/resources/inputs/%s-template.json"
 	fileName := fmt.Sprintf(fileTemplate, viper.GetString(ResourceGroupFlag))
 
 	err = ioutil.WriteFile(fileName, armTemplate, 0666)
