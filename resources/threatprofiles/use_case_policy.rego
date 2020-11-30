@@ -36,7 +36,7 @@ virtualmachine_availability_performDoSViaSSH[vms] {
 virtualmachine_integrity_accessViaCompromisedSSHKey[vms] {
     contains(
         vms_and_interfaces[_].interface_ids,
-        replace(interfaces_with_open_port22[_], "-", "_")  
+        interfaces_with_open_port22[_]
     )
     vms := get_default_names(split(vms_and_interfaces[_].vm_name, "'")[1]) 
 }
