@@ -3,7 +3,7 @@ Prototype for continuous risk assessment
 
 Threat Profiles:
 - "Microsoft.Network/networkSecurityGroups"
-  - Number of open ports? 
+  - Number of open ports? -> Kann das helfen?
 
 - "Microsoft.Network/networkSecurityGroups/securityRules"
   - set "sourceAddressPrefixes" 
@@ -13,9 +13,9 @@ Threat Profiles:
   - "enableVmProtection"
   - is it possible that the location of the VM and the network interface/security group are different?
 
-- "Microsoft.Storage/storageAccounts"
-  - encryption (Oder sind die eh immer verschlüsselt?)
-  - "networkAcls"/"ipRules" 
+- ~~"Microsoft.Storage/storageAccounts"~~
+  - ~~encryption (Oder sind die eh immer verschlüsselt?)~~
+  - ~~"networkAcls"/"ipRules" ~~
 
 - "Microsoft.Storage/storageAccounts/blobServices/containers"
   - "publicAccess"

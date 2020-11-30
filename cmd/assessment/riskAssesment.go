@@ -21,8 +21,8 @@ const (
 
 const (
 	// File names for evaluation
-	// threatProfileDataInputFileName string = "./resources/inputs/use_case_template.json"
-	threatProfileDataInputFileName string = "./resources/inputs/BayernCloud-template.json"
+	threatProfileDataInputFileName string = "./resources/inputs/use_case_template.json"
+	// threatProfileDataInputFileName string = "./resources/inputs/BayernCloud-template.json"
 
 	threatProfileDir            string = "./resources/threatprofiles/use_case_policy.rego"
 	threatProfileOutputFileName string = "./resources/outputs/threats.json"
@@ -79,8 +79,8 @@ func doCmd(cmd *cobra.Command, args []string) (err error) {
 	}
 
 	// discover ARM template
-	armTemplate, err := app.ExportArmTemplate()
-	// _, err = app.ExportArmTemplate()
+	// armTemplate, err := app.ExportArmTemplate()
+	_, err = app.ExportArmTemplate()
 	if err != nil {
 		return err
 	}
@@ -95,8 +95,8 @@ func doCmd(cmd *cobra.Command, args []string) (err error) {
 	// }
 
 	// evaluate template against threat profiles
-	// identifiedThreats := assessment.IdentifyThreatsFromTemplate(threatProfileDir, threatProfileDataInputFileName)
-	identifiedThreats := assessment.IdentifyThreatsFromARMTemplate(threatProfileDir, armTemplate)
+	identifiedThreats := assessment.IdentifyThreatsFromTemplate(threatProfileDir, threatProfileDataInputFileName)
+	// identifiedThreats := assessment.IdentifyThreatsFromARMTemplate(threatProfileDir, armTemplate)
 
 	if identifiedThreats == nil {
 		return os.ErrInvalid
