@@ -9,9 +9,8 @@ Threat Profiles:
   - set "sourceAddressPrefixes" 
 
 - "Microsoft.Network/virtualNetworks"
-  - "enableDdosProtection"
+  - ~~"enableDdosProtection"~~
   - "enableVmProtection"
-  - is it possible that the location of the VM and the network interface/security group are different?
 
 - ~~"Microsoft.Storage/storageAccounts"~~
   - ~~encryption (Oder sind die eh immer verschlüsselt?)~~
