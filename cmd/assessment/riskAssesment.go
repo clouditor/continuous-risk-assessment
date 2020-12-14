@@ -4,6 +4,7 @@ import (
 	"errors"
 	"os"
 	"strings"
+	"time"
 
 	log "github.com/sirupsen/logrus"
 
@@ -20,7 +21,8 @@ const (
 
 const (
 	// File names for evaluation
-	threatProfileDataInputFileName string = "./resources/inputs/use_case_template.json"
+	armTemplateOutputFileName string = "./resources/outputs/arm_template.json"
+	// threatProfileDataInputFileName string = "./resources/inputs/use_case_template.json"
 	// threatProfileDataInputFileName string = "./resources/inputs/BayernCloud-template.json"
 
 	threatProfileDir            string = "./resources/threatprofiles/use_case_policy.rego"
@@ -49,6 +51,8 @@ func init() {
 	viper.BindPFlag(discovery.AppTenantIDFlag, AssessmentCmd.Flags().Lookup(discovery.AppTenantIDFlag))
 	viper.BindPFlag(discovery.AppClientIDFlag, AssessmentCmd.Flags().Lookup(discovery.AppClientIDFlag))
 	viper.BindPFlag(discovery.AppClientSecretFlag, AssessmentCmd.Flags().Lookup(discovery.AppClientSecretFlag))
+
+	AssessmentCmd.Flags().StringP("path", "p", "", "ARM template path")
 }
 
 func initConfig() {
@@ -71,6 +75,7 @@ func doCmd(cmd *cobra.Command, args []string) (err error) {
 	}
 
 	log.Info("Discovering...")
+	templatePath, _ := cmd.Flags().GetString("path")
 
 	app := &discovery.App{}
 	if err = app.AuthorizeAzure(); err != nil {
@@ -78,26 +83,38 @@ func doCmd(cmd *cobra.Command, args []string) (err error) {
 	}
 
 	// discover ARM template
-	// armTemplate, err := app.ExportArmTemplate()
-	_, err = app.ExportArmTemplate()
-	if err != nil {
-		return err
+	var armTemplate interface{}
+
+	// Check if path to ARM template is specified
+	if templatePath != "" {
+		log.Info("Get ARM template from file system.")
+		armTemplate = assessment.ReadFromFilesystem(templatePath)
+	} else {
+		log.Info("Discover ARM template from Azure.")
+		armTemplate, err = app.ExportArmTemplate()
+		// _, err = app.ExportArmTemplate()
+		if err != nil {
+			return err
+		}
+
+		preparedArmTemplate, err := app.PrepareArmExport(armTemplate)
+		if err != nil {
+			return err
+		}
+
+		filepath := getFilepathDate(armTemplateOutputFileName)
+		if err = app.SaveArmTemplateToFileSystem(preparedArmTemplate, filepath); err != nil {
+			return err
+		}
 	}
-
-	// preparedArmTemplate, err := app.PrepareArmExport(armTemplate)
-	// if err != nil {
-	// 	return err
-	// }
-
-	// if err = app.SaveArmTemplateToFileSystem(preparedArmTemplate, threatProfileDataInputFileName); err != nil {
-	// 	return err
-	// }
 
 	log.Info("Risk Assesment...")
 
 	// evaluate template against threat profiles
-	identifiedThreats := assessment.IdentifyThreatsFromTemplate(threatProfileDir, threatProfileDataInputFileName)
-	// identifiedThreats := assessment.IdentifyThreatsFromARMTemplate(threatProfileDir, armTemplate)
+	// inputData := assessment.ReadFromFilesystem(threatProfileDataInputFileName)
+	// identifiedThreats := assessment.IdentifyThreatsFromARMTemplate(threatProfileDir, inputData)
+
+	identifiedThreats := assessment.IdentifyThreatsFromARMTemplate(threatProfileDir, armTemplate)
 
 	if identifiedThreats == nil {
 		return os.ErrInvalid
@@ -128,8 +145,17 @@ func doCmd(cmd *cobra.Command, args []string) (err error) {
 
 // AssessmentCmd exported for main.
 var AssessmentCmd = &cobra.Command{
-	Use:   "discover",
-	Short: "discover takes care of discovering",
-	Long:  "discover is a component of Clouditor and takes care of discovering",
+	Use:   "riskAssessment",
+	Short: "Continuous risk assessment for Azure",
+	Long:  "riskAssessment is a component of Clouditor and takes care of a continuous risk assessment of the customer cloud environment. Currently, the assessment can only be used for the Azure cloud. The continuous risk assessment consists of two parts: Azure Cloud Discovery to get the ARM template and a risk assessment to get threats, the corresponding attack trees and the risk scores.",
 	RunE:  doCmd,
+}
+
+func getFilepathDate(armTemplateOutputFileName string) string {
+	currentTime := time.Now()
+
+	stringSplit := strings.Split(armTemplateOutputFileName, "/")
+	path := strings.Join(stringSplit[:len(stringSplit)-1], "/") + "/" + currentTime.Format("2006-02-01") + "_" + strings.Join(stringSplit[len(stringSplit)-1:], "")
+
+	return path
 }

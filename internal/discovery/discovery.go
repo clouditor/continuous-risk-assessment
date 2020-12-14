@@ -68,7 +68,7 @@ func (a App) ExportArmTemplate() (result resources.GroupExportResult, err error)
 }
 
 // PrepareArmExport prepares Azure ARM template for saving at file system.
-func (a App) PrepareArmExport(armTemplate resources.GroupExportResult) (prepatedArmTemplate []byte, err error) {
+func (a App) PrepareArmExport(armTemplate interface{}) (prepatedArmTemplate []byte, err error) {
 
 	prefix, indent := "", "    "
 	prepatedArmTemplate, err = json.MarshalIndent(armTemplate, prefix, indent)

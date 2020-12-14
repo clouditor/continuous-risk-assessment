@@ -9,44 +9,43 @@ import (
 
 	// "github.com/Azure/azure-sdk-for-go/profiles/latest/resources/mgmt/resources"
 
-	"github.com/Azure/azure-sdk-for-go/services/resources/mgmt/2018-02-01/resources"
 	"github.com/open-policy-agent/opa/rego"
 )
 
 // TODO Merge IdentifyThreatsFromTemplate and IdentifyThreatsFromARMTemplate
 // IdentifyThreatsFromTemplate compares an ARM template (inputFile) to Rego Threat Profiles, and outputs threats and vulnerable resources.
-func IdentifyThreatsFromTemplate(threatProfileDir string, inputFile string) (results rego.ResultSet) {
+// func IdentifyThreatsFromTemplate(threatProfileDir string, inputFile string) (results rego.ResultSet) {
 
-	log.Info("Identify threats...")
+// 	log.Info("Identify threats...")
 
-	ctx := context.TODO()
-	r, err := rego.New(
-		rego.Query("x = data.threatprofile"),
-		rego.Load([]string{threatProfileDir}, nil),
-	).PrepareForEval(ctx)
+// 	ctx := context.TODO()
+// 	r, err := rego.New(
+// 		rego.Query("x = data.threatprofile"),
+// 		rego.Load([]string{threatProfileDir}, nil),
+// 	).PrepareForEval(ctx)
 
-	input := readFromFilesystem(inputFile)
+// 	input := ReadFromFilesystem(inputFile)
 
-	results, err = r.Eval(ctx, rego.EvalInput(input))
+// 	results, err = r.Eval(ctx, rego.EvalInput(input))
 
-	if err != nil {
-		log.Fatal(err)
-		return nil
-	}
+// 	if err != nil {
+// 		log.Fatal(err)
+// 		return nil
+// 	}
 
-	if results == nil {
-		log.Info("Evaluation result is nil.")
-		return nil
-	}
+// 	if results == nil {
+// 		log.Info("Evaluation result is nil.")
+// 		return nil
+// 	}
 
-	// log.Info("Result threats")
-	// pretty.Print(results)
+// 	// log.Info("Result threats")
+// 	// pretty.Print(results)
 
-	return results
-}
+// 	return results
+// }
 
 // IdentifyThreatsFromARMTemplate compares an ARM template to Rego Threat Profiles, and outputs threats and vulnerable resources.
-func IdentifyThreatsFromARMTemplate(threatProfileDir string, input resources.GroupExportResult) (results rego.ResultSet) {
+func IdentifyThreatsFromARMTemplate(threatProfileDir string, input interface{}) (results rego.ResultSet) {
 
 	log.Info("Identify threats...")
 
@@ -119,7 +118,8 @@ func CalculateRiskScores(threatLevelsProfileDir string, evaluationResult rego.Re
 	return threatlevels
 }
 
-func readFromFilesystem(path string) interface{} {
+// ReadFromFileSystem reads files from the file system.
+func ReadFromFilesystem(path string) interface{} {
 
 	bs, err := ioutil.ReadFile(path)
 	if err != nil {
