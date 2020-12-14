@@ -11,6 +11,7 @@ import (
 
 	"clouditor.io/riskAssessment/cmd/assessment"
 	ass_internal "clouditor.io/riskAssessment/internal/assessment"
+	log "github.com/sirupsen/logrus"
 )
 
 type IaC struct {
@@ -83,7 +84,7 @@ type SecurityProperties struct {
 
 // 	iacenc, err := json.Marshal(iac)
 // 	if err != nil {
-// 		fmt.Println(err)
+// 		log.Fatal(err)
 // 	}
 // 	ioutil.WriteFile("testfiles/template.json", []byte(iacenc), os.ModePerm)
 // }
@@ -130,7 +131,7 @@ func generateComplicatedTemplate(amount int) {
 
 	iacenc, err := json.Marshal(iac)
 	if err != nil {
-		fmt.Println(err)
+		log.Fatal(err)
 	}
 	ioutil.WriteFile("testfiles/template.json", []byte(iacenc), os.ModePerm)
 }

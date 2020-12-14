@@ -2,7 +2,6 @@ package assessment
 
 import (
 	"errors"
-	"fmt"
 	"os"
 	"strings"
 
@@ -94,6 +93,8 @@ func doCmd(cmd *cobra.Command, args []string) (err error) {
 	// 	return err
 	// }
 
+	log.Info("Risk Assesment...")
+
 	// evaluate template against threat profiles
 	identifiedThreats := assessment.IdentifyThreatsFromTemplate(threatProfileDir, threatProfileDataInputFileName)
 	// identifiedThreats := assessment.IdentifyThreatsFromARMTemplate(threatProfileDir, armTemplate)
@@ -108,7 +109,7 @@ func doCmd(cmd *cobra.Command, args []string) (err error) {
 	attacktreeReconstruction := assessment.ReconstructAttackTrees(reconstructAttackTreesProfileDir, identifiedThreats)
 
 	if attacktreeReconstruction == nil {
-		fmt.Println("Attack tree reconstruction result is nil.")
+		log.Info("Attack tree reconstruction result is nil.")
 	}
 
 	assessment.SaveToFilesystem(attackTreeReconstructionOutputFileName, attacktreeReconstruction)
@@ -117,7 +118,7 @@ func doCmd(cmd *cobra.Command, args []string) (err error) {
 	threatLevels := assessment.CalculateRiskScores(threatLevelsProfileDir, identifiedThreats)
 
 	if threatLevels == nil {
-		fmt.Println("Identifying threat level result is nil.")
+		log.Info("Identifying threat level result is nil.")
 	}
 
 	assessment.SaveToFilesystem(threatLevelsOutputFileName, threatLevels)

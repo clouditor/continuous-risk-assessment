@@ -3,8 +3,9 @@ package discovery
 import (
 	"context"
 	"encoding/json"
-	"fmt"
 	"io/ioutil"
+
+	log "github.com/sirupsen/logrus"
 
 	"github.com/Azure/azure-sdk-for-go/services/resources/mgmt/2018-02-01/resources"
 	"github.com/Azure/go-autorest/autorest"
@@ -40,13 +41,12 @@ func (a *App) AuthorizeAzure() (err error) {
 		a.auth, err = auth.NewClientCredentialsConfig(clientID, clientSecret, tenantID).Authorizer()
 	}
 
-	fmt.Printf("Auth: %v\n", a.auth)
-
 	return err
 }
 
 // ExportArmTemplate exports Azure ARM template from Azure.
 func (a App) ExportArmTemplate() (result resources.GroupExportResult, err error) {
+	log.Info("Export ARM template...")
 	client := resources.NewGroupsClient(viper.GetString(SubscriptionIDFlag))
 	client.Authorizer = a.auth
 
@@ -60,7 +60,7 @@ func (a App) ExportArmTemplate() (result resources.GroupExportResult, err error)
 	result, err = client.ExportTemplate(context.Background(), viper.GetString(ResourceGroupFlag), expReq)
 
 	if err != nil {
-		fmt.Println("Error exporting ARM template: ", err)
+		log.Error("Error exporting ARM template: ", err)
 		return result, err
 	}
 
@@ -73,7 +73,7 @@ func (a App) PrepareArmExport(armTemplate resources.GroupExportResult) (prepated
 	prefix, indent := "", "    "
 	prepatedArmTemplate, err = json.MarshalIndent(armTemplate, prefix, indent)
 	if err != nil {
-		fmt.Println("MarshalIndent failed: ", err)
+		log.Error("MarshalIndent failed: ", err)
 		return nil, err
 	}
 
@@ -89,10 +89,10 @@ func (a App) SaveArmTemplateToFileSystem(armTemplate []byte, fileName string) (e
 	err = ioutil.WriteFile(fileName, armTemplate, 0666)
 
 	if err != nil {
-		fmt.Println("Error writing file: ", err)
+		log.Fatal("Error writing file: ", err)
 	}
 
-	fmt.Println("AWS ARM template stored to file system: ", fileName)
+	log.Info("AWS ARM template stored to file system: ", fileName)
 
 	return nil
 }
