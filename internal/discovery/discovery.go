@@ -2,8 +2,6 @@ package discovery
 
 import (
 	"context"
-	"encoding/json"
-	"io/ioutil"
 
 	log "github.com/sirupsen/logrus"
 
@@ -44,9 +42,9 @@ func (a *App) AuthorizeAzure() (err error) {
 	return err
 }
 
-// ExportArmTemplate exports Azure ARM template from Azure.
-func (a App) ExportArmTemplate() (result resources.GroupExportResult, err error) {
-	log.Info("Export ARM template...")
+// DiscoverIacTemplate exports the Azure ARM template from Azure.
+func (a App) DiscoverIacTemplate() (result resources.GroupExportResult, err error) {
+	log.Info("Export IaC template...")
 	client := resources.NewGroupsClient(viper.GetString(SubscriptionIDFlag))
 	client.Authorizer = a.auth
 
@@ -60,39 +58,9 @@ func (a App) ExportArmTemplate() (result resources.GroupExportResult, err error)
 	result, err = client.ExportTemplate(context.Background(), viper.GetString(ResourceGroupFlag), expReq)
 
 	if err != nil {
-		log.Error("Error exporting ARM template: ", err)
+		log.Error("Error exporting IaC template: ", err)
 		return result, err
 	}
 
 	return result, err
-}
-
-// PrepareArmExport prepares Azure ARM template for saving at file system.
-func (a App) PrepareArmExport(armTemplate interface{}) (prepatedArmTemplate []byte, err error) {
-
-	prefix, indent := "", "    "
-	prepatedArmTemplate, err = json.MarshalIndent(armTemplate, prefix, indent)
-	if err != nil {
-		log.Error("MarshalIndent failed: ", err)
-		return nil, err
-	}
-
-	return prepatedArmTemplate, nil
-}
-
-// SaveArmTemplateToFileSystem saves Azure ARM template at file system.
-func (a App) SaveArmTemplateToFileSystem(armTemplate []byte, fileName string) (err error) {
-	// TODO
-	// fileTemplate := "./resources/inputs/%s-template.json"
-	// fileName := fmt.Sprintf(fileTemplate, viper.GetString(ResourceGroupFlag))
-
-	err = ioutil.WriteFile(fileName, armTemplate, 0666)
-
-	if err != nil {
-		log.Fatal("Error writing file: ", err)
-	}
-
-	log.Info("AWS ARM template stored to file system: ", fileName)
-
-	return nil
 }

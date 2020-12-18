@@ -59,7 +59,7 @@ networkinterfaces_with_disabled_DDoS_protection[network_interfaces] {
 	input.template.resources[i].type == "Microsoft.Network/networkInterfaces"
  	contains(
     	input.template.resources[i].dependsOn[_], 
-        virtualnetworks(input.template.resources[i].name)
+        virtualnetworks[_]
         )
 
     network_interfaces := trim(input.template.resources[i].name, "[*]")
@@ -68,7 +68,7 @@ networkinterfaces_with_disabled_DDoS_protection[network_interfaces] {
 
 # helper policy
 # Get virtualnetwork with disabled DDoS protection
-virtualnetworks(networkinterface_name) = virtualnetwork_name {
+virtualnetworks[virtualnetwork_name] {
 	input.template.resources[i].type == "Microsoft.Network/virtualNetworks"
     input.template.resources[i].properties.enableDdosProtection == false
     
