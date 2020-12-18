@@ -1,9 +1,9 @@
 # continuous-risk-assessment
 Prototype for continuous risk assessment
 
-##Usage
-Discovery and assessment `go run cmd/main.go`
-Assessment with IaC template from filesystem `go run cmd/main.go -p <filepath>`
+## Usage
+- Discovery and assessment `go run cmd/main.go`
+- Assessment with IaC template from filesystem `go run cmd/main.go -p <filepath>`
 
 Next steps:
 - Define formalization of threat profiles and the "APIs" of the policy engine and other components
