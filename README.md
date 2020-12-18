@@ -1,30 +1,9 @@
 # continuous-risk-assessment
 Prototype for continuous risk assessment
 
-Threat Profiles:
-- "Microsoft.Network/networkSecurityGroups"
-  - Number of open ports? -> Kann das helfen?
-
-- "Microsoft.Network/networkSecurityGroups/securityRules"
-  - set "sourceAddressPrefixes" 
-
-- "Microsoft.Network/virtualNetworks"
-  - ~~"enableDdosProtection"~~
-  - "enableVmProtection"
-
-- ~~"Microsoft.Storage/storageAccounts"~~
-  - ~~encryption (Oder sind die eh immer verschlüsselt?)~~
-  - ~~"networkAcls"/"ipRules" ~~
-
-- "Microsoft.Storage/storageAccounts/blobServices/containers"
-  - "publicAccess"
-
-Tasks:
-- ~~Retrieve ARM templates https://docs.microsoft.com/en-us/rest/api/resources/resourcegroups/exporttemplate~~
-- ~~Integrate OPA/Rego https://www.openpolicyagent.org/docs/latest/integration/~~
-- ~~Reconstruct attack trees from Rego output: https://play.openpolicyagent.org/p/eZF4hFltsX~~
-- ~~Identify the maximum threat level for one attack tree: https://play.openpolicyagent.org/p/InDrHI6jJy~~
-- ~~Impact and threat values are specified in the Data document~~
+##Usage
+Discovery and assessment `go run cmd/main.go`
+Assessment with IaC template from filesystem `go run cmd/main.go -p <filepath>`
 
 Next steps:
 - Define formalization of threat profiles and the "APIs" of the policy engine and other components
