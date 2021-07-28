@@ -1,6 +1,8 @@
 # continuous-risk-assessment
 Prototype for continuous risk assessment
 
+IMPORTANT: This branch only contains code for the risk assessment based on the ontology-based template. 
+
 ## Usage
 - Discovery and assessment `go run cmd/main.go`
 - Assessment with IaC template from filesystem `go run cmd/main.go -p <filepath>`

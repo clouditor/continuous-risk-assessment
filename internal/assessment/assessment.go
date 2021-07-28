@@ -19,6 +19,12 @@ func IdentifyThreatsFromIacTemplate(threatProfileDir string, input interface{}) 
 		rego.Load([]string{threatProfileDir}, nil),
 	).PrepareForEval(ctx)
 
+	if err != nil {
+		log.Error("Prepare for evaluation error: ", err)
+		log.Fatal(err)
+		return nil
+	}
+
 	results, err = r.Eval(ctx, rego.EvalInput(input))
 
 	if err != nil {

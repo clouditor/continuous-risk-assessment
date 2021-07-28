@@ -2,7 +2,6 @@ package assessment
 
 import (
 	"encoding/json"
-	"errors"
 	"io/ioutil"
 	"os"
 	"strings"
@@ -21,19 +20,19 @@ const (
 	envPrefix = "CLOUDITOR"
 
 	// Filename for IaC template
-	iacTemplateOutputFilename string = "./resources/outputs/arm_template.json"
+	//iacTemplateOutputFilename string = "./resources/outputs/arm_template.json"
 
 	// Filenames for threat identification
-	threatProfileDir      string = "./resources/threatprofiles/use_case_policy.rego"
-	threatsOutputFilename string = "./resources/outputs/threats.json"
+	threatProfileDir      string = "../resources/threatprofiles/use_case_policy_ontology.rego"
+	threatsOutputFilename string = "../resources/outputs/threats.json"
 
 	// Filenames for attack tree reconstruction
-	reconstructAttackTreesProfileDir       string = "./resources/reconstruction/"
-	attackTreeReconstructionOutputFilename string = "./resources/outputs/momentary_attacktree.json"
+	reconstructAttackTreesProfileDir       string = "../resources/reconstruction/"
+	attackTreeReconstructionOutputFilename string = "../resources/outputs/momentary_attacktree.json"
 
 	// Filenames for risk score calculation
-	riskScoreProfileDir     string = "./resources/threatlevels/"
-	riskScoreOutputFilename string = "./resources/outputs/threatlevels.json"
+	riskScoreProfileDir     string = "../resources/threatlevels/"
+	riskScoreOutputFilename string = "../resources/outputs/threatlevels.json"
 )
 
 func init() {
@@ -62,45 +61,48 @@ func initConfig() {
 	viper.SetConfigType("yaml")
 	viper.AddConfigPath(".")
 
-	err := viper.ReadInConfig()
-	if err != nil {
-		log.Errorf("Could not read config: %s", err)
-	}
+	// err := viper.ReadInConfig()
+	// if err != nil {
+	// 	log.Errorf("Could not read config: %s", err)
+	// }
 }
 
 func doCmd(cmd *cobra.Command, args []string) (err error) {
-	if viper.GetString(discovery.SubscriptionIDFlag) == "" {
-		return errors.New("Subscription ID is not set")
-	}
+	// if viper.GetString(discovery.SubscriptionIDFlag) == "" {
+	// 	return errors.New("subscription ID is not set")
+	// }
 
 	log.Info("Discovering...")
 	templatePath, _ := cmd.Flags().GetString("path")
 
-	app := &discovery.App{}
-	if err = app.AuthorizeAzure(); err != nil {
-		return err
-	}
+	// // Not necessary if we are using the ontology-based template file instead of the IaC template
+	// app := &discovery.App{}
+	// if err = app.AuthorizeAzure(); err != nil {
+	// 	return err
+	// }
 
 	// Discover IaC template
 	var iacTemplate interface{}
 
 	// Check if IaC template path is given
+	// IMPORTANT In this branch no Azure template discovery is possible, since the risk assessment needs the ontology-based template.
 	if templatePath != "" {
 		log.Info("Get IaC template from file system: ", templatePath)
 		iacTemplate = readFromFilesystem(templatePath)
-	} else {
-		log.Info("Discover IaC template from Azure.")
-		iacTemplate, err = app.DiscoverIacTemplate()
-		if err != nil {
-			return err
-		}
-
-		filepath := getFilepathDate(iacTemplateOutputFilename)
-
-		if err = saveToFilesystem(filepath, iacTemplate); err != nil {
-			return err
-		}
 	}
+	// else {
+	// 	log.Info("Discover IaC template from Azure.")
+	// 	iacTemplate, err = app.DiscoverIacTemplate()
+	// 	if err != nil {
+	// 		return err
+	// 	}
+
+	// 	filepath := getFilepathDate(iacTemplateOutputFilename)
+
+	// 	if err = saveToFilesystem(filepath, iacTemplate); err != nil {
+	// 		return err
+	// 	}
+	// }
 
 	// Risk Assessment
 	log.Info("Risk Assesment...")
