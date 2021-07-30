@@ -16,20 +16,12 @@ storageaccount_nohttps[storageaccount_names] {
     storageaccount_names := input.result[i].name
 }
 
-## helper function
-#get_default_names(resource_names) = resource_default_names{    
-#    resource_default_names := input.template.parameters[i]["defaultValue"]
-#    resource_names == i
-#}
-
-
+# Not yet implemented in ontology discovery
 #storageaccount_confidentiality_accessViaPublicLink[storageaccount_names] {
-#    input.template.resources[i].type == "Microsoft.Storage/storageAccounts"
+#    input.result[i].type[0] == "ObjectStorage"
 #    input.template.resources[i].properties.allowBlobPublicAccess == true
-#
-#    storageaccount_names := get_default_names(split(input.template.resources[i].name, "'")[1])
 #}
-#
+
 #virtualmachine_availability_performDoSViaSSH[vms] {
 #    contains(
 #        vms_and_interfaces[_].interface_ids,
@@ -99,8 +91,13 @@ storageaccount_nohttps[storageaccount_names] {
 #    
 #    nsgs22 := trim(input.template.resources[i].name, "[*]")
 #}
-
-
+#
+## helper function
+#get_default_names(resource_names) = resource_default_names{    
+#    resource_default_names := input.template.parameters[i]["defaultValue"]
+#    resource_names == i
+#}
+#
 ## helper policy
 #functionapps_with_access_to_storageaccount[app_names] {
 #    input.template.resources[j].type == "Microsoft.Web/sites"
