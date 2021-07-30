@@ -9,6 +9,7 @@ import (
 	"strings"
 	"time"
 
+	"github.com/Azure/azure-sdk-for-go/services/resources/mgmt/2019-05-01/resources"
 	log "github.com/sirupsen/logrus"
 
 	"clouditor.io/riskAssessment/internal/assessment"
@@ -24,6 +25,9 @@ var (
 
 	// Filename for IaC template
 	iacTemplateOutputFilename string = "resources/outputs/arm_template.json"
+
+	// Filename for ontology resource template
+	ontologyResourceTemplateOutputFilename string = "resources/outputs/ontology_resource_template.json"
 
 	// Filenames for threat identification
 	// threatProfileDir      string = "resources/threatprofiles/use_case_policy_ontology.rego"
@@ -90,9 +94,9 @@ func doCmd(cmd *cobra.Command, args []string) (err error) {
 
 	// Discover IaC template
 	var iacTemplate interface{}
+	// var iacTemplate resources.GroupExportResult
 
 	// Check if IaC template path is given
-	// IMPORTANT In this branch no Azure template discovery is possible, since the risk assessment needs the ontology-based template.
 	if templatePath != "" {
 		log.Info("Get IaC template from file system: ", templatePath)
 		iacTemplate = readFromFilesystem(templatePath)
@@ -108,6 +112,28 @@ func doCmd(cmd *cobra.Command, args []string) (err error) {
 		if err = saveToFilesystem(filepath, iacTemplate); err != nil {
 			return err
 		}
+	}
+
+	// Create ontology-based resource template from IaC template
+	log.Info("Create ontology-based resource template from IaC template")
+	template, ok := iacTemplate.(resources.GroupExportResult).Template.(map[string]interface{})
+	if !ok {
+		return fmt.Errorf("IaC template type convertion failed")
+	}
+	//template, ok := template1.Template.(map[string]interface{}) //iacTemplate.Template.(map[string]interface{})
+	// if !ok {
+	// 	return fmt.Errorf("IaC template type convertion failed")
+	// }
+
+	ontologyTemplate, err := app.CreateOntologyTemplate(template)
+	if err != nil {
+		return fmt.Errorf("creating ontology template failed: %w", err)
+	}
+
+	filepath := getFilepathDate(ontologyResourceTemplateOutputFilename)
+
+	if err = saveToFilesystem(filepath, ontologyTemplate); err != nil {
+		return err
 	}
 
 	// Risk Assessment
@@ -151,6 +177,7 @@ var AssessmentCmd = &cobra.Command{
 	RunE:  doCmd,
 }
 
+// TODO fix, depending on the start path, the pathes are not correct. For now it is checked if the program starts in cmd folder, otherwise it has to start from root folder
 func checkPathes() {
 	pathcwd, err := os.Getwd()
 	if err != nil {
@@ -167,8 +194,7 @@ func checkPathes() {
 		attackTreeReconstructionOutputFilename = "../" + attackTreeReconstructionOutputFilename
 		riskScoreProfileDir = "../" + riskScoreProfileDir
 		riskScoreOutputFilename = "../" + riskScoreOutputFilename
-		// path = "../" + path
-		// fmt.Println("Path new: ", path)
+		ontologyResourceTemplateOutputFilename = "../" + ontologyResourceTemplateOutputFilename
 	}
 }
 
