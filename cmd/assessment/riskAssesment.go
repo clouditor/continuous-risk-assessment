@@ -30,17 +30,20 @@ var (
 	ontologyResourceTemplateOutputFilename string = "resources/outputs/ontology_resource_template.json"
 
 	// Filenames for threat identification
-	// threatProfileDir      string = "resources/threatprofiles/use_case_policy_ontology.rego"
-	threatProfileDir      string = "resources/threatprofiles/use_case_policy.rego"
-	threatsOutputFilename string = "resources/outputs/threats.json"
+	threatProfileOntologyDir      string = "resources/threatprofiles/use_case_policy_ontology.rego"
+	threatProfileDir              string = "resources/threatprofiles/use_case_policy.rego"
+	threatsOntologyOutputFilename string = "resources/outputs/threats_ontology.json"
+	threatsOutputFilename         string = "resources/outputs/threats.json"
 
 	// Filenames for attack tree reconstruction
-	reconstructAttackTreesProfileDir       string = "resources/reconstruction/"
-	attackTreeReconstructionOutputFilename string = "resources/outputs/momentary_attacktree.json"
+	reconstructAttackTreesProfileDir               string = "resources/reconstruction/"
+	attackTreeReconstructionOutputFilename         string = "resources/outputs/momentary_attacktree.json"
+	attackTreeReconstructionOntologyOutputFilename string = "resources/outputs/momentary_attacktree_ontology.json"
 
 	// Filenames for risk score calculation
-	riskScoreProfileDir     string = "resources/threatlevels/"
-	riskScoreOutputFilename string = "resources/outputs/threatlevels.json"
+	riskScoreProfileDir             string = "resources/threatlevels/"
+	riskScoreOutputFilename         string = "resources/outputs/threatlevels.json"
+	riskScoreOntologyOutputFilename string = "resources/outputs/threatlevels_ontology.json"
 )
 
 func init() {
@@ -120,10 +123,6 @@ func doCmd(cmd *cobra.Command, args []string) (err error) {
 	if !ok {
 		return fmt.Errorf("IaC template type convertion failed")
 	}
-	//template, ok := template1.Template.(map[string]interface{}) //iacTemplate.Template.(map[string]interface{})
-	// if !ok {
-	// 	return fmt.Errorf("IaC template type convertion failed")
-	// }
 
 	ontologyTemplate, err := app.CreateOntologyTemplate(template)
 	if err != nil {
@@ -136,8 +135,8 @@ func doCmd(cmd *cobra.Command, args []string) (err error) {
 		return err
 	}
 
-	// Risk Assessment
-	log.Info("Risk Assesment...")
+	// Risk Assessment based on IaC Template
+	log.Info("Risk Assesment based on IaC Template ...")
 
 	// Identify threats
 	identifiedThreats := assessment.IdentifyThreatsFromIacTemplate(threatProfileDir, iacTemplate)
@@ -165,6 +164,37 @@ func doCmd(cmd *cobra.Command, args []string) (err error) {
 	}
 
 	saveToFilesystem(riskScoreOutputFilename, threatLevels)
+
+	// Risk Assessment based on Ontology Template
+	log.Info("Risk Assesment based on Ontology Template ...")
+
+	iacTemplate = template
+	// Identify threats
+	identifiedThreats = assessment.IdentifyThreatsFromIacTemplate(threatProfileOntologyDir, iacTemplate)
+
+	if identifiedThreats == nil {
+		return os.ErrInvalid
+	}
+
+	saveToFilesystem(threatsOntologyOutputFilename, identifiedThreats)
+
+	// Reconstruct attack paths, i.e. identify all attack paths per asset
+	attacktreeReconstruction = assessment.ReconstructAttackTrees(reconstructAttackTreesProfileDir, identifiedThreats)
+
+	if attacktreeReconstruction == nil {
+		log.Info("Attack tree reconstruction result is nil.")
+	}
+
+	saveToFilesystem(attackTreeReconstructionOntologyOutputFilename, attacktreeReconstruction)
+
+	// Calculate risk scores per asset/protection goal
+	threatLevels = assessment.CalculateRiskScores(riskScoreProfileDir, identifiedThreats)
+
+	if threatLevels == nil {
+		log.Info("Identifying threat level result is nil.")
+	}
+
+	saveToFilesystem(riskScoreOntologyOutputFilename, threatLevels)
 
 	return nil
 }
@@ -195,6 +225,10 @@ func checkPathes() {
 		riskScoreProfileDir = "../" + riskScoreProfileDir
 		riskScoreOutputFilename = "../" + riskScoreOutputFilename
 		ontologyResourceTemplateOutputFilename = "../" + ontologyResourceTemplateOutputFilename
+		threatProfileOntologyDir = "../" + threatProfileOntologyDir
+		threatsOntologyOutputFilename = "../" + threatsOntologyOutputFilename
+		attackTreeReconstructionOntologyOutputFilename = "../" + attackTreeReconstructionOntologyOutputFilename
+		riskScoreOntologyOutputFilename = "../" + riskScoreOntologyOutputFilename
 	}
 }
 
