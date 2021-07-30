@@ -1,5 +1,16 @@
 package discovery
 
+import (
+	"context"
+
+	"github.com/Azure/azure-sdk-for-go/services/resources/mgmt/2018-02-01/resources"
+	// "github.com/Azure/azure-sdk-for-go/profiles/latest/resources/mgmt/resources"
+	"github.com/Azure/go-autorest/autorest"
+	"github.com/Azure/go-autorest/autorest/azure/auth"
+	log "github.com/sirupsen/logrus"
+	"github.com/spf13/viper"
+)
+
 // const exported for other Azure specific functions
 const (
 	SubscriptionIDFlag = "subscriptionID"
@@ -12,44 +23,44 @@ const (
 
 // App Creating a new type "App" containing authorize information.
 type App struct {
-	// auth autorest.Authorizer
+	auth autorest.Authorizer
 }
 
-// // AuthorizeAzure takes care of the azure authorization.
-// func (a *App) AuthorizeAzure() (err error) {
-// 	tenantID := viper.GetString(AppTenantIDFlag)
-// 	clientID := viper.GetString(AppClientIDFlag)
-// 	clientSecret := viper.GetString(AppClientSecretFlag)
+// AuthorizeAzure takes care of the azure authorization.
+func (a *App) AuthorizeAzure() (err error) {
+	tenantID := viper.GetString(AppTenantIDFlag)
+	clientID := viper.GetString(AppClientIDFlag)
+	clientSecret := viper.GetString(AppClientSecretFlag)
 
-// 	if tenantID == "" || clientID == "" || clientSecret == "" {
-// 		// fall back to env authorizer
-// 		a.auth, err = auth.NewAuthorizerFromEnvironment()
-// 	} else {
-// 		a.auth, err = auth.NewClientCredentialsConfig(clientID, clientSecret, tenantID).Authorizer()
-// 	}
+	if tenantID == "" || clientID == "" || clientSecret == "" {
+		// fall back to env authorizer
+		a.auth, err = auth.NewAuthorizerFromEnvironment()
+	} else {
+		a.auth, err = auth.NewClientCredentialsConfig(clientID, clientSecret, tenantID).Authorizer()
+	}
 
-// 	return err
-// }
+	return err
+}
 
-// // DiscoverIacTemplate exports the Azure ARM template from Azure.
-// func (a App) DiscoverIacTemplate() (result resources.GroupExportResult, err error) {
-// 	log.Info("Export IaC template...")
-// 	client := resources.NewGroupsClient(viper.GetString(SubscriptionIDFlag))
-// 	client.Authorizer = a.auth
+// DiscoverIacTemplate exports the Azure ARM template from Azure.
+func (a App) DiscoverIacTemplate() (result resources.GroupExportResult, err error) {
+	log.Info("Export IaC template...")
+	client := resources.NewGroupsClient(viper.GetString(SubscriptionIDFlag))
+	client.Authorizer = a.auth
 
-// 	exportTemplateOption := "IncludeParameterDefaultValue"
+	exportTemplateOption := "IncludeParameterDefaultValue"
 
-// 	expReq := resources.ExportTemplateRequest{
-// 		ResourcesProperty: &[]string{"*"},
-// 		Options:           &exportTemplateOption,
-// 	}
+	expReq := resources.ExportTemplateRequest{
+		ResourcesProperty: &[]string{"*"},
+		Options:           &exportTemplateOption,
+	}
 
-// 	result, err = client.ExportTemplate(context.Background(), viper.GetString(ResourceGroupFlag), expReq)
+	result, err = client.ExportTemplate(context.Background(), viper.GetString(ResourceGroupFlag), expReq)
 
-// 	if err != nil {
-// 		log.Error("Error exporting IaC template: ", err)
-// 		return result, err
-// 	}
+	if err != nil {
+		log.Error("Error exporting IaC template: ", err)
+		return result, err
+	}
 
-// 	return result, err
-// }
+	return result, err
+}
