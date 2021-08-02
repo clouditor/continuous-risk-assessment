@@ -13,6 +13,7 @@ import (
 	log "github.com/sirupsen/logrus"
 
 	"clouditor.io/riskAssessment/internal/assessment"
+	"clouditor.io/riskAssessment/internal/ontology"
 
 	"clouditor.io/riskAssessment/internal/discovery"
 	"github.com/spf13/cobra"
@@ -45,6 +46,10 @@ var (
 	riskScoreOutputFilename         string = "resources/outputs/threatlevels.json"
 	riskScoreOntologyOutputFilename string = "resources/outputs/threatlevels_ontology.json"
 )
+
+type ResultOntology struct {
+	Result []ontology.IsCloudResource `json:"result"`
+}
 
 func init() {
 	cobra.OnInitialize(initConfig)
@@ -129,9 +134,13 @@ func doCmd(cmd *cobra.Command, args []string) (err error) {
 		return fmt.Errorf("creating ontology template failed: %w", err)
 	}
 
+	ontologyTemplateResult := ResultOntology{
+		Result: ontologyTemplate,
+	}
+
 	filepath := getFilepathDate(ontologyResourceTemplateOutputFilename)
 
-	if err = saveToFilesystem(filepath, ontologyTemplate); err != nil {
+	if err = saveToFilesystem(filepath, ontologyTemplateResult); err != nil {
 		return err
 	}
 
@@ -168,7 +177,7 @@ func doCmd(cmd *cobra.Command, args []string) (err error) {
 	// Risk Assessment based on Ontology Template
 	log.Info("Risk Assesment based on Ontology Template ...")
 
-	iacTemplate = template
+	iacTemplate = ontologyTemplateResult
 	// Identify threats
 	identifiedThreats = assessment.IdentifyThreatsFromIacTemplate(threatProfileOntologyDir, iacTemplate)
 
