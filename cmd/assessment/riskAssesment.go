@@ -66,7 +66,8 @@ func init() {
 	viper.BindPFlag(discovery.AppClientIDFlag, AssessmentCmd.Flags().Lookup(discovery.AppClientIDFlag))
 	viper.BindPFlag(discovery.AppClientSecretFlag, AssessmentCmd.Flags().Lookup(discovery.AppClientSecretFlag))
 
-	AssessmentCmd.Flags().StringP("path", "p", "", "IaC template path (currently only ARM templates are usable)")
+	AssessmentCmd.Flags().StringP("templatePath", "t", "", "IaC template path (currently only ARM templates are usable)")
+	AssessmentCmd.Flags().StringP("ontologyPath", "o", "", "Ontology template path")
 }
 
 func initConfig() {
@@ -84,126 +85,51 @@ func initConfig() {
 }
 
 func doCmd(cmd *cobra.Command, args []string) (err error) {
+	var (
+		iacTemplateResult      interface{}
+		ontologyTemplateResult interface{}
+	)
+
 	if viper.GetString(discovery.SubscriptionIDFlag) == "" {
 		return errors.New("subscription ID is not set")
 	}
 
-	// Check pathes
-	checkPathes()
-
 	log.Info("Discovering...")
-	templatePath, _ := cmd.Flags().GetString("path")
+	iacTemplatePath, _ := cmd.Flags().GetString("templatePath")
+	ontologyTemplatePath, _ := cmd.Flags().GetString("ontologyPath")
 
-	// Not necessary if we are using the ontology-based template file instead of the IaC template
 	app := &discovery.App{}
 	if err = app.AuthorizeAzure(); err != nil {
 		return err
 	}
 
-	// Discover IaC template
-	var iacTemplate interface{}
-	// var iacTemplate resources.GroupExportResult
-
-	// Check if IaC template path is given
-	if templatePath != "" {
-		log.Info("Get IaC template from file system: ", templatePath)
-		iacTemplate = readFromFilesystem(templatePath)
-	} else {
-		log.Info("Discover IaC template from Azure.")
-		iacTemplate, err = app.DiscoverIacTemplate()
-		if err != nil {
-			return err
-		}
-
-		filepath := getFilepathDate(iacTemplateOutputFilename)
-
-		if err = saveToFilesystem(filepath, iacTemplate); err != nil {
-			return err
-		}
-	}
-
-	// Create ontology-based resource template from IaC template
-	log.Info("Create ontology-based resource template from IaC template")
-	template, ok := iacTemplate.(resources.GroupExportResult).Template.(map[string]interface{})
-	if !ok {
-		return fmt.Errorf("IaC template type convertion failed")
-	}
-
-	ontologyTemplate, err := app.CreateOntologyTemplate(template)
+	// Get IaC template
+	iacTemplateResult, err = getIacTemplate(app, iacTemplatePath)
 	if err != nil {
-		return fmt.Errorf("creating ontology template failed: %w", err)
+		return fmt.Errorf("getting IaC template failed: %w", err)
 	}
 
-	ontologyTemplateResult := ResultOntology{
-		Result: ontologyTemplate,
+	// Get ontology template
+	ontologyTemplateResult, err = getOntologyTemplate(app, ontologyTemplatePath, iacTemplateResult)
+	if err != nil {
+		return fmt.Errorf("getting IaC template failed: %w", err)
 	}
 
-	filepath := getFilepathDate(ontologyResourceTemplateOutputFilename)
-
-	if err = saveToFilesystem(filepath, ontologyTemplateResult); err != nil {
-		return err
-	}
-
+	// TODO merge the two risk assessment methods
 	// Risk Assessment based on IaC Template
 	log.Info("Risk Assesment based on IaC Template ...")
-
-	// Identify threats
-	identifiedThreats := assessment.IdentifyThreatsFromIacTemplate(threatProfileDir, iacTemplate)
-
-	if identifiedThreats == nil {
-		return os.ErrInvalid
+	err = riskAssessmentIacTemplate(iacTemplateResult)
+	if err != nil {
+		return fmt.Errorf("risk assessment of iac template failed: %w", err)
 	}
-
-	saveToFilesystem(threatsOutputFilename, identifiedThreats)
-
-	// Reconstruct attack paths, i.e. identify all attack paths per asset
-	attacktreeReconstruction := assessment.ReconstructAttackTrees(reconstructAttackTreesProfileDir, identifiedThreats)
-
-	if attacktreeReconstruction == nil {
-		log.Info("Attack tree reconstruction result is nil.")
-	}
-
-	saveToFilesystem(attackTreeReconstructionOutputFilename, attacktreeReconstruction)
-
-	// Calculate risk scores per asset/protection goal
-	threatLevels := assessment.CalculateRiskScores(riskScoreProfileDir, identifiedThreats)
-
-	if threatLevels == nil {
-		log.Info("Identifying threat level result is nil.")
-	}
-
-	saveToFilesystem(riskScoreOutputFilename, threatLevels)
 
 	// Risk Assessment based on Ontology Template
 	log.Info("Risk Assesment based on Ontology Template ...")
 
-	iacTemplate = ontologyTemplateResult
-	// Identify threats
-	identifiedThreats = assessment.IdentifyThreatsFromIacTemplate(threatProfileOntologyDir, iacTemplate)
-
-	if identifiedThreats == nil {
-		return os.ErrInvalid
+	err = riskAssessmentOntologyTemplate(ontologyTemplateResult)
+	if err != nil {
+		return fmt.Errorf("risk assessment of ontology template failed: %w", err)
 	}
-
-	saveToFilesystem(threatsOntologyOutputFilename, identifiedThreats)
-
-	// Reconstruct attack paths, i.e. identify all attack paths per asset
-	attacktreeReconstruction = assessment.ReconstructAttackTrees(reconstructAttackTreesProfileDir, identifiedThreats)
-
-	if attacktreeReconstruction == nil {
-		log.Info("Attack tree reconstruction result is nil.")
-	}
-
-	saveToFilesystem(attackTreeReconstructionOntologyOutputFilename, attacktreeReconstruction)
-
-	// Calculate risk scores per asset/protection goal
-	threatLevels = assessment.CalculateRiskScores(riskScoreProfileDir, identifiedThreats)
-
-	if threatLevels == nil {
-		log.Info("Identifying threat level result is nil.")
-	}
-
-	saveToFilesystem(riskScoreOntologyOutputFilename, threatLevels)
 
 	return nil
 }
@@ -214,31 +140,6 @@ var AssessmentCmd = &cobra.Command{
 	Short: "Continuous risk assessment for Azure",
 	Long:  "riskAssessment is a automated continuous risk assessment for the customer cloud environment and consists of the Azure Cloud Discovery to obtain the IaC template and the Assessment for identifying threats, calculating risk scores and reconstructing attack trees. Currently, the assessment is only available for the Azure Cloud.",
 	RunE:  doCmd,
-}
-
-// TODO fix, depending on the start path, the pathes are not correct. For now it is checked if the program starts in cmd folder, otherwise it has to start from root folder
-func checkPathes() {
-	pathcwd, err := os.Getwd()
-	if err != nil {
-		log.Println(err)
-	}
-	fmt.Println(pathcwd)
-	pathcwdSplit := strings.Split(pathcwd, "/")
-
-	if (pathcwdSplit[len(pathcwdSplit)-1]) == "cmd" {
-		iacTemplateOutputFilename = "../" + iacTemplateOutputFilename
-		threatProfileDir = "../" + threatProfileDir
-		threatsOutputFilename = "../" + threatsOutputFilename
-		reconstructAttackTreesProfileDir = "../" + reconstructAttackTreesProfileDir
-		attackTreeReconstructionOutputFilename = "../" + attackTreeReconstructionOutputFilename
-		riskScoreProfileDir = "../" + riskScoreProfileDir
-		riskScoreOutputFilename = "../" + riskScoreOutputFilename
-		ontologyResourceTemplateOutputFilename = "../" + ontologyResourceTemplateOutputFilename
-		threatProfileOntologyDir = "../" + threatProfileOntologyDir
-		threatsOntologyOutputFilename = "../" + threatsOntologyOutputFilename
-		attackTreeReconstructionOntologyOutputFilename = "../" + attackTreeReconstructionOntologyOutputFilename
-		riskScoreOntologyOutputFilename = "../" + riskScoreOntologyOutputFilename
-	}
 }
 
 // getFilepathDate adds current date to the filename
@@ -284,6 +185,166 @@ func saveToFilesystem(path string, data interface{}) (err error) {
 	}
 
 	log.Info("Saved data to ", path)
+
+	return nil
+}
+
+func getIacTemplate(app *discovery.App, iacTemplatePath string) (interface{}, error) {
+
+	var (
+		iacTemplate interface{}
+		err         error
+	)
+
+	// Check if filepath is available
+	if iacTemplatePath != "" {
+		log.Info("Get IaC template from file system: ", iacTemplatePath)
+		iacTemplate = readFromFilesystem(iacTemplatePath)
+	} else {
+		log.Info("Discover IaC template from Azure.")
+		iacTemplate, err = app.DiscoverIacTemplate()
+		if err != nil {
+			return nil, err
+		}
+
+		filepath := getFilepathDate(iacTemplateOutputFilename)
+
+		if err = saveToFilesystem(filepath, iacTemplate); err != nil {
+			return nil, err
+		}
+	}
+
+	return iacTemplate, nil
+}
+
+func getOntologyTemplate(app *discovery.App, ontologyTemplatePath string, iacTemplate interface{}) (interface{}, error) {
+
+	var (
+		ontologyTemplateResult interface{}
+		template               map[string]interface{}
+		ok                     bool
+	)
+
+	// Check if filepath is available
+	if ontologyTemplatePath != "" {
+		log.Info("Get ontology template from file system: ", ontologyTemplatePath)
+		ontologyTemplateResult = readFromFilesystem(ontologyTemplatePath)
+	} else {
+
+		// Create ontology-based resource template from IaC template
+		log.Info("Create ontology-based resource template from IaC template")
+
+		// Check if iacTemplate is of type interface{} or resources.GroupExportResult. If iacTemplate is discovered from Azure it is of type resources.GroupExportResult, otherwise it it is read from filesystem it is of type interface{}
+		switch iacTemplate.(type) {
+		case map[string]interface{}:
+			iacResult, ok := iacTemplate.(map[string]interface{})
+			if !ok {
+				return nil, fmt.Errorf("IaC template type convertion failed")
+			}
+			template = iacResult["template"].(map[string]interface{})
+
+		case interface{}:
+			template, ok = iacTemplate.(resources.GroupExportResult).Template.(map[string]interface{})
+			if !ok {
+				return nil, fmt.Errorf("IaC template type convertion failed")
+			}
+
+		}
+
+		ontologyTemplate, err := app.CreateOntologyTemplate(template)
+		if err != nil {
+			return nil, fmt.Errorf("creating ontology template failed: %w", err)
+		}
+
+		ontologyTemplateResult = ResultOntology{
+			Result: ontologyTemplate,
+		}
+
+		filepath := getFilepathDate(ontologyResourceTemplateOutputFilename)
+
+		if err = saveToFilesystem(filepath, ontologyTemplateResult); err != nil {
+			return nil, err
+		}
+	}
+
+	return ontologyTemplateResult, nil
+}
+
+func riskAssessmentIacTemplate(iacTemplateResult interface{}) error {
+	// Identify threats
+	identifiedThreats := assessment.IdentifyThreatsFromIacTemplate(threatProfileDir, iacTemplateResult)
+
+	if identifiedThreats == nil {
+		return os.ErrInvalid
+	}
+
+	err := saveToFilesystem(threatsOutputFilename, identifiedThreats)
+	if err != nil {
+		return fmt.Errorf("saving threats to filesystem failed: %w", err)
+	}
+
+	// Reconstruct attack paths, i.e. identify all attack paths per asset
+	attacktreeReconstruction := assessment.ReconstructAttackTrees(reconstructAttackTreesProfileDir, identifiedThreats)
+
+	if attacktreeReconstruction == nil {
+		log.Info("Attack tree reconstruction result is nil.")
+	}
+
+	err = saveToFilesystem(attackTreeReconstructionOutputFilename, attacktreeReconstruction)
+	if err != nil {
+		return fmt.Errorf("saving attack tree reconstrunction to filesystem failed: %w", err)
+	}
+
+	// Calculate risk scores per asset/protection goal
+	threatLevels := assessment.CalculateRiskScores(riskScoreProfileDir, identifiedThreats)
+
+	if threatLevels == nil {
+		log.Info("Identifying threat level result is nil.")
+	}
+
+	err = saveToFilesystem(riskScoreOutputFilename, threatLevels)
+	if err != nil {
+		return fmt.Errorf("saving risk score to filesystem failed: %w", err)
+	}
+	return nil
+}
+
+func riskAssessmentOntologyTemplate(ontologyTemplateResult interface{}) error {
+	// Identify threats
+	identifiedThreats := assessment.IdentifyThreatsFromIacTemplate(threatProfileOntologyDir, ontologyTemplateResult)
+
+	if identifiedThreats == nil {
+		return os.ErrInvalid
+	}
+
+	err := saveToFilesystem(threatsOntologyOutputFilename, identifiedThreats)
+	if err != nil {
+		return fmt.Errorf("saving threats to filesystem failed: %w", err)
+	}
+
+	// Reconstruct attack paths, i.e. identify all attack paths per asset
+	attacktreeReconstruction := assessment.ReconstructAttackTrees(reconstructAttackTreesProfileDir, identifiedThreats)
+
+	if attacktreeReconstruction == nil {
+		log.Info("Attack tree reconstruction result is nil.")
+	}
+
+	err = saveToFilesystem(attackTreeReconstructionOntologyOutputFilename, attacktreeReconstruction)
+	if err != nil {
+		return fmt.Errorf("saving attack tree reconstrunction to filesystem failed: %w", err)
+	}
+
+	// Calculate risk scores per asset/protection goal
+	threatLevels := assessment.CalculateRiskScores(riskScoreProfileDir, identifiedThreats)
+
+	if threatLevels == nil {
+		log.Info("Identifying threat level result is nil.")
+	}
+
+	err = saveToFilesystem(riskScoreOntologyOutputFilename, threatLevels)
+	if err != nil {
+		return fmt.Errorf("saving risk score to filesystem failed: %w", err)
+	}
 
 	return nil
 }

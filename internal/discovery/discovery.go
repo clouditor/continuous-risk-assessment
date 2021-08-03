@@ -129,7 +129,7 @@ func (a App) CreateOntologyTemplate(iacTemplate interface{}) ([]ontology.IsCloud
 	return list, nil
 }
 
-//TODO fix it, nor always the resourceGroup is returned
+//TODO fix it, not always the resourceGroup is returned
 func (a *App) getResourceGroupName(iacTemplate interface{}, resourceName string) (string, error) {
 	var resourceGroupName string
 
@@ -244,7 +244,6 @@ func (a *App) createLBResource(resourceValue map[string]interface{}, resourceGro
 		},
 		HttpEndpoint: &[]ontology.HttpEndpoint{},
 		// // TODO(all): Do we need the httpEndpoint?
-		// HttpEndpoint: &voc.HttpEndpoint{},
 	}
 
 	return lb, nil
