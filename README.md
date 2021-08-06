@@ -35,6 +35,8 @@ In summary, the following files must be specified:
 
 
 ## Usage
+**Currently, the risk assessment is performed both with the IaC template (discovered or as file given as parameter) and with the ontology-based template (translated from the IaC template or as file given as parameter).**
+
 Currently, most of the needed paths cannot be passed as parameter. The only paths that can be specified as parameters are
 - the Azure IaC template (ARM template) path and
 - the ontology-based template path.
