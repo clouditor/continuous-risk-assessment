@@ -168,7 +168,7 @@ func regoEvaluation(tempAmount int, tpAmount int) {
 	generateComplicatedTemplate(tempAmount)
 	generateThreatProfile(tpAmount)
 
-	ass_internal.IdentifyThreatsFromIacTemplate("testfiles/", "testfiles/template.json")
+	ass_internal.IdentifyThreats("testfiles/", "testfiles/template.json")
 }
 
 func BenchmarkRegoEvaluation(b *testing.B) {
@@ -181,7 +181,7 @@ func BenchmarkRegoEvaluation(b *testing.B) {
 			generateThreatProfile(m)
 			b.Run(fmt.Sprintf("%d/%d", n, m), func(b *testing.B) {
 				for i := 0; i < b.N; i++ {
-					ass_internal.IdentifyThreatsFromIacTemplate("internal/assessment/testfiles/", "internal/assessment/testfiles/template.json")
+					ass_internal.IdentifyThreats("internal/assessment/testfiles/", "internal/assessment/testfiles/template.json")
 				}
 			})
 		}

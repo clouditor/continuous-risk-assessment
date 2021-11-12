@@ -17,7 +17,7 @@ For the first part 2 inputs are needed:
 
 ### Reconstruct attack paths
 This part needs as an input
-- the identified threats (result of the first step) and
+- the identified threats (result of the first step: identify threats) and
 - a further Rego policy that maps all assets to their identified attack paths.
 
 The Rego policy for reconstructing the attack paths must be located in *resources/reconstruction/*.

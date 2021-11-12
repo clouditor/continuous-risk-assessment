@@ -8,8 +8,8 @@ import (
 	"github.com/open-policy-agent/opa/rego"
 )
 
-// IdentifyThreatsFromIacTemplate compares an IaC template to Rego Threat Profiles, and outputs threats and vulnerable resources.
-func IdentifyThreatsFromIacTemplate(threatProfileDir string, input interface{}) (results rego.ResultSet) {
+// IdentifyThreats compares an IaC template to Rego Threat Profiles, and outputs threats and vulnerable resources.
+func IdentifyThreats(threatProfileDir string, input interface{}) (results rego.ResultSet) {
 
 	log.Info("Identify threats...")
 
@@ -38,14 +38,11 @@ func IdentifyThreatsFromIacTemplate(threatProfileDir string, input interface{}) 
 		return nil
 	}
 
-	// log.Info("Result threats")
-	// pretty.Print(results)
-
 	return results
 }
 
-// ReconstructAttackTrees reassembles the output of IdentifyThreatsFromIacTemplate per asset, i.e. indicates the attack paths per asset.
-func ReconstructAttackTrees(reconstructAttackTreesProfileDir string, data rego.ResultSet) (attacktrees rego.ResultSet) {
+// CwReconstruction reassembles the output of IdentifyThreats per asset, i.e. indicates the attack paths per asset.
+func CwReconstruction(reconstructAttackTreesProfileDir string, data rego.ResultSet) (attacktrees rego.ResultSet) {
 
 	log.Info("Reconstruct attack trees...")
 
@@ -59,9 +56,6 @@ func ReconstructAttackTrees(reconstructAttackTreesProfileDir string, data rego.R
 	if err != nil {
 		log.Fatal(err)
 	}
-
-	// log.Info("Result reconstructed attack trees")
-	// pretty.Print(attacktrees)
 
 	return attacktrees
 }
@@ -81,9 +75,6 @@ func CalculateRiskScores(threatLevelsProfileDir string, evaluationResult rego.Re
 	if err != nil {
 		log.Fatal(err)
 	}
-
-	// log.Info("Result highest threat level")
-	// pretty.Print(threatlevels)
 
 	return threatlevels
 }

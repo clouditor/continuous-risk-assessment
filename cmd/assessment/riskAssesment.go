@@ -30,21 +30,21 @@ var (
 	// Filename for ontology resource template
 	ontologyResourceTemplateOutputFilename string = "resources/outputs/ontology_resource_template.json"
 
-	// Filenames for threat identification
+	// Filenames for the threat assessment
 	threatProfileOntologyDir      string = "resources/threatprofiles/use_case_policy_ontology.rego"
 	threatProfileDir              string = "resources/threatprofiles/use_case_policy.rego"
-	threatsOntologyOutputFilename string = "resources/outputs/threats_ontology.json"
-	threatsOutputFilename         string = "resources/outputs/threats.json"
+	cwCloudOutputFilename    string = "resources/outputs/cw_cloud.json"
+	cwOntologyOutputFilename string = "resources/outputs/cw_ontology.json"
 
-	// Filenames for attack tree reconstruction
-	reconstructAttackTreesProfileDir               string = "resources/reconstruction/"
-	attackTreeReconstructionOutputFilename         string = "resources/outputs/momentary_attacktree.json"
-	attackTreeReconstructionOntologyOutputFilename string = "resources/outputs/momentary_attacktree_ontology.json"
+	// Filenames for the mapping of all applicable configuration weaknesses (CW) per asset
+	reconstructAttackTreesProfileDir string = "resources/reconstruction/"
+	cwPerAssetOutputFilename         string = "resources/outputs/cw_per_asset.json"
+	cwPerAssetOntologyOutputFilename string = "resources/outputs/cw_per_asset_ontology.json" //TODO(garuppel): Do we need that?
 
 	// Filenames for risk score calculation
-	riskScoreProfileDir             string = "resources/threatlevels/"
-	riskScoreOutputFilename         string = "resources/outputs/threatlevels.json"
-	riskScoreOntologyOutputFilename string = "resources/outputs/threatlevels_ontology.json"
+	threatLevelsProfileDir          string = "resources/threatlevels/"
+	riskScoreCloudOutputFilename    string = "resources/outputs/risk_scores_cloud.json"
+	riskScoreOntologyOutputFilename string = "resources/outputs/risk_scores_ontology.json"
 )
 
 type ResultOntology struct {
@@ -115,7 +115,7 @@ func doCmd(cmd *cobra.Command, args []string) (err error) {
 		return fmt.Errorf("getting IaC template failed: %w", err)
 	}
 
-	// TODO merge the two risk assessment methods
+	// TODO merge the two risk assessment methods: what should be merged?
 	// Risk Assessment based on IaC Template
 	log.Info("Risk Assesment based on IaC Template ...")
 	err = riskAssessmentIacTemplate(iacTemplateResult)
@@ -270,39 +270,41 @@ func getOntologyTemplate(app *discovery.App, ontologyTemplatePath string, iacTem
 	return ontologyTemplateResult, nil
 }
 
+
+// TODO Can we merge this and the following method? riskAssessmentIaCTemplate/riskAssessmentOntologyTemplate
 func riskAssessmentIacTemplate(iacTemplateResult interface{}) error {
 	// Identify threats
-	identifiedThreats := assessment.IdentifyThreatsFromIacTemplate(threatProfileDir, iacTemplateResult)
+	identifiedThreats := assessment.IdentifyThreats(threatProfileDir, iacTemplateResult)
 
 	if identifiedThreats == nil {
 		return os.ErrInvalid
 	}
 
-	err := saveToFilesystem(threatsOutputFilename, identifiedThreats)
+	err := saveToFilesystem(cwCloudOutputFilename, identifiedThreats)
 	if err != nil {
 		return fmt.Errorf("saving threats to filesystem failed: %w", err)
 	}
 
 	// Reconstruct attack paths, i.e. identify all attack paths per asset
-	attacktreeReconstruction := assessment.ReconstructAttackTrees(reconstructAttackTreesProfileDir, identifiedThreats)
+	cwReconstruction := assessment.CwReconstruction(reconstructAttackTreesProfileDir, identifiedThreats)
 
-	if attacktreeReconstruction == nil {
+	if cwReconstruction == nil {
 		log.Info("Attack tree reconstruction result is nil.")
 	}
 
-	err = saveToFilesystem(attackTreeReconstructionOutputFilename, attacktreeReconstruction)
+	err = saveToFilesystem(cwPerAssetOutputFilename, cwReconstruction)
 	if err != nil {
 		return fmt.Errorf("saving attack tree reconstrunction to filesystem failed: %w", err)
 	}
 
 	// Calculate risk scores per asset/protection goal
-	threatLevels := assessment.CalculateRiskScores(riskScoreProfileDir, identifiedThreats)
+	threatLevels := assessment.CalculateRiskScores(threatLevelsProfileDir, identifiedThreats)
 
 	if threatLevels == nil {
 		log.Info("Identifying threat level result is nil.")
 	}
 
-	err = saveToFilesystem(riskScoreOutputFilename, threatLevels)
+	err = saveToFilesystem(riskScoreCloudOutputFilename, threatLevels)
 	if err != nil {
 		return fmt.Errorf("saving risk score to filesystem failed: %w", err)
 	}
@@ -311,31 +313,31 @@ func riskAssessmentIacTemplate(iacTemplateResult interface{}) error {
 
 func riskAssessmentOntologyTemplate(ontologyTemplateResult interface{}) error {
 	// Identify threats
-	identifiedThreats := assessment.IdentifyThreatsFromIacTemplate(threatProfileOntologyDir, ontologyTemplateResult)
+	identifiedThreats := assessment.IdentifyThreats(threatProfileOntologyDir, ontologyTemplateResult)
 
 	if identifiedThreats == nil {
 		return os.ErrInvalid
 	}
 
-	err := saveToFilesystem(threatsOntologyOutputFilename, identifiedThreats)
+	err := saveToFilesystem(cwOntologyOutputFilename, identifiedThreats)
 	if err != nil {
 		return fmt.Errorf("saving threats to filesystem failed: %w", err)
 	}
 
 	// Reconstruct attack paths, i.e. identify all attack paths per asset
-	attacktreeReconstruction := assessment.ReconstructAttackTrees(reconstructAttackTreesProfileDir, identifiedThreats)
+	attacktreeReconstruction := assessment.CwReconstruction(reconstructAttackTreesProfileDir, identifiedThreats)
 
 	if attacktreeReconstruction == nil {
 		log.Info("Attack tree reconstruction result is nil.")
 	}
 
-	err = saveToFilesystem(attackTreeReconstructionOntologyOutputFilename, attacktreeReconstruction)
+	err = saveToFilesystem(cwPerAssetOntologyOutputFilename, attacktreeReconstruction)
 	if err != nil {
-		return fmt.Errorf("saving attack tree reconstrunction to filesystem failed: %w", err)
+		return fmt.Errorf("saving  to filesystem  momentary configuration weaknesses based on the ontology failed: %w", err)
 	}
 
 	// Calculate risk scores per asset/protection goal
-	threatLevels := assessment.CalculateRiskScores(riskScoreProfileDir, identifiedThreats)
+	threatLevels := assessment.CalculateRiskScores(threatLevelsProfileDir, identifiedThreats)
 
 	if threatLevels == nil {
 		log.Info("Identifying threat level result is nil.")
@@ -343,7 +345,7 @@ func riskAssessmentOntologyTemplate(ontologyTemplateResult interface{}) error {
 
 	err = saveToFilesystem(riskScoreOntologyOutputFilename, threatLevels)
 	if err != nil {
-		return fmt.Errorf("saving risk score to filesystem failed: %w", err)
+		return fmt.Errorf("saving risk scores to filesystem failed: %w", err)
 	}
 
 	return nil
