@@ -97,8 +97,12 @@ func doCmd(_ *cobra.Command, args []string) (err error) {
 	}
 
 	log.Info("Discovering...")
-	iacTemplatePath = args[3]
-	ontologyTemplatePath = args[1]
+	if len(args) > 1 {
+		iacTemplatePath = args[3]
+		ontologyTemplatePath = args[1]
+	} else {
+		return errors.New("No IaC nor ontology template path given.")
+	}
 
 	app := &discovery.App{}
 	if err = app.AuthorizeAzure(); err != nil {
@@ -107,15 +111,13 @@ func doCmd(_ *cobra.Command, args []string) (err error) {
 
 	// TODO(garuppel): Do not return error, if one of both is getting an template
 	// Get IaC template
-	iacTemplateResult, err = getIacTemplate(app, iacTemplatePath)
-	if err != nil {
-		return fmt.Errorf("getting IaC template failed: %w", err)
-	}
+	iacTemplateResult, errIac := getIacTemplate(app, iacTemplatePath)
 
 	// Get ontology template
-	ontologyTemplateResult, err = getOntologyTemplate(app, ontologyTemplatePath, iacTemplateResult)
-	if err != nil {
-		return fmt.Errorf("getting IaC template failed: %w", err)
+	ontologyTemplateResult, errOntology := getOntologyTemplate(app, ontologyTemplatePath, iacTemplateResult)
+
+	if errIac != nil && errOntology != nil {
+		return fmt.Errorf("getting IaC and ontology template failed: %w", err)
 	}
 
 	// Risk Assessment based on IaC Template
