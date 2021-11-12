@@ -11,7 +11,7 @@ func main() {
 
 	log.SetLevel(log.DebugLevel)
 
-	if err := cmd.AssessmentCmd.Execute(); err != nil {
+	if err := cmd.CmdAssessment.Execute(); err != nil {
 		os.Exit(1)
 	}
 }

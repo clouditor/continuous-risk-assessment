@@ -24,27 +24,27 @@ const envPrefix = "CLOUDITOR"
 
 var (
 
-	// Filename for IaC template
-	iacTemplateOutputFilename string = "resources/outputs/arm_template.json"
+	// Filename for the IaC template
+	iacOutputFilename = "resources/outputs/arm_template.json"
 
-	// Filename for ontology resource template
-	ontologyResourceTemplateOutputFilename string = "resources/outputs/ontology_resource_template.json"
+	// Filename for the ontology resource template
+	ontologyOutputFilename = "resources/outputs/ontology_resource_template.json"
 
 	// Filenames for the threat assessment
-	threatProfileOntologyDir      string = "resources/threatprofiles/use_case_policy_ontology.rego"
-	threatProfileDir              string = "resources/threatprofiles/use_case_policy.rego"
-	cwCloudOutputFilename    string = "resources/outputs/cw_cloud.json"
-	cwOntologyOutputFilename string = "resources/outputs/cw_ontology.json"
+	threatIacProfileDir      = "resources/threatprofiles/use_case_policy.rego"
+	threatOntologyProfileDir = "resources/threatprofiles/use_case_policy_ontology.rego"
+	cwIacOutputFilename      = "resources/outputs/cw_iac.json"
+	cwOntologyOutputFilename = "resources/outputs/cw_ontology.json"
 
 	// Filenames for the mapping of all applicable configuration weaknesses (CW) per asset
-	reconstructAttackTreesProfileDir string = "resources/reconstruction/"
-	cwPerAssetOutputFilename         string = "resources/outputs/cw_per_asset.json"
-	cwPerAssetOntologyOutputFilename string = "resources/outputs/cw_per_asset_ontology.json" //TODO(garuppel): Do we need that?
+	reconstructAttackTreesProfileDir = "resources/reconstruction/"
+	cwPerAssetIacOutputFilename      = "resources/outputs/cw_per_asset_iac.json"
+	cwPerAssetOntologyOutputFilename = "resources/outputs/cw_per_asset_ontology.json"
 
 	// Filenames for risk score calculation
-	threatLevelsProfileDir          string = "resources/threatlevels/"
-	riskScoreCloudOutputFilename    string = "resources/outputs/risk_scores_cloud.json"
-	riskScoreOntologyOutputFilename string = "resources/outputs/risk_scores_ontology.json"
+	threatLevelsProfileDir          = "resources/threatlevels/"
+	riskScoreIacOutputFilename      = "resources/outputs/risk_scores_iac.json"
+	riskScoreOntologyOutputFilename = "resources/outputs/risk_scores_ontology.json"
 )
 
 type ResultOntology struct {
@@ -54,20 +54,20 @@ type ResultOntology struct {
 func init() {
 	cobra.OnInitialize(initConfig)
 
-	AssessmentCmd.Flags().String(discovery.SubscriptionIDFlag, "", "Subscription ID")
-	AssessmentCmd.Flags().String(discovery.ResourceGroupFlag, "", "Resource Group")
-	AssessmentCmd.Flags().String(discovery.AppTenantIDFlag, "", "Tenant ID of the Azure App")
-	AssessmentCmd.Flags().String(discovery.AppClientIDFlag, "", "Client ID of the Azure App")
-	AssessmentCmd.Flags().String(discovery.AppClientSecretFlag, "", "Client secret of the Azure App")
+	CmdAssessment.Flags().String(discovery.SubscriptionIDFlag, "", "Subscription ID")
+	CmdAssessment.Flags().String(discovery.ResourceGroupFlag, "", "Resource Group")
+	CmdAssessment.Flags().String(discovery.AppTenantIDFlag, "", "Tenant ID of the Azure App")
+	CmdAssessment.Flags().String(discovery.AppClientIDFlag, "", "Client ID of the Azure App")
+	CmdAssessment.Flags().String(discovery.AppClientSecretFlag, "", "Client secret of the Azure App")
 
-	viper.BindPFlag(discovery.SubscriptionIDFlag, AssessmentCmd.Flags().Lookup(discovery.SubscriptionIDFlag))
-	viper.BindPFlag(discovery.ResourceGroupFlag, AssessmentCmd.Flags().Lookup(discovery.ResourceGroupFlag))
-	viper.BindPFlag(discovery.AppTenantIDFlag, AssessmentCmd.Flags().Lookup(discovery.AppTenantIDFlag))
-	viper.BindPFlag(discovery.AppClientIDFlag, AssessmentCmd.Flags().Lookup(discovery.AppClientIDFlag))
-	viper.BindPFlag(discovery.AppClientSecretFlag, AssessmentCmd.Flags().Lookup(discovery.AppClientSecretFlag))
+	_ = viper.BindPFlag(discovery.SubscriptionIDFlag, CmdAssessment.Flags().Lookup(discovery.SubscriptionIDFlag))
+	_ = viper.BindPFlag(discovery.ResourceGroupFlag, CmdAssessment.Flags().Lookup(discovery.ResourceGroupFlag))
+	_ = viper.BindPFlag(discovery.AppTenantIDFlag, CmdAssessment.Flags().Lookup(discovery.AppTenantIDFlag))
+	_ = viper.BindPFlag(discovery.AppClientIDFlag, CmdAssessment.Flags().Lookup(discovery.AppClientIDFlag))
+	_ = viper.BindPFlag(discovery.AppClientSecretFlag, CmdAssessment.Flags().Lookup(discovery.AppClientSecretFlag))
 
-	AssessmentCmd.Flags().StringP("templatePath", "t", "", "IaC template path (currently only ARM templates are usable)")
-	AssessmentCmd.Flags().StringP("ontologyPath", "o", "", "Ontology template path")
+	CmdAssessment.Flags().StringP("templatePath", "t", "", "IaC template path (currently only ARM templates are usable)")
+	CmdAssessment.Flags().StringP("ontologyPath", "o", "", "Ontology template path")
 }
 
 func initConfig() {
@@ -84,10 +84,12 @@ func initConfig() {
 	}
 }
 
-func doCmd(cmd *cobra.Command, args []string) (err error) {
+func doCmd(_ *cobra.Command, args []string) (err error) {
 	var (
 		iacTemplateResult      interface{}
 		ontologyTemplateResult interface{}
+		iacTemplatePath        string
+		ontologyTemplatePath   string
 	)
 
 	if viper.GetString(discovery.SubscriptionIDFlag) == "" {
@@ -95,14 +97,15 @@ func doCmd(cmd *cobra.Command, args []string) (err error) {
 	}
 
 	log.Info("Discovering...")
-	iacTemplatePath, _ := cmd.Flags().GetString("templatePath")
-	ontologyTemplatePath, _ := cmd.Flags().GetString("ontologyPath")
+	iacTemplatePath = args[3]
+	ontologyTemplatePath = args[1]
 
 	app := &discovery.App{}
 	if err = app.AuthorizeAzure(); err != nil {
 		return err
 	}
 
+	// TODO(garuppel): Do not return error, if one of both is getting an template
 	// Get IaC template
 	iacTemplateResult, err = getIacTemplate(app, iacTemplatePath)
 	if err != nil {
@@ -115,18 +118,16 @@ func doCmd(cmd *cobra.Command, args []string) (err error) {
 		return fmt.Errorf("getting IaC template failed: %w", err)
 	}
 
-	// TODO merge the two risk assessment methods: what should be merged?
 	// Risk Assessment based on IaC Template
-	log.Info("Risk Assesment based on IaC Template ...")
-	err = riskAssessmentIacTemplate(iacTemplateResult)
+	log.Info("Risk Assessment based on IaC Template ...")
+	err = riskAssessment(iacTemplateResult, threatIacProfileDir, cwIacOutputFilename, cwPerAssetIacOutputFilename, riskScoreIacOutputFilename)
 	if err != nil {
 		return fmt.Errorf("risk assessment of iac template failed: %w", err)
 	}
 
 	// Risk Assessment based on Ontology Template
-	log.Info("Risk Assesment based on Ontology Template ...")
-
-	err = riskAssessmentOntologyTemplate(ontologyTemplateResult)
+	log.Info("Risk Assessment based on Ontology Template ...")
+	err = riskAssessment(ontologyTemplateResult, threatOntologyProfileDir, cwOntologyOutputFilename, cwPerAssetOntologyOutputFilename, riskScoreOntologyOutputFilename)
 	if err != nil {
 		return fmt.Errorf("risk assessment of ontology template failed: %w", err)
 	}
@@ -134,8 +135,8 @@ func doCmd(cmd *cobra.Command, args []string) (err error) {
 	return nil
 }
 
-// AssessmentCmd exported for main.
-var AssessmentCmd = &cobra.Command{
+// CmdAssessment exported for main.
+var CmdAssessment = &cobra.Command{
 	Use:   "riskAssessment",
 	Short: "Continuous risk assessment for Azure",
 	Long:  "riskAssessment is a automated continuous risk assessment for the customer cloud environment and consists of the Azure Cloud Discovery to obtain the IaC template and the Assessment for identifying threats, calculating risk scores and reconstructing attack trees. Currently, the assessment is only available for the Azure Cloud.",
@@ -207,7 +208,7 @@ func getIacTemplate(app *discovery.App, iacTemplatePath string) (interface{}, er
 			return nil, err
 		}
 
-		filepath := getFilepathDate(iacTemplateOutputFilename)
+		filepath := getFilepathDate(iacOutputFilename)
 
 		if err = saveToFilesystem(filepath, iacTemplate); err != nil {
 			return nil, err
@@ -260,7 +261,7 @@ func getOntologyTemplate(app *discovery.App, ontologyTemplatePath string, iacTem
 			Result: ontologyTemplate,
 		}
 
-		filepath := getFilepathDate(ontologyResourceTemplateOutputFilename)
+		filepath := getFilepathDate(ontologyOutputFilename)
 
 		if err = saveToFilesystem(filepath, ontologyTemplateResult); err != nil {
 			return nil, err
@@ -270,9 +271,7 @@ func getOntologyTemplate(app *discovery.App, ontologyTemplatePath string, iacTem
 	return ontologyTemplateResult, nil
 }
 
-
-// TODO Can we merge this and the following method? riskAssessmentIaCTemplate/riskAssessmentOntologyTemplate
-func riskAssessmentIacTemplate(iacTemplateResult interface{}) error {
+func riskAssessment(iacTemplateResult interface{}, threatProfileDir, cwOutputFilename, cwPerAssetOutputFilename, riskScoreCloudOutputFilename string) error {
 	// Identify threats
 	identifiedThreats := assessment.IdentifyThreats(threatProfileDir, iacTemplateResult)
 
@@ -280,7 +279,7 @@ func riskAssessmentIacTemplate(iacTemplateResult interface{}) error {
 		return os.ErrInvalid
 	}
 
-	err := saveToFilesystem(cwCloudOutputFilename, identifiedThreats)
+	err := saveToFilesystem(cwOutputFilename, identifiedThreats)
 	if err != nil {
 		return fmt.Errorf("saving threats to filesystem failed: %w", err)
 	}
@@ -308,45 +307,5 @@ func riskAssessmentIacTemplate(iacTemplateResult interface{}) error {
 	if err != nil {
 		return fmt.Errorf("saving risk score to filesystem failed: %w", err)
 	}
-	return nil
-}
-
-func riskAssessmentOntologyTemplate(ontologyTemplateResult interface{}) error {
-	// Identify threats
-	identifiedThreats := assessment.IdentifyThreats(threatProfileOntologyDir, ontologyTemplateResult)
-
-	if identifiedThreats == nil {
-		return os.ErrInvalid
-	}
-
-	err := saveToFilesystem(cwOntologyOutputFilename, identifiedThreats)
-	if err != nil {
-		return fmt.Errorf("saving threats to filesystem failed: %w", err)
-	}
-
-	// Reconstruct attack paths, i.e. identify all attack paths per asset
-	attacktreeReconstruction := assessment.CwReconstruction(reconstructAttackTreesProfileDir, identifiedThreats)
-
-	if attacktreeReconstruction == nil {
-		log.Info("Attack tree reconstruction result is nil.")
-	}
-
-	err = saveToFilesystem(cwPerAssetOntologyOutputFilename, attacktreeReconstruction)
-	if err != nil {
-		return fmt.Errorf("saving  to filesystem  momentary configuration weaknesses based on the ontology failed: %w", err)
-	}
-
-	// Calculate risk scores per asset/protection goal
-	threatLevels := assessment.CalculateRiskScores(threatLevelsProfileDir, identifiedThreats)
-
-	if threatLevels == nil {
-		log.Info("Identifying threat level result is nil.")
-	}
-
-	err = saveToFilesystem(riskScoreOntologyOutputFilename, threatLevels)
-	if err != nil {
-		return fmt.Errorf("saving risk scores to filesystem failed: %w", err)
-	}
-
 	return nil
 }

@@ -190,7 +190,7 @@ func BenchmarkRegoEvaluation(b *testing.B) {
 
 // Tests the whole risk assessment process
 func TestRiskAssessment(t *testing.T) {
-	assessment.AssessmentCmd.Execute()
+	assessment.CmdAssessment.Execute()
 }
 
 func init() {
