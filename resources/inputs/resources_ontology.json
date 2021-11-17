@@ -1,0 +1,1089 @@
+{
+    "result": [
+        {
+            "atRestEncryption": {
+                "algorithm": "AES-265",
+                "enabled": true,
+                "keyManager": "Microsoft.Storage"
+            },
+            "creationTime": 1623935955,
+            "httpEndpoint": {
+                "creationTime": 0,
+                "id": "",
+                "name": "",
+                "transportEncryption": {
+                    "enabled": true,
+                    "enforced": true,
+                    "tlsVersion": "TLS1_2"
+                },
+                "type": null,
+                "url": "https://csb1003200151a89fd0.blob.core.windows.net/"
+            },
+            "id": "/subscriptions/196946e1-7029-4d97-8f65-ba6c6138c93f/resourceGroups/cloud-shell-storage-westeurope/providers/Microsoft.Storage/storageAccounts/csb1003200151a89fd0",
+            "name": "csb1003200151a89fd0",
+            "type": [
+                "ObjectStorage",
+                "Storage",
+                "Resource"
+            ]
+        },
+        {
+            "creationTime": 0,
+            "id": "/subscriptions/196946e1-7029-4d97-8f65-ba6c6138c93f/resourceGroups/BayernCloud/providers/Microsoft.Web/sites/cloudcontrolFA",
+            "name": "cloudcontrolFA",
+            "networkInterfaces": null,
+            "type": [
+                "Function",
+                "Compute",
+                "Resource"
+            ]
+        },
+        {
+            "creationTime": 1623505068,
+            "id": "/namespaces/cert-manager/containers/ca-cert-generation-job-8w9m2",
+            "name": "ca-cert-generation-job-8w9m2",
+            "networkInterfaces": [
+                "cert-manager"
+            ],
+            "type": [
+                "Container",
+                "Compute",
+                "Resource"
+            ]
+        },
+        {
+            "creationTime": 1624632323,
+            "id": "/namespaces/cpg-examples-patient-community/containers/nurse-api-5f4b7c9db8-xp96m",
+            "name": "nurse-api-5f4b7c9db8-xp96m",
+            "networkInterfaces": [
+                "cpg-examples-patient-community"
+            ],
+            "type": [
+                "Container",
+                "Compute",
+                "Resource"
+            ]
+        },
+        {
+            "creationTime": 1601502380,
+            "id": "/namespaces/kube-system/containers/addon-http-application-routing-nginx-ingress-controller-5ccr526",
+            "name": "addon-http-application-routing-nginx-ingress-controller-5ccr526",
+            "networkInterfaces": [
+                "kube-system"
+            ],
+            "type": [
+                "Container",
+                "Compute",
+                "Resource"
+            ]
+        },
+        {
+            "creationTime": 1620612993,
+            "id": "/namespaces/kube-system/containers/coredns-77b8db5487-b9bzn",
+            "name": "coredns-77b8db5487-b9bzn",
+            "networkInterfaces": [
+                "kube-system"
+            ],
+            "type": [
+                "Container",
+                "Compute",
+                "Resource"
+            ]
+        },
+        {
+            "creationTime": 1626401392,
+            "id": "/namespaces/kube-system/containers/addon-http-application-routing-external-dns-69b7bf949c-rl8jt",
+            "name": "addon-http-application-routing-external-dns-69b7bf949c-rl8jt",
+            "networkInterfaces": [
+                "kube-system"
+            ],
+            "type": [
+                "Container",
+                "Compute",
+                "Resource"
+            ]
+        },
+        {
+            "atRestEncryption": {
+                "algorithm": "AES-265",
+                "enabled": true,
+                "keyManager": "Microsoft.Storage"
+            },
+            "creationTime": 1613504287,
+            "httpEndpoint": {
+                "creationTime": 0,
+                "id": "",
+                "name": "",
+                "transportEncryption": {
+                    "enabled": true,
+                    "enforced": true,
+                    "tlsVersion": "TLS1_1"
+                },
+                "type": null,
+                "url": "https://cloudpgstorage.blob.core.windows.net/"
+            },
+            "id": "/subscriptions/196946e1-7029-4d97-8f65-ba6c6138c93f/resourceGroups/cloud-property-graphs-examples/providers/Microsoft.Storage/storageAccounts/cloudpgstorage",
+            "name": "cloudpgstorage",
+            "type": [
+                "ObjectStorage",
+                "Storage",
+                "Resource"
+            ]
+        },
+        {
+            "creationTime": 1626401375,
+            "id": "/namespaces/kube-system/containers/omsagent-rs-7d47cd5578-ggjwl",
+            "name": "omsagent-rs-7d47cd5578-ggjwl",
+            "networkInterfaces": [
+                "kube-system"
+            ],
+            "type": [
+                "Container",
+                "Compute",
+                "Resource"
+            ]
+        },
+        {
+            "blockStorage": [
+                "/subscriptions/196946e1-7029-4d97-8f65-ba6c6138c93f/resourceGroups/BAYERNCLOUD/providers/Microsoft.Compute/disks/vm3_OsDisk_1_576a175e983c41978b9fba3efacdd166"
+            ],
+            "creationTime": 0,
+            "id": "/subscriptions/196946e1-7029-4d97-8f65-ba6c6138c93f/resourceGroups/BAYERNCLOUD/providers/Microsoft.Compute/virtualMachines/vm3",
+            "log": {
+                "enabled": false
+            },
+            "name": "vm3",
+            "networkInterfaces": [
+                "/subscriptions/196946e1-7029-4d97-8f65-ba6c6138c93f/resourceGroups/BayernCloud/providers/Microsoft.Network/networkInterfaces/vm3984"
+            ],
+            "type": [
+                "VirtualMachine",
+                "Compute",
+                "Resource"
+            ]
+        },
+        {
+            "blockStorage": [
+                "/subscriptions/196946e1-7029-4d97-8f65-ba6c6138c93f/resourceGroups/cloud-property-graphs-examples/providers/Microsoft.Compute/disks/cloudpg-evaluation_OsDisk_1_156319b974a946d1bc4e32482bc197f2"
+            ],
+            "creationTime": 0,
+            "id": "/subscriptions/196946e1-7029-4d97-8f65-ba6c6138c93f/resourceGroups/CLOUD-PROPERTY-GRAPHS-EXAMPLES/providers/Microsoft.Compute/virtualMachines/cloudpg-evaluation",
+            "log": {
+                "enabled": false
+            },
+            "name": "cloudpg-evaluation",
+            "networkInterfaces": [
+                "/subscriptions/196946e1-7029-4d97-8f65-ba6c6138c93f/resourceGroups/cloud-property-graphs-examples/providers/Microsoft.Network/networkInterfaces/cloudpg-evaluation67"
+            ],
+            "type": [
+                "VirtualMachine",
+                "Compute",
+                "Resource"
+            ]
+        },
+        {
+            "blockStorage": [
+                "/subscriptions/196946e1-7029-4d97-8f65-ba6c6138c93f/resourceGroups/SGXA-RG/providers/Microsoft.Compute/disks/sgxA_OsDisk_1_73d6a6cedd5d466d9a8a01f173d0a84b"
+            ],
+            "creationTime": 0,
+            "id": "/subscriptions/196946e1-7029-4d97-8f65-ba6c6138c93f/resourceGroups/SGXA-RG/providers/Microsoft.Compute/virtualMachines/sgxA",
+            "log": {
+                "enabled": false
+            },
+            "name": "sgxA",
+            "networkInterfaces": [
+                "/subscriptions/196946e1-7029-4d97-8f65-ba6c6138c93f/resourceGroups/sgxA-RG/providers/Microsoft.Network/networkInterfaces/sgxA-nic"
+            ],
+            "type": [
+                "VirtualMachine",
+                "Compute",
+                "Resource"
+            ]
+        },
+        {
+            "blockStorage": [
+                "/subscriptions/196946e1-7029-4d97-8f65-ba6c6138c93f/resourceGroups/sgxtest3RG/providers/Microsoft.Compute/disks/sgxtest4_OsDisk_1_09c92c28f74c40f08bb24b83ac47beec"
+            ],
+            "creationTime": 0,
+            "id": "/subscriptions/196946e1-7029-4d97-8f65-ba6c6138c93f/resourceGroups/SGXTEST3RG/providers/Microsoft.Compute/virtualMachines/sgxtest4",
+            "log": {
+                "enabled": false
+            },
+            "name": "sgxtest4",
+            "networkInterfaces": [
+                "/subscriptions/196946e1-7029-4d97-8f65-ba6c6138c93f/resourceGroups/sgxtest3RG/providers/Microsoft.Network/networkInterfaces/sgxtest4592"
+            ],
+            "type": [
+                "VirtualMachine",
+                "Compute",
+                "Resource"
+            ]
+        },
+        {
+            "accessRestriction": {
+                "inbound": false,
+                "restrictedPorts": ""
+            },
+            "attachedTo": "",
+            "creationTime": 0,
+            "id": "/subscriptions/196946e1-7029-4d97-8f65-ba6c6138c93f/resourceGroups/sgxtest3RG/providers/Microsoft.Network/networkInterfaces/sgxtest4592",
+            "name": "sgxtest4592",
+            "type": [
+                "NetworkInterface",
+                "Compute",
+                "Resource"
+            ]
+        },
+        {
+            "creationTime": 1624632309,
+            "id": "/namespaces/cpg-examples-patient-community/containers/frontend-8444544476-brrjc",
+            "name": "frontend-8444544476-brrjc",
+            "networkInterfaces": [
+                "cpg-examples-patient-community"
+            ],
+            "type": [
+                "Container",
+                "Compute",
+                "Resource"
+            ]
+        },
+        {
+            "creationTime": 1624634296,
+            "id": "/namespaces/cpg-examples-patient-community/containers/group-phr-controller-94f8f8ff7-hbrtc",
+            "name": "group-phr-controller-94f8f8ff7-hbrtc",
+            "networkInterfaces": [
+                "cpg-examples-patient-community"
+            ],
+            "type": [
+                "Container",
+                "Compute",
+                "Resource"
+            ]
+        },
+        {
+            "creationTime": 1601502380,
+            "id": "/namespaces/kube-system/containers/addon-http-application-routing-default-http-backend-554cd5hs8z6",
+            "name": "addon-http-application-routing-default-http-backend-554cd5hs8z6",
+            "networkInterfaces": [
+                "kube-system"
+            ],
+            "type": [
+                "Container",
+                "Compute",
+                "Resource"
+            ]
+        },
+        {
+            "blockStorage": [
+                "/subscriptions/196946e1-7029-4d97-8f65-ba6c6138c93f/resourceGroups/bbraun/providers/Microsoft.Compute/disks/vm-linux_OsDisk_1_262e2792f3d84de3b2af6fae61eed39c"
+            ],
+            "creationTime": 0,
+            "id": "/subscriptions/196946e1-7029-4d97-8f65-ba6c6138c93f/resourceGroups/BBRAUN/providers/Microsoft.Compute/virtualMachines/vm-linux",
+            "log": {
+                "enabled": false
+            },
+            "name": "vm-linux",
+            "networkInterfaces": [
+                "/subscriptions/196946e1-7029-4d97-8f65-ba6c6138c93f/resourceGroups/bbraun/providers/Microsoft.Network/networkInterfaces/vm-linux495"
+            ],
+            "type": [
+                "VirtualMachine",
+                "Compute",
+                "Resource"
+            ]
+        },
+        {
+            "accessRestriction": {
+                "inbound": false,
+                "restrictedPorts": ""
+            },
+            "attachedTo": "",
+            "creationTime": 0,
+            "id": "/subscriptions/196946e1-7029-4d97-8f65-ba6c6138c93f/resourceGroups/bbraun/providers/Microsoft.Network/networkInterfaces/vm-linux495",
+            "name": "vm-linux495",
+            "type": [
+                "NetworkInterface",
+                "Compute",
+                "Resource"
+            ]
+        },
+        {
+            "accessRestriction": {
+                "inbound": false,
+                "restrictedPorts": ""
+            },
+            "attachedTo": "",
+            "creationTime": 0,
+            "id": "/subscriptions/196946e1-7029-4d97-8f65-ba6c6138c93f/resourceGroups/sgxA-RG/providers/Microsoft.Network/networkInterfaces/sgxA-nic",
+            "name": "sgxA-nic",
+            "type": [
+                "NetworkInterface",
+                "Compute",
+                "Resource"
+            ]
+        },
+        {
+            "accessRestriction": {
+                "inbound": false,
+                "restrictedPorts": ""
+            },
+            "attachedTo": "",
+            "creationTime": 0,
+            "id": "/subscriptions/196946e1-7029-4d97-8f65-ba6c6138c93f/resourceGroups/BayernCloud/providers/Microsoft.Network/networkInterfaces/kubernetes-istio-tes941",
+            "name": "kubernetes-istio-tes941",
+            "type": [
+                "NetworkInterface",
+                "Compute",
+                "Resource"
+            ]
+        },
+        {
+            "accessRestriction": {
+                "inbound": false,
+                "restrictedPorts": ""
+            },
+            "attachedTo": "",
+            "creationTime": 0,
+            "id": "/subscriptions/196946e1-7029-4d97-8f65-ba6c6138c93f/resourceGroups/cloud-property-graphs-examples/providers/Microsoft.Network/networkInterfaces/cloudpg-evaluation67",
+            "name": "cloudpg-evaluation67",
+            "type": [
+                "NetworkInterface",
+                "Compute",
+                "Resource"
+            ]
+        },
+        {
+            "creationTime": 1624633441,
+            "id": "/namespaces/cpg-examples-patient-community/containers/mongo-686dd5cb7f-7x6cp",
+            "name": "mongo-686dd5cb7f-7x6cp",
+            "networkInterfaces": [
+                "cpg-examples-patient-community"
+            ],
+            "type": [
+                "Container",
+                "Compute",
+                "Resource"
+            ]
+        },
+        {
+            "creationTime": 1624632249,
+            "id": "/namespaces/cpg-examples-patient-community/containers/statistics-66cddc4c67-7wsnj",
+            "name": "statistics-66cddc4c67-7wsnj",
+            "networkInterfaces": [
+                "cpg-examples-patient-community"
+            ],
+            "type": [
+                "Container",
+                "Compute",
+                "Resource"
+            ]
+        },
+        {
+            "creationTime": 1626401398,
+            "id": "/namespaces/kube-system/containers/omsagent-7p8sv",
+            "name": "omsagent-7p8sv",
+            "networkInterfaces": [
+                "kube-system"
+            ],
+            "type": [
+                "Container",
+                "Compute",
+                "Resource"
+            ]
+        },
+        {
+            "creationTime": 1626401375,
+            "id": "/namespaces/kube-system/containers/tunnelfront-b8bcc447f-lqq9b",
+            "name": "tunnelfront-b8bcc447f-lqq9b",
+            "networkInterfaces": [
+                "kube-system"
+            ],
+            "type": [
+                "Container",
+                "Compute",
+                "Resource"
+            ]
+        },
+        {
+            "atRestEncryption": {
+                "algorithm": "AES-265",
+                "enabled": true,
+                "keyManager": "Microsoft.Storage"
+            },
+            "creationTime": 1556537050,
+            "httpEndpoint": {
+                "creationTime": 0,
+                "id": "",
+                "name": "",
+                "transportEncryption": {
+                    "enabled": true,
+                    "enforced": false,
+                    "tlsVersion": "TLS1_2"
+                },
+                "type": null,
+                "url": "https://bcloudtest.blob.core.windows.net/"
+            },
+            "id": "/subscriptions/196946e1-7029-4d97-8f65-ba6c6138c93f/resourceGroups/BayernCloud/providers/Microsoft.Storage/storageAccounts/bcloudtest",
+            "name": "bcloudtest",
+            "type": [
+                "ObjectStorage",
+                "Storage",
+                "Resource"
+            ]
+        },
+        {
+            "atRestEncryption": {
+                "algorithm": "AES-265",
+                "enabled": true,
+                "keyManager": "Microsoft.Storage"
+            },
+            "creationTime": 1588772761,
+            "httpEndpoint": {
+                "creationTime": 0,
+                "id": "",
+                "name": "",
+                "transportEncryption": {
+                    "enabled": true,
+                    "enforced": true,
+                    "tlsVersion": ""
+                },
+                "type": null,
+                "url": "https://storageaccountbayera537.blob.core.windows.net/"
+            },
+            "id": "/subscriptions/196946e1-7029-4d97-8f65-ba6c6138c93f/resourceGroups/BayernCloud/providers/Microsoft.Storage/storageAccounts/storageaccountbayera537",
+            "name": "storageaccountbayera537",
+            "type": [
+                "ObjectStorage",
+                "Storage",
+                "Resource"
+            ]
+        },
+        {
+            "accessRestriction": {
+                "inbound": false,
+                "restrictedPorts": ""
+            },
+            "attachedTo": "",
+            "creationTime": 0,
+            "id": "/subscriptions/196946e1-7029-4d97-8f65-ba6c6138c93f/resourceGroups/BayernCloud/providers/Microsoft.Network/networkInterfaces/paper-performance-te342",
+            "name": "paper-performance-te342",
+            "type": [
+                "NetworkInterface",
+                "Compute",
+                "Resource"
+            ]
+        },
+        {
+            "accessRestriction": {
+                "inbound": false,
+                "restrictedPorts": ""
+            },
+            "attachedTo": "",
+            "creationTime": 0,
+            "id": "/subscriptions/196946e1-7029-4d97-8f65-ba6c6138c93f/resourceGroups/sgxB-RG/providers/Microsoft.Network/networkInterfaces/sgxB-nic",
+            "name": "sgxB-nic",
+            "type": [
+                "NetworkInterface",
+                "Compute",
+                "Resource"
+            ]
+        },
+        {
+            "creationTime": 1625206931,
+            "id": "/namespaces/cpg-examples-patient-community/containers/disease-service-858996b445-222qz",
+            "name": "disease-service-858996b445-222qz",
+            "networkInterfaces": [
+                "cpg-examples-patient-community"
+            ],
+            "type": [
+                "Container",
+                "Compute",
+                "Resource"
+            ]
+        },
+        {
+            "creationTime": 1620612993,
+            "id": "/namespaces/kube-system/containers/coredns-77b8db5487-5qqrz",
+            "name": "coredns-77b8db5487-5qqrz",
+            "networkInterfaces": [
+                "kube-system"
+            ],
+            "type": [
+                "Container",
+                "Compute",
+                "Resource"
+            ]
+        },
+        {
+            "atRestEncryption": {
+                "algorithm": "AES-265",
+                "enabled": true,
+                "keyManager": "Microsoft.Storage"
+            },
+            "creationTime": 1588252666,
+            "httpEndpoint": {
+                "creationTime": 0,
+                "id": "",
+                "name": "",
+                "transportEncryption": {
+                    "enabled": true,
+                    "enforced": true,
+                    "tlsVersion": "TLS1_1"
+                },
+                "type": null,
+                "url": "https://bcloudstoragev2.blob.core.windows.net/"
+            },
+            "id": "/subscriptions/196946e1-7029-4d97-8f65-ba6c6138c93f/resourceGroups/BayernCloud/providers/Microsoft.Storage/storageAccounts/bcloudstoragev2",
+            "name": "bcloudstoragev2",
+            "type": [
+                "ObjectStorage",
+                "Storage",
+                "Resource"
+            ]
+        },
+        {
+            "atRestEncryption": {
+                "algorithm": "AES-265",
+                "enabled": true,
+                "keyManager": "Microsoft.Storage"
+            },
+            "creationTime": 1588176784,
+            "httpEndpoint": {
+                "creationTime": 0,
+                "id": "",
+                "name": "",
+                "transportEncryption": {
+                    "enabled": true,
+                    "enforced": true,
+                    "tlsVersion": ""
+                },
+                "type": null,
+                "url": "https://flowlogsbayerncloud.blob.core.windows.net/"
+            },
+            "id": "/subscriptions/196946e1-7029-4d97-8f65-ba6c6138c93f/resourceGroups/BayernCloud/providers/Microsoft.Storage/storageAccounts/flowlogsbayerncloud",
+            "name": "flowlogsbayerncloud",
+            "type": [
+                "ObjectStorage",
+                "Storage",
+                "Resource"
+            ]
+        },
+        {
+            "atRestEncryption": {
+                "algorithm": "AES-265",
+                "enabled": true,
+                "keyManager": "Microsoft.Storage"
+            },
+            "creationTime": 1589384960,
+            "httpEndpoint": {
+                "creationTime": 0,
+                "id": "",
+                "name": "",
+                "transportEncryption": {
+                    "enabled": true,
+                    "enforced": true,
+                    "tlsVersion": ""
+                },
+                "type": null,
+                "url": "https://functionapplogtransfer.blob.core.windows.net/"
+            },
+            "id": "/subscriptions/196946e1-7029-4d97-8f65-ba6c6138c93f/resourceGroups/BayernCloud/providers/Microsoft.Storage/storageAccounts/functionapplogtransfer",
+            "name": "functionapplogtransfer",
+            "type": [
+                "ObjectStorage",
+                "Storage",
+                "Resource"
+            ]
+        },
+        {
+            "accessRestriction": {
+                "inbound": false,
+                "restrictedPorts": ""
+            },
+            "attachedTo": "",
+            "creationTime": 0,
+            "id": "/subscriptions/196946e1-7029-4d97-8f65-ba6c6138c93f/resourceGroups/BayernCloud/providers/Microsoft.Network/networkInterfaces/knative-test517",
+            "name": "knative-test517",
+            "type": [
+                "NetworkInterface",
+                "Compute",
+                "Resource"
+            ]
+        },
+        {
+            "accessRestriction": {
+                "inbound": false,
+                "restrictedPorts": ""
+            },
+            "attachedTo": "",
+            "creationTime": 0,
+            "id": "/subscriptions/196946e1-7029-4d97-8f65-ba6c6138c93f/resourceGroups/sgxtest3RG/providers/Microsoft.Network/networkInterfaces/sgxtest3-nic",
+            "name": "sgxtest3-nic",
+            "type": [
+                "NetworkInterface",
+                "Compute",
+                "Resource"
+            ]
+        },
+        {
+            "creationTime": 1621563257,
+            "id": "/namespaces/kube-system/containers/kube-proxy-x54h4",
+            "name": "kube-proxy-x54h4",
+            "networkInterfaces": [
+                "kube-system"
+            ],
+            "type": [
+                "Container",
+                "Compute",
+                "Resource"
+            ]
+        },
+        {
+            "atRestEncryption": {
+                "algorithm": "AES-265",
+                "enabled": true,
+                "keyManager": "Microsoft.Storage"
+            },
+            "creationTime": 1614356937,
+            "httpEndpoint": {
+                "creationTime": 0,
+                "id": "",
+                "name": "",
+                "transportEncryption": {
+                    "enabled": true,
+                    "enforced": true,
+                    "tlsVersion": "TLS1_2"
+                },
+                "type": null,
+                "url": "https://thisisnotineurope.blob.core.windows.net/"
+            },
+            "id": "/subscriptions/196946e1-7029-4d97-8f65-ba6c6138c93f/resourceGroups/cloud-property-graphs-examples/providers/Microsoft.Storage/storageAccounts/thisisnotineurope",
+            "name": "thisisnotineurope",
+            "type": [
+                "ObjectStorage",
+                "Storage",
+                "Resource"
+            ]
+        },
+        {
+            "blockStorage": [
+                "/subscriptions/196946e1-7029-4d97-8f65-ba6c6138c93f/resourceGroups/SGXB-RG/providers/Microsoft.Compute/disks/sgxB_OsDisk_1_d31b7c44f91448daaf487a1694884eff"
+            ],
+            "creationTime": 0,
+            "id": "/subscriptions/196946e1-7029-4d97-8f65-ba6c6138c93f/resourceGroups/SGXB-RG/providers/Microsoft.Compute/virtualMachines/sgxB",
+            "log": {
+                "enabled": false
+            },
+            "name": "sgxB",
+            "networkInterfaces": [
+                "/subscriptions/196946e1-7029-4d97-8f65-ba6c6138c93f/resourceGroups/sgxB-RG/providers/Microsoft.Network/networkInterfaces/sgxB-nic"
+            ],
+            "type": [
+                "VirtualMachine",
+                "Compute",
+                "Resource"
+            ]
+        },
+        {
+            "accessRestriction": {
+                "inbound": false,
+                "restrictedPorts": ""
+            },
+            "attachedTo": "",
+            "creationTime": 0,
+            "id": "/subscriptions/196946e1-7029-4d97-8f65-ba6c6138c93f/resourceGroups/sgxtest2_group/providers/Microsoft.Network/networkInterfaces/sgxtest2737",
+            "name": "sgxtest2737",
+            "type": [
+                "NetworkInterface",
+                "Compute",
+                "Resource"
+            ]
+        },
+        {
+            "creationTime": 1624633433,
+            "id": "/namespaces/cpg-examples-patient-community/containers/postgres-7f58bf8945-ttdgm",
+            "name": "postgres-7f58bf8945-ttdgm",
+            "networkInterfaces": [
+                "cpg-examples-patient-community"
+            ],
+            "type": [
+                "Container",
+                "Compute",
+                "Resource"
+            ]
+        },
+        {
+            "accessRestriction": {
+                "inbound": false,
+                "restrictedPorts": ""
+            },
+            "attachedTo": "",
+            "creationTime": 0,
+            "id": "/subscriptions/196946e1-7029-4d97-8f65-ba6c6138c93f/resourceGroups/BayernCloud/providers/Microsoft.Network/networkInterfaces/vm458",
+            "name": "vm458",
+            "type": [
+                "NetworkInterface",
+                "Compute",
+                "Resource"
+            ]
+        },
+        {
+            "creationTime": 1623505051,
+            "id": "/namespaces/cert-manager/containers/cert-manager-6cd8cb4b7c-kdzwd",
+            "name": "cert-manager-6cd8cb4b7c-kdzwd",
+            "networkInterfaces": [
+                "cert-manager"
+            ],
+            "type": [
+                "Container",
+                "Compute",
+                "Resource"
+            ]
+        },
+        {
+            "creationTime": 1623505051,
+            "id": "/namespaces/cert-manager/containers/cert-manager-webhook-76978fbd4c-89gcq",
+            "name": "cert-manager-webhook-76978fbd4c-89gcq",
+            "networkInterfaces": [
+                "cert-manager"
+            ],
+            "type": [
+                "Container",
+                "Compute",
+                "Resource"
+            ]
+        },
+        {
+            "blockStorage": [
+                "/subscriptions/196946e1-7029-4d97-8f65-ba6c6138c93f/resourceGroups/BAYERNCLOUD/providers/Microsoft.Compute/disks/vm_OsDisk_1_8cf6a9202f3a4623a1d16a3819221410"
+            ],
+            "creationTime": 0,
+            "id": "/subscriptions/196946e1-7029-4d97-8f65-ba6c6138c93f/resourceGroups/BAYERNCLOUD/providers/Microsoft.Compute/virtualMachines/vm",
+            "log": {
+                "enabled": false
+            },
+            "name": "vm",
+            "networkInterfaces": [
+                "/subscriptions/196946e1-7029-4d97-8f65-ba6c6138c93f/resourceGroups/BayernCloud/providers/Microsoft.Network/networkInterfaces/vm458"
+            ],
+            "type": [
+                "VirtualMachine",
+                "Compute",
+                "Resource"
+            ]
+        },
+        {
+            "accessRestriction": {
+                "inbound": false,
+                "restrictedPorts": ""
+            },
+            "attachedTo": "",
+            "creationTime": 0,
+            "id": "/subscriptions/196946e1-7029-4d97-8f65-ba6c6138c93f/resourceGroups/cloud-property-graphs-examples/providers/Microsoft.Network/networkInterfaces/cloudpg-evaluation208",
+            "name": "cloudpg-evaluation208",
+            "type": [
+                "NetworkInterface",
+                "Compute",
+                "Resource"
+            ]
+        },
+        {
+            "accessRestriction": {
+                "inbound": false,
+                "restrictedPorts": ""
+            },
+            "attachedTo": "",
+            "creationTime": 0,
+            "id": "/subscriptions/196946e1-7029-4d97-8f65-ba6c6138c93f/resourceGroups/cloud-property-graphs-examples/providers/Microsoft.Network/networkInterfaces/vm889",
+            "name": "vm889",
+            "type": [
+                "NetworkInterface",
+                "Compute",
+                "Resource"
+            ]
+        },
+        {
+            "atRestEncryption": {
+                "algorithm": "AES-265",
+                "enabled": true,
+                "keyManager": "Microsoft.Storage"
+            },
+            "creationTime": 1601563600,
+            "httpEndpoint": {
+                "creationTime": 0,
+                "id": "",
+                "name": "",
+                "transportEncryption": {
+                    "enabled": true,
+                    "enforced": true,
+                    "tlsVersion": ""
+                },
+                "type": null,
+                "url": "https://csb10032000c54acb31.blob.core.windows.net/"
+            },
+            "id": "/subscriptions/196946e1-7029-4d97-8f65-ba6c6138c93f/resourceGroups/BayernCloud/providers/Microsoft.Storage/storageAccounts/csb10032000c54acb31",
+            "name": "csb10032000c54acb31",
+            "type": [
+                "ObjectStorage",
+                "Storage",
+                "Resource"
+            ]
+        },
+        {
+            "blockStorage": [
+                "/subscriptions/196946e1-7029-4d97-8f65-ba6c6138c93f/resourceGroups/BAYERNCLOUD/providers/Microsoft.Compute/disks/kubernetes-istio-test_OsDisk_1_8e02eaf7e04a498da4a03dadd3eb3318",
+                "/subscriptions/196946e1-7029-4d97-8f65-ba6c6138c93f/resourceGroups/BAYERNCLOUD/providers/Microsoft.Compute/disks/istio-data-disk"
+            ],
+            "creationTime": 0,
+            "id": "/subscriptions/196946e1-7029-4d97-8f65-ba6c6138c93f/resourceGroups/BAYERNCLOUD/providers/Microsoft.Compute/virtualMachines/kubernetes-istio-test",
+            "log": {
+                "enabled": false
+            },
+            "name": "kubernetes-istio-test",
+            "networkInterfaces": [
+                "/subscriptions/196946e1-7029-4d97-8f65-ba6c6138c93f/resourceGroups/BayernCloud/providers/Microsoft.Network/networkInterfaces/kubernetes-istio-tes941"
+            ],
+            "type": [
+                "VirtualMachine",
+                "Compute",
+                "Resource"
+            ]
+        },
+        {
+            "blockStorage": [
+                "/subscriptions/196946e1-7029-4d97-8f65-ba6c6138c93f/resourceGroups/BAYERNCLOUD/providers/Microsoft.Compute/disks/ml-privacy-framework_OsDisk_1_8d4bb3a6a6d94a50a58767bd98a6704b"
+            ],
+            "creationTime": 0,
+            "id": "/subscriptions/196946e1-7029-4d97-8f65-ba6c6138c93f/resourceGroups/BAYERNCLOUD/providers/Microsoft.Compute/virtualMachines/ml-privacy-framework",
+            "log": {
+                "enabled": false
+            },
+            "name": "ml-privacy-framework",
+            "networkInterfaces": [
+                "/subscriptions/196946e1-7029-4d97-8f65-ba6c6138c93f/resourceGroups/BayernCloud/providers/Microsoft.Network/networkInterfaces/ml-privacy-framework758"
+            ],
+            "type": [
+                "VirtualMachine",
+                "Compute",
+                "Resource"
+            ]
+        },
+        {
+            "IPs": [
+                "51.105.160.202"
+            ],
+            "Ports": [
+                80,
+                443
+            ],
+            "accessRestriction": {
+                "inbound": false,
+                "restrictedPorts": ""
+            },
+            "creationTime": 0,
+            "httpEndpoint": [],
+            "id": "/subscriptions/196946e1-7029-4d97-8f65-ba6c6138c93f/resourceGroups/mc_cloud-property-graphs-examples_eks_westeurope/providers/Microsoft.Network/loadBalancers/kubernetes",
+            "name": "kubernetes",
+            "type": [
+                "LoadBalancer",
+                "NetworkService",
+                "Resource"
+            ]
+        },
+        {
+            "atRestEncryption": {
+                "algorithm": "AES-265",
+                "enabled": true,
+                "keyManager": "Microsoft.Storage"
+            },
+            "creationTime": 1603878753,
+            "httpEndpoint": {
+                "creationTime": 0,
+                "id": "",
+                "name": "",
+                "transportEncryption": {
+                    "enabled": true,
+                    "enforced": true,
+                    "tlsVersion": "TLS1_2"
+                },
+                "type": null,
+                "url": "https://csb10032000c544ca79.blob.core.windows.net/"
+            },
+            "id": "/subscriptions/196946e1-7029-4d97-8f65-ba6c6138c93f/resourceGroups/cloud-shell-storage-westeurope/providers/Microsoft.Storage/storageAccounts/csb10032000c544ca79",
+            "name": "csb10032000c544ca79",
+            "type": [
+                "ObjectStorage",
+                "Storage",
+                "Resource"
+            ]
+        },
+        {
+            "atRestEncryption": {
+                "algorithm": "AES-265",
+                "enabled": true,
+                "keyManager": "Microsoft.Storage"
+            },
+            "creationTime": 1603454392,
+            "httpEndpoint": {
+                "creationTime": 0,
+                "id": "",
+                "name": "",
+                "transportEncryption": {
+                    "enabled": true,
+                    "enforced": true,
+                    "tlsVersion": ""
+                },
+                "type": null,
+                "url": "https://storageaccountbayer9859.blob.core.windows.net/"
+            },
+            "id": "/subscriptions/196946e1-7029-4d97-8f65-ba6c6138c93f/resourceGroups/BayernCloud/providers/Microsoft.Storage/storageAccounts/storageaccountbayer9859",
+            "name": "storageaccountbayer9859",
+            "type": [
+                "ObjectStorage",
+                "Storage",
+                "Resource"
+            ]
+        },
+        {
+            "creationTime": 1624634723,
+            "id": "/namespaces/cpg-examples-patient-community/containers/phr-manager-5b5497bf9f-j58sn",
+            "name": "phr-manager-5b5497bf9f-j58sn",
+            "networkInterfaces": [
+                "cpg-examples-patient-community"
+            ],
+            "type": [
+                "Container",
+                "Compute",
+                "Resource"
+            ]
+        },
+        {
+            "atRestEncryption": {
+                "algorithm": "AES-265",
+                "enabled": true,
+                "keyManager": "Microsoft.Storage"
+            },
+            "creationTime": 1620895106,
+            "httpEndpoint": {
+                "creationTime": 0,
+                "id": "",
+                "name": "",
+                "transportEncryption": {
+                    "enabled": true,
+                    "enforced": false,
+                    "tlsVersion": ""
+                },
+                "type": null,
+                "url": "https://sgxtest37df3a2c294.blob.core.windows.net/"
+            },
+            "id": "/subscriptions/196946e1-7029-4d97-8f65-ba6c6138c93f/resourceGroups/sgxtest3RG/providers/Microsoft.Storage/storageAccounts/sgxtest37df3a2c294",
+            "name": "sgxtest37df3a2c294",
+            "type": [
+                "ObjectStorage",
+                "Storage",
+                "Resource"
+            ]
+        },
+        {
+            "accessRestriction": {
+                "inbound": false,
+                "restrictedPorts": ""
+            },
+            "attachedTo": "",
+            "creationTime": 0,
+            "id": "/subscriptions/196946e1-7029-4d97-8f65-ba6c6138c93f/resourceGroups/BayernCloud/providers/Microsoft.Network/networkInterfaces/vm3984",
+            "name": "vm3984",
+            "type": [
+                "NetworkInterface",
+                "Compute",
+                "Resource"
+            ]
+        },
+        {
+            "creationTime": 1623505051,
+            "id": "/namespaces/cert-manager/containers/cert-manager-cainjector-685b87b86-c88d6",
+            "name": "cert-manager-cainjector-685b87b86-c88d6",
+            "networkInterfaces": [
+                "cert-manager"
+            ],
+            "type": [
+                "Container",
+                "Compute",
+                "Resource"
+            ]
+        },
+        {
+            "creationTime": 1624632282,
+            "id": "/namespaces/cpg-examples-patient-community/containers/auth-service-5846756b7c-zm6m6",
+            "name": "auth-service-5846756b7c-zm6m6",
+            "networkInterfaces": [
+                "cpg-examples-patient-community"
+            ],
+            "type": [
+                "Container",
+                "Compute",
+                "Resource"
+            ]
+        },
+        {
+            "creationTime": 1620266549,
+            "id": "/namespaces/kube-system/containers/coredns-autoscaler-cb5bc68df-jd564",
+            "name": "coredns-autoscaler-cb5bc68df-jd564",
+            "networkInterfaces": [
+                "kube-system"
+            ],
+            "type": [
+                "Container",
+                "Compute",
+                "Resource"
+            ]
+        },
+        {
+            "creationTime": 1605664942,
+            "id": "/namespaces/kube-system/containers/metrics-server-58fdc875d5-m9mkm",
+            "name": "metrics-server-58fdc875d5-m9mkm",
+            "networkInterfaces": [
+                "kube-system"
+            ],
+            "type": [
+                "Container",
+                "Compute",
+                "Resource"
+            ]
+        },
+        {
+            "blockStorage": [
+                "/subscriptions/196946e1-7029-4d97-8f65-ba6c6138c93f/resourceGroups/BAYERNCLOUD/providers/Microsoft.Compute/disks/paper-performance-test_OsDisk_1_22a3600f00774fa388185e404f6d44bc"
+            ],
+            "creationTime": 0,
+            "id": "/subscriptions/196946e1-7029-4d97-8f65-ba6c6138c93f/resourceGroups/BAYERNCLOUD/providers/Microsoft.Compute/virtualMachines/paper-performance-test",
+            "log": {
+                "enabled": false
+            },
+            "name": "paper-performance-test",
+            "networkInterfaces": [
+                "/subscriptions/196946e1-7029-4d97-8f65-ba6c6138c93f/resourceGroups/BayernCloud/providers/Microsoft.Network/networkInterfaces/paper-performance-te342"
+            ],
+            "type": [
+                "VirtualMachine",
+                "Compute",
+                "Resource"
+            ]
+        },
+        {
+            "accessRestriction": {
+                "inbound": false,
+                "restrictedPorts": ""
+            },
+            "attachedTo": "",
+            "creationTime": 0,
+            "id": "/subscriptions/196946e1-7029-4d97-8f65-ba6c6138c93f/resourceGroups/BayernCloud/providers/Microsoft.Network/networkInterfaces/ml-privacy-framework758",
+            "name": "ml-privacy-framework758",
+            "type": [
+                "NetworkInterface",
+                "Compute",
+                "Resource"
+            ]
+        }
+    ]
+}
