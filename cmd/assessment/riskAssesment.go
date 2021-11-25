@@ -23,7 +23,6 @@ import (
 const envPrefix = "CLOUDITOR"
 
 var (
-
 	// Filename for the IaC template
 	iacOutputFilename = "resources/outputs/arm_template.json"
 
@@ -59,15 +58,17 @@ func init() {
 	CmdAssessment.Flags().String(discovery.AppTenantIDFlag, "", "Tenant ID of the Azure App")
 	CmdAssessment.Flags().String(discovery.AppClientIDFlag, "", "Client ID of the Azure App")
 	CmdAssessment.Flags().String(discovery.AppClientSecretFlag, "", "Client secret of the Azure App")
+	CmdAssessment.Flags().StringP("iacTemplatePath", "t", "", "IaC template path (currently only Azure ARM templates are usable)")
+	CmdAssessment.Flags().StringP("ontologyTemplatePath", "o", "", "Ontology template path")
 
 	_ = viper.BindPFlag(discovery.SubscriptionIDFlag, CmdAssessment.Flags().Lookup(discovery.SubscriptionIDFlag))
 	_ = viper.BindPFlag(discovery.ResourceGroupFlag, CmdAssessment.Flags().Lookup(discovery.ResourceGroupFlag))
 	_ = viper.BindPFlag(discovery.AppTenantIDFlag, CmdAssessment.Flags().Lookup(discovery.AppTenantIDFlag))
 	_ = viper.BindPFlag(discovery.AppClientIDFlag, CmdAssessment.Flags().Lookup(discovery.AppClientIDFlag))
 	_ = viper.BindPFlag(discovery.AppClientSecretFlag, CmdAssessment.Flags().Lookup(discovery.AppClientSecretFlag))
+	_ = viper.BindPFlag("iacTemplatePath", CmdAssessment.PersistentFlags().Lookup("iacTemplatePath"))
+	_ = viper.BindPFlag("ontologyTemplatePath", CmdAssessment.Flags().Lookup("ontologyTemplatePath"))
 
-	CmdAssessment.Flags().StringP("templatePath", "t", "", "IaC template path (currently only ARM templates are usable)")
-	CmdAssessment.Flags().StringP("ontologyPath", "o", "", "Ontology template path")
 }
 
 func initConfig() {
@@ -84,7 +85,7 @@ func initConfig() {
 	}
 }
 
-func doCmd(_ *cobra.Command, args []string) (err error) {
+func doCmd(cmd *cobra.Command, args []string) (err error) {
 	var (
 		iacTemplateResult      interface{}
 		ontologyTemplateResult interface{}
@@ -97,13 +98,15 @@ func doCmd(_ *cobra.Command, args []string) (err error) {
 	}
 
 	log.Info("Discovering...")
-	if len(args) > 1 {
-		iacTemplatePath = args[3]
-		ontologyTemplatePath = args[1]
-	} else {
-		return errors.New("No IaC nor ontology template path given.")
+
+	iacTemplatePath, err = cmd.Flags().GetString("iacTemplatePath")
+	ontologyTemplatePath, err = cmd.Flags().GetString("ontologyTemplatePath")
+
+	if err != nil {
+		return fmt.Errorf("error getting argument: %w", err)
 	}
 
+	// TODO: Only authorize if no IaC template path is given
 	app := &discovery.App{}
 	if err = app.AuthorizeAzure(); err != nil {
 		return err
@@ -116,7 +119,7 @@ func doCmd(_ *cobra.Command, args []string) (err error) {
 	ontologyTemplateResult, errOntology := getOntologyTemplate(app, ontologyTemplatePath, iacTemplateResult)
 
 	if errIac != nil && errOntology != nil {
-		return fmt.Errorf("getting IaC and ontology template failed: %w", err)
+		return fmt.Errorf("getting IaC and ontology template failed: \nerrorIaCTemplate: %v \nerrorOntologyTemplate:%v", errIac, errOntology)
 	}
 
 	// Risk Assessment based on IaC Template
@@ -231,7 +234,9 @@ func getOntologyTemplate(app *discovery.App, ontologyTemplatePath string, iacTem
 	if ontologyTemplatePath != "" {
 		log.Info("Get ontology template from file system: ", ontologyTemplatePath)
 		ontologyTemplateResult = readFromFilesystem(ontologyTemplatePath)
-	} else {
+	} else if iacTemplate == nil {
+		return nil, errors.New("IaC template not available for creating ontology-based template")
+	} else{
 
 		// Create ontology-based resource template from IaC template
 		log.Info("Create ontology-based resource template from IaC template")
